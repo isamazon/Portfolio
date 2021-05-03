@@ -1,0 +1,9 @@
+.app {
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  height: 100vh;
+  background: #090a14;
+  z-index: -3;
+  margin: 0;
+}
