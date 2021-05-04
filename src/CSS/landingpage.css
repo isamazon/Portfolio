@@ -133,6 +133,7 @@
 .fluid-cont .video1 {
   position: fixed;
   width: 100%;
+  left: 0;
   z-index: -1;
 }
 
@@ -176,7 +177,7 @@
 
 .fluid-cont .main-cont .name-h1 {
   position: relative;
-  bottom: 9%;
+  bottom: 5%;
   background: none;
   width: 100%;
   height: 30px;
@@ -193,7 +194,7 @@
 
 .fluid-cont .main-cont .dev-h1 {
   position: relative;
-  bottom: 9%;
+  bottom: 5%;
   font-size: 50px;
   color: white;
   width: 100%;
@@ -213,14 +214,174 @@
 
 .projects-fluid-cnt {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background: #090d0f;
+  background-image: url(../assets/BGdark.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.projects-fluid-cnt .BGpng {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .projects-fluid-cnt .projects-cnt {
   position: relative;
   height: 100%;
   width: 100%;
+  background: none;
+}
+
+.projects-fluid-cnt .projects-cnt .particles-1 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.projects-fluid-cnt .projects-cnt h1 {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  font-family: "Monoton", cursive;
+  top: 50px;
+  font-size: 60px;
+  text-align: center;
+  z-index: 3;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 {
+  position: relative;
+  height: 100%;
+  background: none;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 {
+  position: relative;
+  height: 700px;
+  top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card {
+  height: 95%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(17, 24, 32, 0.55);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .project-img {
+  position: relative;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .project-img .svg {
+  height: 100%;
+  width: 90%;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .project-h1 {
+  position: relative;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10%;
+  width: 100%;
+  background: none;
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .project-p {
+  position: relative;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  background: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .buttons-container {
+  position: relative;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 15%;
   background: none;
 }
 
@@ -264,7 +425,7 @@
 
 .dev-h1-light {
   position: relative;
-  bottom: 9%;
+  bottom: 5%;
   font-size: 50px;
   color: white;
   width: 100%;
@@ -282,7 +443,6 @@
 }
 
 .projects-lightBG {
-  height: 100vh;
   background: #305a65;
 }
 /*# sourceMappingURL=landingpage.css.map */

@@ -2,10 +2,19 @@ import { render } from "@testing-library/react";
 import React, { useState, Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
+import Particles from "react-particles-js";
 // Assets
 import video1 from "../assets/clouds.mp4";
 import video2 from "../assets/sunbg.mp4";
 import resume from "../assets/isaiahsresume.pdf";
+import BGdark from "../assets/BGdark.png";
+// SVGs
+import shounenfitsvgdark from "../assets/shounenfitsvgdark.svg";
+import shounenfitsvglight from "../assets/shounenfitsvglight.svg";
+import humblenutritionL from "../assets/humblenutrition.svg";
+import humblenutritionD from "../assets/humblenutrition2.svg";
+import portfolioD from "../assets/portfolioD.svg";
+import portfolioL from "../assets/portfolioL.svg";
 // Icons
 
 import { FaGithub, FaLinkedinIn, FaRegMoon, FaSun } from "react-icons/fa";
@@ -14,6 +23,7 @@ import { SiIndeed } from "react-icons/si";
 import { FcDocument } from "react-icons/fc";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 // Components
+import Projectcard from "./projectcard";
 
 class Landing extends React.Component {
   constructor() {
@@ -24,6 +34,10 @@ class Landing extends React.Component {
       welcome: "welcome-h1",
       devh1: "dev-h1",
       lp2BG: "projects-fluid-cnt",
+      col1: "col-1",
+      projimg1: shounenfitsvgdark,
+      projimg2: humblenutritionD,
+      projimg3: portfolioD,
     };
   }
   render() {
@@ -40,6 +54,10 @@ class Landing extends React.Component {
                     welcome: "welcome-h1-light",
                     devh1: "dev-h1-light",
                     lp2BG: "projects-fluid-cnt projects-lightBG",
+                    col1: "col-1",
+                    projimg1: shounenfitsvglight,
+                    projimg2: humblenutritionL,
+                    projimg3: portfolioL,
                   })
                 }
                 size="40px"
@@ -54,6 +72,10 @@ class Landing extends React.Component {
                     welcome: "welcome-h1",
                     devh1: "dev-h1",
                     lp2BG: "projects-fluid-cnt",
+                    col1: "col-1",
+                    projimg1: shounenfitsvgdark,
+                    projimg2: humblenutritionD,
+                    projimg3: portfolioD,
                   })
                 }
                 size="40px"
@@ -97,18 +119,18 @@ class Landing extends React.Component {
           ></video>
           <Container className="main-cont">
             <h1 className={this.state.welcome}>WELCOME</h1>
-            <h1 className="name-h1">Im isaiah mazon,</h1>
+            <h1 className="name-h1">Im Isaiah Mazon,</h1>
             <h1 className={this.state.devh1}>FRONT END WEB DEV</h1>
           </Container>
         </Container>
         <Container fluid className={this.state.lp2BG}>
-          <Container className="projects-cnt">
-            <Row>
-              <Col>
-                <h1>ee</h1>
-              </Col>
-            </Row>
-          </Container>
+          <Projectcard
+            col1={this.state.col1}
+            // SVGS for projects
+            svg1={this.state.projimg1}
+            svg2={this.state.projimg2}
+            svg3={this.state.projimg3}
+          />
         </Container>
       </div>
     );
