@@ -133,13 +133,19 @@
 .fluid-cont .video1 {
   position: fixed;
   width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-cont .video1 {
+    display: none;
+  }
 }
 
 .fluid-cont .main-cont {
   position: relative;
   background: none;
-  width: 50%;
-  left: 10%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,26 +164,64 @@
 .fluid-cont .main-cont .welcome-h1 {
   color: #492d66;
   font-size: 150px;
+  width: 100%;
   font-family: "Monoton", cursive;
+}
+
+@media screen and (max-width: 1500px) {
+  .fluid-cont .main-cont .welcome-h1 {
+    font-size: 100px;
+  }
 }
 
 .fluid-cont .main-cont .name-h1 {
-  position: absolute;
-  bottom: 42%;
-  left: 5%;
+  position: relative;
+  bottom: 9%;
+  background: none;
+  width: 100%;
+  height: 30px;
   letter-spacing: 5px;
-  color: white;
   font-family: "Fjalla One", sans-serif;
+  color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .fluid-cont .main-cont .name-h1 {
+    bottom: 5%;
+  }
 }
 
 .fluid-cont .main-cont .dev-h1 {
-  position: absolute;
-  bottom: 35%;
-  left: 5%;
+  position: relative;
+  bottom: 9%;
   font-size: 50px;
   color: white;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  background: none;
   font-family: "Monoton", cursive;
   color: #774e71;
+}
+
+@media screen and (max-width: 1500px) {
+  .fluid-cont .main-cont .dev-h1 {
+    bottom: 6%;
+    padding-left: 35px;
+  }
+}
+
+.projects-fluid-cnt {
+  position: relative;
+  height: 100vh;
+  background: #090d0f;
+}
+
+.projects-fluid-cnt .projects-cnt {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: none;
 }
 
 .link-lighttheme {
@@ -203,5 +247,42 @@
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
   color: #03dac6;
+}
+
+.welcome-h1-light {
+  color: #03dac6;
+  font-size: 150px;
+  width: 100%;
+  font-family: "Monoton", cursive;
+}
+
+@media screen and (max-width: 1500px) {
+  .welcome-h1-light {
+    font-size: 100px;
+  }
+}
+
+.dev-h1-light {
+  position: relative;
+  bottom: 9%;
+  font-size: 50px;
+  color: white;
+  width: 100%;
+  left: 0;
+  background: none;
+  font-family: "Monoton", cursive;
+  color: #10887e;
+}
+
+@media screen and (max-width: 1500px) {
+  .dev-h1-light {
+    bottom: 6%;
+    padding-left: 35px;
+  }
+}
+
+.projects-lightBG {
+  height: 100vh;
+  background: #305a65;
 }
 /*# sourceMappingURL=landingpage.css.map */
