@@ -42,7 +42,7 @@ function Nav() {
   return (
     <nav className={nav ? "nav active" : "nav"}>
       <Link to="/" className="brand">
-        ShounenFit
+        Isaiah Mazon
       </Link>
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -51,6 +51,11 @@ function Nav() {
         <li className="nav-item">
           <Link to="/" className="nav-links" onClick={closeMobileMenu}>
             Home
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            Projects
           </Link>
         </li>
         <li className="nav-item">

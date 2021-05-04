@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+.mode-btn {
+  position: fixed;
+  width: 20%;
+  height: 80px;
+  padding-left: 0px;
+  top: 0%;
+  right: 0;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: none;
+}
+
+.mode-btn .btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mode-btn .btn .color-icon {
+  margin-right: 10px;
+  color: yellow;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mode-btn .btn .color-icon:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.mode-btn .btn .divider {
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.mode-btn .btn .color-icon-2 {
+  cursor: pointer;
+  margin-left: 0px;
+  color: #68369a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mode-btn .btn .color-icon-2:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.fluid-cont {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fluid-cont .link-container {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.fluid-cont .link-container .link {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fluid-cont .link-container .link p {
+  position: absolute;
+  right: 0%;
+  color: white;
+  padding-left: 20px;
+}
+
+.fluid-cont .link-container .link:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  color: #68369a;
+}
+
+.fluid-cont .video1 {
+  position: fixed;
+  width: 100%;
+}
+
+.fluid-cont .main-cont {
+  position: relative;
+  background: none;
+  width: 50%;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fluid-cont .main-cont .welcome-h1 {
+  color: #492d66;
+  font-size: 150px;
+  font-family: "Monoton", cursive;
+}
+
+.fluid-cont .main-cont .name-h1 {
+  position: absolute;
+  bottom: 42%;
+  left: 5%;
+  letter-spacing: 5px;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.fluid-cont .main-cont .dev-h1 {
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+  font-size: 50px;
+  color: white;
+  font-family: "Monoton", cursive;
+  color: #774e71;
+}
+
+.link-lighttheme {
+  position: relative;
+  cursor: pointer;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-lighttheme:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  color: #03dac6;
+}
+/*# sourceMappingURL=landingpage.css.map */

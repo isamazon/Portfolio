@@ -10,8 +10,8 @@
 }
 
 .nav {
-  background: transparent;
-  z-index: 999;
+  background: black;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@
   letter-spacing: 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  font-family: "Ceviche One", cursive;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .nav .brand:hover {

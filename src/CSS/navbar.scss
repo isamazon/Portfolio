@@ -18,8 +18,8 @@ $font3: "Ceviche One", cursive;
 }
 
 .nav {
-  background: transparent;
-  z-index: 999;
+  background: black;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@ $font3: "Ceviche One", cursive;
     text-decoration: none;
     letter-spacing: 2px;
     transition: 0.5s;
-    font-family: $font3;
+    font-family: $font2;
     &:hover {
       color: white;
       text-decoration: none;

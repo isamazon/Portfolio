@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+$monoton: "Monoton", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+$font2: "Fjalla One", sans-serif;
+
+.mode-btn {
+  position: fixed;
+  width: 20%;
+  height: 80px;
+  padding-left: 0px;
+  top: 0%;
+  right: 0;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+  .btn {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .color-icon {
+      margin-right: 10px;
+      color: yellow;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    .divider {
+      color: white;
+      font-family: $font2;
+    }
+    .color-icon-2 {
+      cursor: pointer;
+      margin-left: 0px;
+      color: #68369a;
+      transition: 0.5s;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+// Dark theme
+.fluid-cont {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  .link-container {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    .link {
+      position: relative;
+      cursor: pointer;
+      color: white;
+      transition: 0.5s;
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p {
+        position: absolute;
+        right: 0%;
+        color: white;
+        padding-left: 20px;
+      }
+      &:hover {
+        transform: translateX(5px);
+        color: #68369a;
+      }
+    }
+  }
+  .video1 {
+    position: fixed;
+    width: 100%;
+  }
+  .main-cont {
+    position: relative;
+    background: none;
+    width: 50%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .welcome-h1 {
+      color: #492d66;
+      font-size: 150px;
+      font-family: $monoton;
+    }
+    .name-h1 {
+      position: absolute;
+      bottom: 42%;
+      left: 5%;
+      letter-spacing: 5px;
+      color: white;
+      font-family: $font2;
+    }
+    .dev-h1 {
+      position: absolute;
+      bottom: 35%;
+      left: 5%;
+      font-size: 50px;
+      color: white;
+      font-family: $monoton;
+      color: #774e71;
+    }
+  }
+}
+
+// dark theme
+.link-lighttheme {
+  position: relative;
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:hover {
+    transform: translateX(5px);
+    color: #03dac6;
+  }
+}
