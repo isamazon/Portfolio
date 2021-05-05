@@ -464,12 +464,41 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 15%;
   background: none;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .buttons-container .repo-1 {
+  background: black;
+  background: rgba(20, 27, 39, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  border: 2px solid white;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  border-radius: 20px;
+  margin: 5px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .buttons-container .repo-1:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: none;
+  text-decoration: none;
+  border-radius: 50px;
 }
 
 .link-lighttheme {

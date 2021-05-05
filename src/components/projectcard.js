@@ -27,7 +27,17 @@ class Projectcard extends Component {
                 project is in its very early stages of development with only the
                 front end being built right now.
               </p>
-              <div className="buttons-container"></div>
+              <div className="buttons-container">
+                <a
+                  href="https://github.com/isamazon/ShounenFit"
+                  className="repo-1"
+                >
+                  Github repo
+                </a>
+                <a href="http://shounenfit.com/" className="repo-1">
+                  Live demo
+                </a>
+              </div>
             </div>
           </Col>
           <Col className={this.props.col1} xl={4} lg={6} xs={12}>
@@ -44,6 +54,17 @@ class Projectcard extends Component {
                 all platforms, The website utilizes said technologies such as
                 HTML5, CSS, SCSS, Bootstrap 5 and PHP
               </p>
+              <div className="buttons-container">
+                <a
+                  href="https://github.com/isamazon/Humble-Nutrtion"
+                  className="repo-1"
+                >
+                  Github repo
+                </a>
+                <a href="https://humblenutritionnm.com/" className="repo-1">
+                  Live demo
+                </a>
+              </div>
             </div>
           </Col>
           <Col className={this.props.col1} xl={4} lg={6} xs={12}>
@@ -53,6 +74,20 @@ class Projectcard extends Component {
               </div>
               <h1 className="project-h1">Portfolio</h1>
               <p className="project-p"></p>
+              <div className="buttons-container">
+                <a
+                  href="https://github.com/isamazon/Portfolio"
+                  className="repo-1"
+                >
+                  Github repo
+                </a>
+                <a
+                  href="https://github.com/isamazon/ShounenFit"
+                  className="repo-1"
+                >
+                  Live demo
+                </a>
+              </div>
             </div>
           </Col>
         </Row>
