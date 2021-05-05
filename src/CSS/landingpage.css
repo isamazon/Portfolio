@@ -20,6 +20,12 @@
   background: none;
 }
 
+@media screen and (max-width: 980px) {
+  .mode-btn {
+    top: 10%;
+  }
+}
+
 .mode-btn .btn {
   position: relative;
   width: 200px;
@@ -98,10 +104,26 @@
   background: none;
 }
 
+@media screen and (max-width: 800px) {
+  .fluid-cont .link-container {
+    height: 100px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    bottom: 0;
+    background: none;
+  }
+}
+
 .fluid-cont .link-container .link {
   position: relative;
   cursor: pointer;
-  color: white;
+  color: #492d66;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 20px 0px;
@@ -115,6 +137,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-cont .link-container .link {
+    margin: 0px 20px;
+  }
 }
 
 .fluid-cont .link-container .link p {
@@ -167,11 +195,25 @@
   font-size: 150px;
   width: 100%;
   font-family: "Monoton", cursive;
+  text-shadow: 5px 0px 5px black;
 }
 
 @media screen and (max-width: 1500px) {
   .fluid-cont .main-cont .welcome-h1 {
     font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-cont .main-cont .welcome-h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fluid-cont .main-cont .welcome-h1 {
+    font-size: 50px;
   }
 }
 
@@ -192,11 +234,24 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .fluid-cont .main-cont .name-h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fluid-cont .main-cont .name-h1 {
+    font-size: 20px;
+    bottom: 2%;
+  }
+}
+
 .fluid-cont .main-cont .dev-h1 {
   position: relative;
   bottom: 5%;
   font-size: 50px;
-  color: white;
+  color: rgba(255, 255, 255, 0.342);
   width: 100%;
   height: 50px;
   left: 0;
@@ -209,6 +264,25 @@
   .fluid-cont .main-cont .dev-h1 {
     bottom: 6%;
     padding-left: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-cont .main-cont .dev-h1 {
+    text-align: center;
+    bottom: 5%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fluid-cont .main-cont .dev-h1 {
+    font-size: 25px;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -258,6 +332,12 @@
   font-size: 60px;
   text-align: center;
   z-index: 3;
+}
+
+@media screen and (max-width: 350px) {
+  .projects-fluid-cnt .projects-cnt h1 {
+    font-size: 40px;
+  }
 }
 
 .projects-fluid-cnt .projects-cnt .row-1 {
@@ -371,6 +451,13 @@
   border-bottom: 2px solid white;
 }
 
+@media screen and (max-width: 500px) {
+  .projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .project-p {
+    font-size: 15px;
+    padding: 0px 10px;
+  }
+}
+
 .projects-fluid-cnt .projects-cnt .row-1 .col-1 .inner-card .buttons-container {
   position: relative;
   top: 0;
@@ -388,7 +475,7 @@
 .link-lighttheme {
   position: relative;
   cursor: pointer;
-  color: black;
+  color: #03dac6;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 20px 0px;
@@ -423,6 +510,19 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .welcome-h1-light {
+    text-align: center;
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .welcome-h1-light {
+    font-size: 50px;
+  }
+}
+
 .dev-h1-light {
   position: relative;
   bottom: 5%;
@@ -442,7 +542,30 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .dev-h1-light {
+    text-align: center;
+    bottom: 5%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dev-h1-light {
+    font-size: 25px;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    padding-left: 0px;
+  }
+}
+
 .projects-lightBG {
   background: #305a65;
+  background-image: url(../assets/BGlight.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 /*# sourceMappingURL=landingpage.css.map */

@@ -15,6 +15,9 @@ $font2: "Fjalla One", sans-serif;
   align-items: center;
   justify-content: flex-end;
   background: none;
+  @media screen and (max-width: 980px) {
+    top: 10%;
+  }
   .btn {
     position: relative;
     width: 200px;
@@ -54,6 +57,8 @@ $font2: "Fjalla One", sans-serif;
   position: relative;
   height: 100vh;
   display: flex;
+  @media screen and (max-width: 800px) {
+  }
 
   .link-container {
     position: absolute;
@@ -66,15 +71,26 @@ $font2: "Fjalla One", sans-serif;
     align-items: center;
     justify-content: center;
     background: none;
+    @media screen and (max-width: 800px) {
+      height: 100px;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      bottom: 0;
+      background: none;
+    }
     .link {
       position: relative;
       cursor: pointer;
-      color: white;
+      color: #492d66;
       transition: 0.5s;
       margin: 20px 0px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      @media screen and (max-width: 800px) {
+        margin: 0px 20px;
+      }
       p {
         position: absolute;
         right: 0%;
@@ -109,8 +125,16 @@ $font2: "Fjalla One", sans-serif;
       font-size: 150px;
       width: 100%;
       font-family: $monoton;
+      text-shadow: 5px 0px 5px black;
       @media screen and (max-width: 1500px) {
         font-size: 100px;
+      }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        font-size: 80px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 50px;
       }
     }
     .name-h1 {
@@ -125,12 +149,19 @@ $font2: "Fjalla One", sans-serif;
       @media screen and (max-width: 1500px) {
         bottom: 5%;
       }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+        bottom: 2%;
+      }
     }
     .dev-h1 {
       position: relative;
       bottom: 5%;
       font-size: 50px;
-      color: white;
+      color: rgba(255, 255, 255, 0.342);
       width: 100%;
       height: 50px;
       left: 0;
@@ -140,6 +171,19 @@ $font2: "Fjalla One", sans-serif;
       @media screen and (max-width: 1500px) {
         bottom: 6%;
         padding-left: 35px;
+      }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        bottom: 5%;
+        font-size: 30px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 25px;
+        bottom: 3%;
+        width: 100%;
+        text-align: center;
+        left: 0px;
+        padding-left: 0px;
       }
     }
   }
@@ -186,6 +230,9 @@ $font2: "Fjalla One", sans-serif;
       font-size: 60px;
       text-align: center;
       z-index: 3;
+      @media screen and (max-width: 350px) {
+        font-size: 40px;
+      }
     }
     .row-1 {
       position: relative;
@@ -255,6 +302,10 @@ $font2: "Fjalla One", sans-serif;
             padding: 0px 20px;
             border-top: 2px solid white;
             border-bottom: 2px solid white;
+            @media screen and (max-width: 500px) {
+              font-size: 15px;
+              padding: 0px 10px;
+            }
           }
           .buttons-container {
             position: relative;
@@ -274,7 +325,7 @@ $font2: "Fjalla One", sans-serif;
 .link-lighttheme {
   position: relative;
   cursor: pointer;
-  color: black;
+  color: #03dac6;
   transition: 0.5s;
   margin: 20px 0px;
   display: flex;
@@ -293,6 +344,13 @@ $font2: "Fjalla One", sans-serif;
   @media screen and (max-width: 1500px) {
     font-size: 100px;
   }
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    font-size: 80px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 50px;
+  }
 }
 .dev-h1-light {
   position: relative;
@@ -308,8 +366,25 @@ $font2: "Fjalla One", sans-serif;
     bottom: 6%;
     padding-left: 35px;
   }
+  @media screen and (max-width: 800px) {
+    text-align: center;
+    bottom: 5%;
+    font-size: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 25px;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    padding-left: 0px;
+  }
 }
 
 .projects-lightBG {
   background: #305a65;
+  background-image: url(../assets/BGlight.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }

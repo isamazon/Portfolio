@@ -37,10 +37,12 @@ class Projectcard extends Component {
               </div>
               <h1 className="project-h1">Humble nutrition</h1>
               <p className="project-p">
-                Humble nutrition is a website that i made for a local buinsess
-                here in Albuquerque New Mexico using <br></br> (HTML5, SCSS,
-                Javascript (Es6) ) i was commisioned to build this website to
-                visually please and welcome customers of the small shop
+                Humblenutritionnm.com is a website i built and maintain for the
+                company located in albuquerque new mexico Humble nutrition, It
+                is a front end site utilizing modern styling techniques equipped
+                with all of the necessary technologies to make it responsive on
+                all platforms, The website utilizes said technologies such as
+                HTML5, CSS, SCSS, Bootstrap 5 and PHP
               </p>
             </div>
           </Col>

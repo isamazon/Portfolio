@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // Dependencies
 import { Link } from "react-router-dom";
-
+import { FaBars } from "react-icons/fa";
 // CSS
 import "../CSS/navbar.css";
 

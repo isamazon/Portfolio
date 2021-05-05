@@ -2,7 +2,7 @@ import { render } from "@testing-library/react";
 import React, { useState, Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ThemeProvider } from "styled-components";
-import Particles from "react-particles-js";
+
 // Assets
 import video1 from "../assets/clouds.mp4";
 import video2 from "../assets/sunbg.mp4";
@@ -121,6 +121,9 @@ class Landing extends React.Component {
             <h1 className={this.state.welcome}>WELCOME</h1>
             <h1 className="name-h1">Im Isaiah Mazon,</h1>
             <h1 className={this.state.devh1}>FRONT END WEB DEV</h1>
+            <a className="button" href="mailto:email@email.de">
+              Kontakt
+            </a>
           </Container>
         </Container>
         <Container fluid className={this.state.lp2BG}>
