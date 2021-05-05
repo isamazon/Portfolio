@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 // Dependencies
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -14,22 +14,6 @@ function Nav() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
-
   const changeBackground = () => {
     if (window.scrollY >= 10) {
       setNav(true);
@@ -37,6 +21,8 @@ function Nav() {
       setNav(false);
     }
   };
+  //   Scroll to div
+  const scrollTo = useRef(null);
 
   window.addEventListener("scroll", changeBackground);
   return (
@@ -61,11 +47,6 @@ function Nav() {
         <li className="nav-item">
           <Link to="/" className="nav-links" onClick={closeMobileMenu}>
             About
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-            Contact
           </Link>
         </li>
       </ul>

@@ -73,7 +73,12 @@ class Projectcard extends Component {
                 <img src={this.props.svg3} className="svg" alt="" />
               </div>
               <h1 className="project-h1">Portfolio</h1>
-              <p className="project-p"></p>
+              <p className="project-p">
+                This project is the one youre currently viewing. It is built
+                with React.js utilizing reacts state managament and reacts
+                ability to use components and make them reusable with the power
+                of props and state.
+              </p>
               <div className="buttons-container">
                 <a
                   href="https://github.com/isamazon/Portfolio"

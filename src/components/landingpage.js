@@ -1,12 +1,11 @@
 import { render } from "@testing-library/react";
 import React, { useState, Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ThemeProvider } from "styled-components";
-
+import Navbar from "../components/navbar";
 // Assets
 import video1 from "../assets/clouds.mp4";
 import video2 from "../assets/sunbg.mp4";
-import resume from "../assets/isaiahsresume.pdf";
+import resume from "../assets/resume.pdf";
 import BGdark from "../assets/BGdark.png";
 // SVGs
 import shounenfitsvgdark from "../assets/shounenfitsvgdark.svg";
@@ -43,6 +42,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div className="parent-cont">
+        <Navbar />
         <Container fluid className="fluid-cont">
           <div className="mode-btn">
             <div className="btn">
@@ -121,9 +121,11 @@ class Landing extends React.Component {
             <h1 className={this.state.welcome}>WELCOME</h1>
             <h1 className="name-h1">Im Isaiah Mazon,</h1>
             <h1 className={this.state.devh1}>FRONT END WEB DEV</h1>
-            <a className="button" href="mailto:email@email.de">
-              Kontakt
-            </a>
+            <div className="button-ctn">
+              <a className="button" href="mailto:isaiahmazon0622@gmail.com">
+                Contact me
+              </a>
+            </div>
           </Container>
         </Container>
         <Container fluid className={this.state.lp2BG}>

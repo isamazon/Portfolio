@@ -186,6 +186,45 @@ $font2: "Fjalla One", sans-serif;
         padding-left: 0px;
       }
     }
+    .button-ctn {
+      position: relative;
+      width: 100%;
+      top: -5%;
+      background: none;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 0px;
+      z-index: 3;
+      @media screen and (max-width: 800px) {
+        justify-content: center;
+      }
+      @media screen and (max-width: 370px) {
+        top: 0;
+      }
+      .button {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        background: none;
+        border: 2px solid white;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        font-family: $font2;
+        &:hover {
+          text-decoration: none;
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
   }
 }
 // Projects container
@@ -210,6 +249,7 @@ $font2: "Fjalla One", sans-serif;
     position: relative;
     height: 100%;
     width: 100%;
+    padding: 50px 0px;
     background: none;
     .particles-1 {
       position: fixed;

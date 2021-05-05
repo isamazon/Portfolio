@@ -286,6 +286,67 @@
   }
 }
 
+.fluid-cont .main-cont .button-ctn {
+  position: relative;
+  width: 100%;
+  top: -5%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0px;
+  z-index: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .fluid-cont .main-cont .button-ctn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .fluid-cont .main-cont .button-ctn {
+    top: 0;
+  }
+}
+
+.fluid-cont .main-cont .button-ctn .button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background: none;
+  border: 2px solid white;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.fluid-cont .main-cont .button-ctn .button:hover {
+  text-decoration: none;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .projects-fluid-cnt {
   position: relative;
   height: 100%;
@@ -310,6 +371,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  padding: 50px 0px;
   background: none;
 }
 

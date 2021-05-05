@@ -10,7 +10,6 @@ import { Col, Container, Row } from "reactstrap";
 const Home = () => {
   return (
     <div className="parent-cont">
-      <Navbar />
       <Landing />
     </div>
   );
