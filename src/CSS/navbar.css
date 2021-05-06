@@ -36,7 +36,7 @@
   padding-left: 80px;
   text-decoration: none;
   letter-spacing: 2px;
-  top: 25%;
+  top: 0%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Fjalla One", sans-serif;
@@ -48,6 +48,13 @@
   text-decoration: none;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.nav .brand .logo-img {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: -10%;
 }
 
 nav.active {

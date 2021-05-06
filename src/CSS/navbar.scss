@@ -38,7 +38,7 @@ $font3: "Ceviche One", cursive;
     padding-left: 80px;
     text-decoration: none;
     letter-spacing: 2px;
-    top: 25%;
+    top: 0%;
     transition: 0.5s;
     font-family: $font2;
     cursor: pointer;
@@ -46,6 +46,12 @@ $font3: "Ceviche One", cursive;
       color: white;
       text-decoration: none;
       transform: translateY(-5px);
+    }
+    .logo-img {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      top: -10%;
     }
   }
 }

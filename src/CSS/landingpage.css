@@ -368,6 +368,7 @@
   position: relative;
   height: 100%;
   background: #090d0f;
+  background-size: cover;
   background-image: url(../assets/BGdark.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -514,7 +515,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 30%;
+  height: 35%;
   width: 100%;
   background: none;
   -webkit-box-pack: center;
@@ -553,7 +554,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 15%;
+  height: 10%;
   background: none;
 }
 
@@ -680,10 +681,12 @@
 
 .projects-lightBG {
   background: #305a65;
+  background-size: cover;
   background-image: url(../assets/BGlight.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
 }
 
 @-webkit-keyframes fadedup {

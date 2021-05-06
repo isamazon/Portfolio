@@ -243,6 +243,7 @@ $font2: "Fjalla One", sans-serif;
   position: relative;
   height: 100%;
   background: #090d0f;
+  background-size: cover;
   background-image: url(../assets/BGdark.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -343,7 +344,7 @@ $font2: "Fjalla One", sans-serif;
             position: relative;
             top: 0px;
             display: flex;
-            height: 30%;
+            height: 35%;
             width: 100%;
             background: none;
             justify-content: center;
@@ -365,7 +366,7 @@ $font2: "Fjalla One", sans-serif;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            height: 15%;
+            height: 10%;
             background: none;
             .repo-1 {
               background: black;
@@ -460,10 +461,12 @@ $font2: "Fjalla One", sans-serif;
 
 .projects-lightBG {
   background: #305a65;
+  background-size: cover;
   background-image: url(../assets/BGlight.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
 }
 
 @keyframes fadedup {

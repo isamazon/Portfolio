@@ -7,6 +7,8 @@ import video1 from "../assets/clouds.mp4";
 import video2 from "../assets/sunbg.mp4";
 import resume from "../assets/resume.pdf";
 import BGdark from "../assets/BGdark.png";
+import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
 // SVGs
 import shounenfitsvgdark from "../assets/shounenfitsvgdark.svg";
 import shounenfitsvglight from "../assets/shounenfitsvglight.svg";
@@ -37,12 +39,14 @@ class Landing extends React.Component {
       projimg1: shounenfitsvgdark,
       projimg2: humblenutritionD,
       projimg3: portfolioD,
+      logoimg: logo2,
     };
   }
 
   render() {
     return (
       <div className="parent-cont">
+        <Navbar logoimg={this.state.logoimg} />
         <Container id="home" fluid className="fluid-cont">
           <div className="mode-btn">
             <div className="btn">
@@ -58,6 +62,7 @@ class Landing extends React.Component {
                     projimg1: shounenfitsvglight,
                     projimg2: humblenutritionL,
                     projimg3: portfolioL,
+                    logoimg: logo,
                   })
                 }
                 size="40px"
@@ -76,6 +81,7 @@ class Landing extends React.Component {
                     projimg1: shounenfitsvgdark,
                     projimg2: humblenutritionD,
                     projimg3: portfolioD,
+                    logoimg: logo2,
                   })
                 }
                 size="40px"
