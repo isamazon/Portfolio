@@ -39,11 +39,11 @@ class Landing extends React.Component {
       projimg3: portfolioD,
     };
   }
+
   render() {
     return (
       <div className="parent-cont">
-        <Navbar />
-        <Container fluid className="fluid-cont">
+        <Container id="home" fluid className="fluid-cont">
           <div className="mode-btn">
             <div className="btn">
               <WiDaySunny

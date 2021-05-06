@@ -36,9 +36,11 @@
   padding-left: 80px;
   text-decoration: none;
   letter-spacing: 2px;
+  top: 25%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Fjalla One", sans-serif;
+  cursor: pointer;
 }
 
 .nav .brand:hover {
@@ -55,6 +57,16 @@ nav.active {
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
+}
+
+.link-to {
+  cursor: pointer;
+  color: white;
+}
+
+.link-to:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .nav-menu {

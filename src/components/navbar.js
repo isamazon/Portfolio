@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 // Dependencies
-import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+
+import { Link } from "react-scroll";
 // CSS
 import "../CSS/navbar.css";
 
-function Nav() {
+function Nav(props) {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   // Active navbar stat
@@ -22,32 +22,41 @@ function Nav() {
     }
   };
   //   Scroll to div
-  const scrollTo = useRef(null);
 
   window.addEventListener("scroll", changeBackground);
   return (
     <nav className={nav ? "nav active" : "nav"}>
-      <Link to="/" className="brand">
-        Isaiah Mazon
+      <Link
+        className="link-to"
+        activeClass="active"
+        to="home"
+        spy={true}
+        smooth={true}
+      >
+        <div className="brand">Isaiah Mazon</div>
       </Link>
       <div className="menu-icon" onClick={handleClick}>
         <i className={click ? "fas fa-times" : "fas fa-bars"} />
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-            Home
-          </Link>
+          <div className="nav-links" onClick={closeMobileMenu}>
+            <Link to="home" spy={true} smooth={true} className="link-to">
+              Home
+            </Link>
+          </div>
         </li>
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-            Projects
-          </Link>
+          <div className="nav-links" onClick={closeMobileMenu}>
+            <Link className="link-to" to="about" spy={true} smooth={true}>
+              Projects
+            </Link>
+          </div>
         </li>
         <li className="nav-item">
-          <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          <div className="nav-links" onClick={closeMobileMenu}>
             About
-          </Link>
+          </div>
         </li>
       </ul>
     </nav>

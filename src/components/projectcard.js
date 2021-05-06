@@ -11,7 +11,7 @@ import portfolioD from "../assets/portfolioD.svg";
 class Projectcard extends Component {
   render() {
     return (
-      <Container fluid className="projects-cnt">
+      <Container id="about" fluid className="projects-cnt">
         <Particles className="particles-1" />
         <h1>Projects</h1>
         <Row className="row-1">
