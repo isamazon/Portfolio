@@ -42,6 +42,9 @@ $font3: "Ceviche One", cursive;
     transition: 0.5s;
     font-family: $font2;
     cursor: pointer;
+    @media screen and (max-width: 1050px) {
+      left: 0px;
+    }
     &:hover {
       color: white;
       text-decoration: none;
@@ -51,7 +54,7 @@ $font3: "Ceviche One", cursive;
       position: absolute;
       height: 80px;
       width: 80px;
-      top: -10%;
+      left: 10px;
     }
   }
 }

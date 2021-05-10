@@ -43,9 +43,23 @@
           justify-content: center;
 }
 
+@media screen and (max-width: 980px) {
+  .mode-btn .btn {
+    background: rgba(20, 20, 42, 0.4);
+    -webkit-box-shadow: 0 8px 32px 0 black;
+            box-shadow: 0 8px 32px 0 black;
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 100px;
+    height: 50px;
+  }
+}
+
 .mode-btn .btn .color-icon {
   margin-right: 10px;
-  color: yellow;
+  color: #03dac6;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -59,6 +73,7 @@
 .mode-btn .btn .divider {
   color: white;
   font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
 }
 
 .mode-btn .btn .color-icon-2 {
@@ -102,8 +117,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: none;
-  -webkit-animation: fadein 2s;
-          animation: fadein 2s;
 }
 
 @media screen and (max-width: 800px) {
@@ -170,6 +183,8 @@
 @media screen and (max-width: 800px) {
   .fluid-cont .video1 {
     display: none;
+    position: relative;
+    z-index: -100;
   }
 }
 
@@ -200,8 +215,6 @@
   text-shadow: 5px 0px 5px black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: fadedup 1s;
-          animation: fadedup 1s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -234,8 +247,6 @@
   color: rgba(255, 255, 255, 0.76);
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: fadeleft 1s;
-          animation: fadeleft 1s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -271,8 +282,6 @@
   font-family: "Monoton", cursive;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: fadedown 1s;
-          animation: fadedown 1s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -352,8 +361,6 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Fjalla One", sans-serif;
-  -webkit-animation: fadedown 1s;
-          animation: fadedown 1s;
 }
 
 .fluid-cont .main-cont .button-ctn .button:hover {
@@ -614,8 +621,6 @@
   text-shadow: 5px 0px 5px black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: fadedup 1s;
-          animation: fadedup 1s;
 }
 
 @media screen and (max-width: 1500px) {
@@ -649,8 +654,6 @@
   font-family: "Monoton", cursive;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: fadedown 1s;
-          animation: fadedown 1s;
 }
 
 @media screen and (max-width: 1500px) {

@@ -119,13 +119,14 @@ class Landing extends React.Component {
           <video
             className="video1"
             src={this.state.video}
+            playsInline
             autoPlay
             muted
             loop
           ></video>
           <Container className="main-cont">
             <h1 className={this.state.welcome}>WELCOME</h1>
-            <h1 className="name-h1">Im Isaiah Mazon,</h1>
+            <h1 className="name-h1">Im Isaiah Mazon:</h1>
             <h1 className={this.state.devh1}>FRONT END WEB DEV</h1>
             <div className="button-ctn">
               <a className="button" href="mailto:isaiahmazon0622@gmail.com">

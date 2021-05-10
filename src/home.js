@@ -15,7 +15,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const Home = () => {
   return (
     <div className="parent-cont">
-      <Navbar />
+      
       <Landing />
     </div>
   );

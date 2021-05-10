@@ -22,10 +22,11 @@ class Projectcard extends Component {
               </div>
               <h1 className="project-h1">Shounen Fit</h1>
               <p className="project-p">
-                Shounen fit is a in progress fullstack project utilizing
-                (React.js, SCSS, MongoDB, Express and Node.js) Right now the
-                project is in its very early stages of development with only the
-                front end being built right now.
+                Shounen fit is an in progress full stack application utilizing
+                the MERN stack (mongoDB, express, react.js and node.js) Right
+                now in its development stage its front end is still in progress
+                due to the ambitious nature of the project, Shounen fit is a
+                workout program with anime as the cornerstone theme.
               </p>
               <div className="buttons-container">
                 <a
@@ -47,12 +48,12 @@ class Projectcard extends Component {
               </div>
               <h1 className="project-h1">Humble nutrition</h1>
               <p className="project-p">
-                Humblenutritionnm.com is a website i built and maintain for the
-                company located in albuquerque new mexico Humble nutrition, It
-                is a front end site utilizing modern styling techniques equipped
+                Humblenutritionnm.com is a website I built and maintain for the
+                company located in Albuquerque, New Mexico. Humble nutrition is
+                a front end site utilizing modern styling techniques equipped
                 with all of the necessary technologies to make it responsive on
                 all platforms, The website utilizes said technologies such as
-                HTML5, CSS, SCSS, Bootstrap 5 and PHP
+                HTML5, CSS, SCSS, Javascript ES6, Bootstrap 5 and PHP
               </p>
               <div className="buttons-container">
                 <a

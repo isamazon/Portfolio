@@ -27,9 +27,19 @@ $font2: "Fjalla One", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 980px) {
+      background: rgba(20, 20, 42, 0.4);
+      box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+      backdrop-filter: blur(15.5px);
+      -webkit-backdrop-filter: blur(15.5px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      width: 100px;
+      height: 50px;
+    }
     .color-icon {
       margin-right: 10px;
-      color: yellow;
+      color: #03dac6;
       cursor: pointer;
       transition: 0.5s;
       &:hover {
@@ -39,6 +49,7 @@ $font2: "Fjalla One", sans-serif;
     .divider {
       color: white;
       font-family: $font2;
+      font-size: 20px;
     }
     .color-icon-2 {
       cursor: pointer;
@@ -71,7 +82,7 @@ $font2: "Fjalla One", sans-serif;
     align-items: center;
     justify-content: center;
     background: none;
-    animation: fadein 2s;
+
     @media screen and (max-width: 800px) {
       height: 100px;
       width: 100%;
@@ -111,6 +122,8 @@ $font2: "Fjalla One", sans-serif;
     z-index: -1;
     @media screen and (max-width: 800px) {
       display: none;
+      position: relative;
+      z-index: -100;
     }
   }
   .main-cont {
@@ -128,7 +141,7 @@ $font2: "Fjalla One", sans-serif;
       font-family: $monoton;
       text-shadow: 5px 0px 5px black;
       transition: 0.5s;
-      animation: fadedup 1s;
+
       @media screen and (max-width: 1500px) {
         font-size: 100px;
       }
@@ -150,7 +163,6 @@ $font2: "Fjalla One", sans-serif;
       font-family: $font2;
       color: rgba(255, 255, 255, 0.76);
       transition: 0.5s;
-      animation: fadeleft 1s;
 
       @media screen and (max-width: 1500px) {
         bottom: 5%;
@@ -177,7 +189,7 @@ $font2: "Fjalla One", sans-serif;
       background: none;
       font-family: $monoton;
       transition: 0.5s;
-      animation: fadedown 1s;
+
       @media screen and (max-width: 1500px) {
         bottom: 6%;
         padding-left: 35px;
@@ -226,7 +238,7 @@ $font2: "Fjalla One", sans-serif;
         justify-content: center;
         transition: 0.5s;
         font-family: $font2;
-        animation: fadedown 1s;
+
         &:hover {
           text-decoration: none;
           border-top-right-radius: 0px;
@@ -416,7 +428,7 @@ $font2: "Fjalla One", sans-serif;
   font-family: $monoton;
   text-shadow: 5px 0px 5px black;
   transition: 0.5s;
-  animation: fadedup 1s;
+
   @media screen and (max-width: 1500px) {
     font-size: 100px;
   }
@@ -439,7 +451,7 @@ $font2: "Fjalla One", sans-serif;
   background: none;
   font-family: $monoton;
   transition: 0.5s;
-  animation: fadedown 1s;
+
   @media screen and (max-width: 1500px) {
     bottom: 6%;
     padding-left: 35px;

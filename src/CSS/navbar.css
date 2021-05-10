@@ -43,6 +43,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1050px) {
+  .nav .brand {
+    left: 0px;
+  }
+}
+
 .nav .brand:hover {
   color: white;
   text-decoration: none;
@@ -54,7 +60,7 @@
   position: absolute;
   height: 80px;
   width: 80px;
-  top: -10%;
+  left: 10px;
 }
 
 nav.active {
