@@ -256,7 +256,7 @@ $font2: "Fjalla One", sans-serif;
   height: 100%;
   background: #090d0f;
   background-size: cover;
-  background-image: url(../assets/BGdark.png);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -305,105 +305,11 @@ $font2: "Fjalla One", sans-serif;
       padding-top: 40px;
       display: flex;
       justify-content: center;
-
-      .col-1 {
-        position: relative;
-        height: 700px;
-        top: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: none;
-
-        .inner-card {
-          height: 95%;
-          width: 90%;
-          display: flex;
-          flex-direction: column;
-          background: rgba(17, 24, 32, 0.55);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          backdrop-filter: blur(15.5px);
-          -webkit-backdrop-filter: blur(15.5px);
-          border-radius: 10px;
-          border: 1px solid rgba(0, 0, 0, 0.18);
-          border-radius: 20px;
-          .project-img {
-            position: relative;
-            height: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            .svg {
-              height: 100%;
-              width: 90%;
-            }
-          }
-          .project-h1 {
-            position: relative;
-            top: 0%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 10%;
-            width: 100%;
-            background: none;
-            font-size: 40px;
-            font-family: $font2;
-          }
-          .project-p {
-            position: relative;
-            top: 0px;
-            display: flex;
-            height: 35%;
-            width: 100%;
-            background: none;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0px 20px;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-            @media screen and (max-width: 500px) {
-              font-size: 15px;
-              padding: 0px 10px;
-            }
-          }
-          .buttons-container {
-            position: relative;
-            top: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
-            background: none;
-            .repo-1 {
-              background: black;
-              background: rgba(20, 27, 39, 0.25);
-              backdrop-filter: blur(4px);
-              -webkit-backdrop-filter: blur(10px);
-              padding: 20px 40px;
-              border: 2px solid white;
-              color: white;
-              font-family: $font2;
-              border-radius: 20px;
-              margin: 5px 10px;
-              transition: 0.5s;
-              &:hover {
-                transform: translateY(-5px);
-                background: none;
-                text-decoration: none;
-                border-radius: 50px;
-              }
-            }
-          }
-        }
-      }
     }
   }
+}
+.slide2 {
+  overflow-x: hidden;
 }
 
 // light theme
@@ -474,7 +380,7 @@ $font2: "Fjalla One", sans-serif;
 .projects-lightBG {
   background: #305a65;
   background-size: cover;
-  background-image: url(../assets/BGlight.png);
+  // background-image: url(../assets/BGlight.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

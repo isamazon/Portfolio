@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
+
 // components
 import Navbar from "./components/navbar";
-
 import Landing from "./components/landingpage";
 // CSS
 import "./CSS/landingpage.css";
@@ -15,7 +15,6 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const Home = () => {
   return (
     <div className="parent-cont">
-      
       <Landing />
     </div>
   );

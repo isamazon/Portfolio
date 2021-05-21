@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+.projects-fld-cnt {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.projects-fld-cnt .particles-1 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.projects-fld-cnt .row-1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.projects-fld-cnt .row-1 .col-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background: none;
+}
+
+.projects-fld-cnt .row-1 .col-1 .project-info {
+  position: relative;
+  top: 10%;
+  background: red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-fld-cnt .row-1 .col-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.projects-fld-cnt .row-1 .col-2 .svg {
+  height: 100%;
+  width: 100%;
+}
+
+.projects-fld-cnt .row-1 .col-2 .png {
+  position: absolute;
+  height: auto;
+  width: 600px;
+  left: 10%;
+}
+
+#bubble1,
+#bubble2,
+#bubble3,
+#bubble4,
+#bubble5,
+#bubble6 {
+  -webkit-animation: up 15s infinite linear;
+          animation: up 15s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#bubble7,
+#bubble8 {
+  -webkit-animation: down 10s infinite linear;
+          animation: down 10s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=project.css.map */

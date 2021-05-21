@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+$monoton: "Monoton", cursive;
+
+.projects-fld-cnt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  .particles-1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .row-1 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .col-1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      order: 1;
+      background: none;
+      .project-info {
+        position: relative;
+        top: 10%;
+        background: red;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .col-2 {
+      position: relative;
+      display: flex;
+      order: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      .svg {
+        height: 100%;
+        width: 100%;
+      }
+      .png {
+        position: absolute;
+        height: auto;
+        width: 600px;
+        left: 10%;
+      }
+    }
+  }
+}
+
+#bubble1,
+#bubble2,
+#bubble3,
+#bubble4,
+#bubble5,
+#bubble6 {
+  animation: up 15s infinite linear;
+  transform-origin: center;
+}
+#bubble7,
+#bubble8 {
+  animation: down 10s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
