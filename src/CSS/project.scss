@@ -47,12 +47,35 @@ $monoton: "Monoton", cursive;
       .svg {
         height: 100%;
         width: 100%;
+        z-index: 5;
       }
       .png {
         position: absolute;
         height: auto;
         width: 600px;
         left: 10%;
+        transition: 0.5s;
+        z-index: 2;
+        &:hover {
+          transform: scale(1.05);
+        }
+        @media screen and (max-width: 1500px) {
+          width: auto;
+          height: auto;
+        }
+        @media screen and (max-width: 1300px) {
+          width: 400px;
+          height: auto;
+        }
+        @media screen and (max-width: 1100px) {
+          width: 300px;
+          height: auto;
+        }
+        @media screen and (max-width: 1100px) {
+          width: 300px;
+          height: auto;
+          z-index: 0;
+        }
       }
     }
   }
@@ -90,6 +113,45 @@ $monoton: "Monoton", cursive;
   }
   50% {
     transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#triangle1 {
+  animation: spin1 10s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#innercircle1,
+#innercircle2 {
+  animation: spin1 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes spin1 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#circle1,
+#circle2,
+#boxedcont1,
+#boxedcont2 {
+  animation: down2 10s infinite linear;
+}
+
+@keyframes down2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
   }
   100% {
     transform: translateY(0);

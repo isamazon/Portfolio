@@ -12,14 +12,13 @@ import BGdark from "../assets/BGdark.png";
 import logo from "../assets/logo.png";
 import logo2 from "../assets/logo2.png";
 // SVGs
-import shounenfitsvgdark from "../assets/shounenfitsvgdark.svg";
-import shounenfitsvglight from "../assets/shounenfitsvglight.svg";
-import humblenutritionL from "../assets/humblenutrition.svg";
+
 import SVG from "./svgs/SVG";
 import portfolioD from "../assets/portfolioD.svg";
 import portfolioL from "../assets/portfolioL.svg";
 // PNGS
 import humbleDpng from "../assets/humbleD.png";
+import humbleLpng from "../assets/humbleL.png";
 // Icons
 
 import { FaGithub, FaLinkedinIn, FaRegMoon, FaSun } from "react-icons/fa";
@@ -29,6 +28,7 @@ import { FcDocument } from "react-icons/fc";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
 // Components
 import Projectcard from "./projectcard";
+import Projectcard2 from "./project2";
 
 class Landing extends React.Component {
   constructor() {
@@ -40,7 +40,7 @@ class Landing extends React.Component {
       devh1: "dev-h1",
       lp2BG: "projects-fluid-cnt",
       col1: "col-1",
-      projimg1: shounenfitsvgdark,
+      projimg1: SVG.ShounenD,
       projimg2: SVG.HumbleD,
       projimg3: portfolioD,
       logoimg: logo2,
@@ -66,10 +66,11 @@ class Landing extends React.Component {
                         devh1: "dev-h1-light",
                         lp2BG: "projects-fluid-cnt projects-lightBG",
                         col1: "col-1",
-                        projimg1: shounenfitsvglight,
+                        projimg1: SVG.ShounenL,
                         projimg2: SVG.HumbleL,
                         projimg3: portfolioL,
                         logoimg: logo,
+                        png1: humbleLpng,
                       })
                     }
                     size="40px"
@@ -85,10 +86,11 @@ class Landing extends React.Component {
                         devh1: "dev-h1",
                         lp2BG: "projects-fluid-cnt",
                         col1: "col-1",
-                        projimg1: shounenfitsvgdark,
+                        projimg1: SVG.ShounenD,
                         projimg2: SVG.HumbleD,
                         projimg3: portfolioD,
                         logoimg: logo2,
+                        png1: humbleDpng,
                       })
                     }
                     size="40px"
@@ -155,11 +157,19 @@ class Landing extends React.Component {
           </Slide>
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
+              <Projectcard2
+                projectnumber="Project 2:"
+                projectname="Shounen fit"
+                svg={this.state.projimg1}
+              />
+            </Container>
+          </Slide>
+          <Slide className="slide2">
+            <Container fluid className={this.state.lp2BG}>
               <Projectcard
-                projectnumber="Project 1:"
-                projectname="humble nutrition"
-                svg={this.state.projimg2}
-                png={this.state.png1}
+                projectnumber="Project 2:"
+                projectname="Shounen fit"
+                svg={this.state.projimg1}
               />
             </Container>
           </Slide>

@@ -1,11 +1,15 @@
 import react from "react";
-import HumbleD from "../svgs/humbleD";
-import HumbleL from "../svgs/humbleL";
+import HumbleD from "./humbleD";
+import HumbleL from "./humbleL";
+import ShounenD from "./shounenD";
+import ShounenL from "./shounenL";
+import CointrackerD from "./cointrackerD";
 import "../../CSS/project.css";
-const Gifs = {
-  // chest band workouts
-  HumbleD: <HumbleD className="svg" />,
+const SVGS = {
+  HumbleD: <HumbleD className="svg" height="100%" width="100%" />,
   HumbleL: <HumbleL className="svg" />,
-  // Shoulder band workouts
+  ShounenD: <ShounenD className="svg" height="100%" width="100%" />,
+  ShounenL: <ShounenL className="svg" height="100%" width="100%" />,
+  CointrackerD: <CointrackerD className="svg" height="100%" width="100%" />,
 };
-export default Gifs;
+export default SVGS;

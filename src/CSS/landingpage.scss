@@ -428,3 +428,14 @@ $font2: "Fjalla One", sans-serif;
     opacity: 1;
   }
 }
+@keyframes pulseup {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
