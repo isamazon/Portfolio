@@ -11,6 +11,10 @@ import resume from "../assets/resume.pdf";
 import BGdark from "../assets/BGdark.png";
 import logo from "../assets/logo.png";
 import logo2 from "../assets/logo2.png";
+import html from "../assets/html5.png";
+import css from "../assets/css.png";
+import react from "../assets/react.png";
+import sass from "../assets/sass.png";
 // SVGs
 
 import SVG from "./svgs/SVG";
@@ -42,9 +46,13 @@ class Landing extends React.Component {
       col1: "col-1",
       projimg1: SVG.ShounenD,
       projimg2: SVG.HumbleD,
-      projimg3: portfolioD,
+      projimg3: SVG.CointrackerD,
       logoimg: logo2,
       png1: humbleDpng,
+      projectnumber: "project-number dark-text",
+      projectname: "project-name dark-text",
+      btn: "btn-1 btn-dark",
+      projectdesc: "project-p dark-text",
     };
   }
 
@@ -68,9 +76,12 @@ class Landing extends React.Component {
                         col1: "col-1",
                         projimg1: SVG.ShounenL,
                         projimg2: SVG.HumbleL,
-                        projimg3: portfolioL,
+                        projimg3: SVG.CointrackerL,
                         logoimg: logo,
                         png1: humbleLpng,
+                        btn: "btn-1 btn-light",
+                        projectnumber: "project-number light-text",
+                        projectname: "project-name light-text",
                       })
                     }
                     size="40px"
@@ -88,9 +99,12 @@ class Landing extends React.Component {
                         col1: "col-1",
                         projimg1: SVG.ShounenD,
                         projimg2: SVG.HumbleD,
-                        projimg3: portfolioD,
+                        projimg3: SVG.CointrackerD,
                         logoimg: logo2,
                         png1: humbleDpng,
+                        btn: "btn-1 btn-dark",
+                        projectnumber: "project-number dark-text",
+                        projectname: "project-name dark-text",
                       })
                     }
                     size="40px"
@@ -145,13 +159,23 @@ class Landing extends React.Component {
               </Container>
             </Container>
           </Slide>
+          {/* Project 1 */}
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
               <Projectcard
                 projectnumber="Project 1:"
-                projectname="humble nutrition"
+                projectnameclass={this.state.projectname}
+                projectdescclass={this.state.projectdesc}
+                projectdesc="Humble nutrition is a website that i made for a local company located in Albuquerque New Mexico using modern ui and ux design techniques to increase vistors interaction with the website developing a strong impression on the customer due to the websites interaction and experience"
+                headerclass1={this.state.projectnumber}
+                projectname="Humble nutrition"
                 svg={this.state.projimg2}
                 png={this.state.png1}
+                btn1={this.state.btn}
+                img1={html}
+                img2={css}
+                img3={sass}
+                img4={react}
               />
             </Container>
           </Slide>
@@ -164,12 +188,13 @@ class Landing extends React.Component {
               />
             </Container>
           </Slide>
+          {/* Project 3 */}
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
               <Projectcard
                 projectnumber="Project 2:"
                 projectname="Shounen fit"
-                svg={this.state.projimg1}
+                svg={this.state.projimg3}
               />
             </Container>
           </Slide>

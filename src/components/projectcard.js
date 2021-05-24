@@ -13,8 +13,29 @@ class Projectcard extends Component {
         <Row className="row-1">
           <Col lg={5} sm={12} xs={12} className="col-1">
             <div className="project-info">
-              <h1>{this.props.projectnumber}</h1>
-              <h1>{this.props.projectname}</h1>
+              <h1 className={this.props.headerclass1}>
+                {this.props.projectnumber}
+              </h1>
+              <h1 className={this.props.projectnameclass}>
+                {this.props.projectname}
+              </h1>
+              <p className={this.props.projectdescclass}>
+                {this.props.projectdesc}
+              </p>
+              <div className="languages-cnt">
+                <img src={this.props.img1} className="img" alt="" />
+                <img src={this.props.img2} className="img" alt="" />
+                <img src={this.props.img3} className="img" alt="" />
+                <img src={this.props.img4} className="img" alt="" />
+              </div>
+              <div className="btn-cnt">
+                <a className={this.props.btn1} href={this.props.githublink}>
+                  Github
+                </a>
+                <a className={this.props.btn1} href={this.props.livelink}>
+                  live demo
+                </a>
+              </div>
             </div>
           </Col>
           <Col lg={7} sm={12} xs={12} className="col-2">

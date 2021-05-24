@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 .projects-fld-cnt {
   position: relative;
   display: -webkit-box;
@@ -46,8 +47,9 @@
 .projects-fld-cnt .row-1 .col-1 .project-info {
   position: relative;
   top: 10%;
-  background: red;
+  background: none;
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +63,126 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.projects-fld-cnt .row-1 .col-1 .project-info .project-number {
+  position: relative;
+  top: 0%;
+  font-family: "Monoton", cursive;
+  letter-spacing: 10px;
+  font-size: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.projects-fld-cnt .row-1 .col-1 .project-info .project-name {
+  position: relative;
+  top: 0;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  z-index: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.projects-fld-cnt .row-1 .col-1 .project-info .project-p {
+  position: relative;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 100px;
+  font-family: "Fjalla One", sans-serif;
+  height: 150px;
+  color: white;
+}
+
+.projects-fld-cnt .row-1 .col-1 .languages-cnt {
+  position: relative;
+  width: 100%;
+  background: none;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+.projects-fld-cnt .row-1 .col-1 .languages-cnt .img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  z-index: 5;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-1 {
+  position: relative;
+  margin: 0px 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-dark {
+  color: #6523ac;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 3px solid #8f33f1;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-dark:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-light {
+  color: #02aa99;
+  background: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 3px solid #00ffe5;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-light:hover {
+  color: #03dac6;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  text-decoration: none;
 }
 
 .projects-fld-cnt .row-1 .col-2 {
@@ -132,6 +254,14 @@
     height: auto;
     z-index: 0;
   }
+}
+
+.dark-text {
+  color: #6523ac;
+}
+
+.light-text {
+  color: #03dac6;
 }
 
 #bubble1,
@@ -288,6 +418,47 @@
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+#coincont2,
+#coincont3 {
+  -webkit-animation: toleft 10s infinite linear;
+          animation: toleft 10s infinite linear;
+}
+
+#coincont1 {
+  -webkit-animation: toleft 15s infinite linear;
+          animation: toleft 15s infinite linear;
+}
+
+@-webkit-keyframes toleft {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-animation: down2 10s infinite linear;
+            animation: down2 10s infinite linear;
+  }
+}
+
+@keyframes toleft {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-animation: down2 10s infinite linear;
+            animation: down2 10s infinite linear;
   }
 }
 /*# sourceMappingURL=project.css.map */
