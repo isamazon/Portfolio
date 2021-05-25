@@ -46,7 +46,7 @@
 
 .projects-fld-cnt .row-1 .col-1 .project-info {
   position: relative;
-  top: 10%;
+  top: 0%;
   background: none;
   width: 100%;
   height: 100%;
@@ -75,6 +75,18 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1500px) {
+  .projects-fld-cnt .row-1 .col-1 .project-info .project-number {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects-fld-cnt .row-1 .col-1 .project-info .project-number {
+    font-size: 40px;
+  }
+}
+
 .projects-fld-cnt .row-1 .col-1 .project-info .project-name {
   position: relative;
   top: 0;
@@ -85,6 +97,12 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 1500px) {
+  .projects-fld-cnt .row-1 .col-1 .project-info .project-name {
+    font-size: 30px;
+  }
+}
+
 .projects-fld-cnt .row-1 .col-1 .project-info .project-p {
   position: relative;
   font-size: 15px;
@@ -93,6 +111,26 @@
   font-family: "Fjalla One", sans-serif;
   height: 150px;
   color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .projects-fld-cnt .row-1 .col-1 .project-info .project-p {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-fld-cnt .row-1 .col-1 .project-info .project-p {
+    height: 100px;
+    overflow-y: auto;
+  }
+}
+
+.projects-fld-cnt .row-1 .col-1 .project-info .skillsused-h3 {
+  color: white;
+  font-size: 30px;
+  font-family: "Fjalla One", sans-serif;
+  border-radius: 20px;
 }
 
 .projects-fld-cnt .row-1 .col-1 .languages-cnt {
@@ -114,6 +152,12 @@
       -ms-flex-align: center;
           align-items: center;
   overflow-x: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .projects-fld-cnt .row-1 .col-1 .languages-cnt {
+    height: 50px;
+  }
 }
 
 .projects-fld-cnt .row-1 .col-1 .languages-cnt .img {
@@ -149,7 +193,8 @@
   font-family: "Fjalla One", sans-serif;
   font-size: 20px;
   padding: 10px 30px;
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-dark {
@@ -166,6 +211,10 @@
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   text-decoration: none;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .projects-fld-cnt .row-1 .col-1 .btn-cnt .btn-light {
@@ -183,6 +232,10 @@
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
   text-decoration: none;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .projects-fld-cnt .row-1 .col-2 {

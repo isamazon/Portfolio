@@ -15,6 +15,8 @@ import html from "../assets/html5.png";
 import css from "../assets/css.png";
 import react from "../assets/react.png";
 import sass from "../assets/sass.png";
+import mongoDB from "../assets/mongodb.png";
+import node from "../assets/node.png";
 // SVGs
 
 import SVG from "./svgs/SVG";
@@ -47,6 +49,7 @@ class Landing extends React.Component {
       projimg1: SVG.ShounenD,
       projimg2: SVG.HumbleD,
       projimg3: SVG.CointrackerD,
+      projimg4: SVG.BlookifyD,
       logoimg: logo2,
       png1: humbleDpng,
       projectnumber: "project-number dark-text",
@@ -77,6 +80,7 @@ class Landing extends React.Component {
                         projimg1: SVG.ShounenL,
                         projimg2: SVG.HumbleL,
                         projimg3: SVG.CointrackerL,
+                        projimg4: SVG.BlookifyL,
                         logoimg: logo,
                         png1: humbleLpng,
                         btn: "btn-1 btn-light",
@@ -100,6 +104,7 @@ class Landing extends React.Component {
                         projimg1: SVG.ShounenD,
                         projimg2: SVG.HumbleD,
                         projimg3: SVG.CointrackerD,
+                        projimg4: SVG.BlookifyD,
                         logoimg: logo2,
                         png1: humbleDpng,
                         btn: "btn-1 btn-dark",
@@ -168,6 +173,7 @@ class Landing extends React.Component {
                 projectdescclass={this.state.projectdesc}
                 projectdesc="Humble nutrition is a website that i made for a local company located in Albuquerque New Mexico using modern ui and ux design techniques to increase vistors interaction with the website developing a strong impression on the customer due to the websites interaction and experience"
                 headerclass1={this.state.projectnumber}
+                githublink="https://github.com/isamazon/Humble-Nutrtion"
                 projectname="Humble nutrition"
                 svg={this.state.projimg2}
                 png={this.state.png1}
@@ -175,16 +181,27 @@ class Landing extends React.Component {
                 img1={html}
                 img2={css}
                 img3={sass}
-                img4={react}
               />
             </Container>
           </Slide>
+          {/* Project 2 */}
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
               <Projectcard2
                 projectnumber="Project 2:"
-                projectname="Shounen fit"
-                svg={this.state.projimg1}
+                projectnameclass={this.state.projectname}
+                projectdescclass={this.state.projectdesc}
+                projectdesc="Blookify is a fullstack MERN application that gives users the ability to keep track of books theyre reading or currently reading by utilizing the google books api users have access to over 7 million books to add to their collection."
+                headerclass1={this.state.projectnumber}
+                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                projectname="Blookify"
+                svg={this.state.projimg4}
+                btn1={this.state.btn}
+                img1={react}
+                img2={css}
+                img3={sass}
+                img4={mongoDB}
+                img5={node}
               />
             </Container>
           </Slide>

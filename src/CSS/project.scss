@@ -28,7 +28,7 @@ $font2: "Fjalla One", sans-serif;
       background: none;
       .project-info {
         position: relative;
-        top: 10%;
+        top: 0%;
         background: none;
         width: 100%;
         height: 100%;
@@ -43,6 +43,12 @@ $font2: "Fjalla One", sans-serif;
           letter-spacing: 10px;
           font-size: 80px;
           transition: 0.5s;
+          @media screen and (max-width: 1500px) {
+            font-size: 60px;
+          }
+          @media screen and (max-width: 1200px) {
+            font-size: 40px;
+          }
         }
         .project-name {
           position: relative;
@@ -51,6 +57,9 @@ $font2: "Fjalla One", sans-serif;
           font-size: 50px;
           z-index: 3;
           transition: 0.5s;
+          @media screen and (max-width: 1500px) {
+            font-size: 30px;
+          }
         }
         .project-p {
           position: relative;
@@ -60,6 +69,19 @@ $font2: "Fjalla One", sans-serif;
           font-family: $font2;
           height: 150px;
           color: white;
+          @media screen and (max-width: 1500px) {
+            padding: 10px 50px;
+          }
+          @media screen and (max-width: 500px) {
+            height: 100px;
+            overflow-y: auto;
+          }
+        }
+        .skillsused-h3 {
+          color: white;
+          font-size: 30px;
+          font-family: $font2;
+          border-radius: 20px;
         }
       }
       .languages-cnt {
@@ -72,6 +94,9 @@ $font2: "Fjalla One", sans-serif;
         justify-content: center;
         align-items: center;
         overflow-x: auto;
+        @media screen and (max-width: 500px) {
+          height: 50px;
+        }
         .img {
           position: relative;
           height: 100%;
@@ -94,7 +119,8 @@ $font2: "Fjalla One", sans-serif;
           font-family: $font2;
           font-size: 20px;
           padding: 10px 30px;
-          border-radius: 10px;
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
         }
         .btn-dark {
           color: #6523ac;
@@ -106,6 +132,10 @@ $font2: "Fjalla One", sans-serif;
           &:hover {
             transform: translateY(-5px);
             text-decoration: none;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
           }
         }
         .btn-light {
@@ -119,6 +149,10 @@ $font2: "Fjalla One", sans-serif;
             color: #03dac6;
             transform: translateY(-5px);
             text-decoration: none;
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
           }
         }
       }

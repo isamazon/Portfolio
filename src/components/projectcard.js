@@ -22,6 +22,7 @@ class Projectcard extends Component {
               <p className={this.props.projectdescclass}>
                 {this.props.projectdesc}
               </p>
+              <h3 className="skillsused-h3">Tech used:</h3>
               <div className="languages-cnt">
                 <img src={this.props.img1} className="img" alt="" />
                 <img src={this.props.img2} className="img" alt="" />
@@ -33,7 +34,7 @@ class Projectcard extends Component {
                   Github
                 </a>
                 <a className={this.props.btn1} href={this.props.livelink}>
-                  live demo
+                  Live demo
                 </a>
               </div>
             </div>
