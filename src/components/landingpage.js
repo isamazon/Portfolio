@@ -171,9 +171,10 @@ class Landing extends React.Component {
                 projectnumber="Project 1:"
                 projectnameclass={this.state.projectname}
                 projectdescclass={this.state.projectdesc}
-                projectdesc="Humble nutrition is a website that i made for a local company located in Albuquerque New Mexico using modern ui and ux design techniques to increase vistors interaction with the website developing a strong impression on the customer due to the websites interaction and experience"
+                projectdesc="Humble nutrition is a website that i made and maintain, for a local company located in Albuquerque New Mexico using modern ui and ux design techniques to increase vistors interaction with the website developing a strong impression on the customer due to the websites interaction and experience"
                 headerclass1={this.state.projectnumber}
                 githublink="https://github.com/isamazon/Humble-Nutrtion"
+                livelink="https://humblenutritionnm.com/"
                 projectname="Humble nutrition"
                 svg={this.state.projimg2}
                 png={this.state.png1}
@@ -193,7 +194,8 @@ class Landing extends React.Component {
                 projectdescclass={this.state.projectdesc}
                 projectdesc="Blookify is a fullstack MERN application that gives users the ability to keep track of books theyre reading or currently reading by utilizing the google books api users have access to over 7 million books to add to their collection."
                 headerclass1={this.state.projectnumber}
-                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                githublink="https://github.com/isamazon/Blookify"
+                livelink="https://blookify.com/"
                 projectname="Blookify"
                 svg={this.state.projimg4}
                 btn1={this.state.btn}
@@ -209,9 +211,36 @@ class Landing extends React.Component {
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
               <Projectcard
-                projectnumber="Project 2:"
-                projectname="Shounen fit"
+                projectnumber="Project 3:"
+                projectnameclass={this.state.projectname}
+                projectdescclass={this.state.projectdesc}
+                projectdesc="Crypto tracker is a app utilizing coin geckos api to list 100s of avalaible crypto currencies and presenting current prices, 24 hour changes, market caps plus more. This project in particular taught me how to ustilize 3rd party apis in my projects"
+                headerclass1={this.state.projectnumber}
+                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                projectname="Crypto Tracker"
                 svg={this.state.projimg3}
+                btn1={this.state.btn}
+                img1={react}
+                img2={css}
+                img3={sass}
+              />
+            </Container>
+          </Slide>
+          <Slide className="slide2">
+            <Container fluid className={this.state.lp2BG}>
+              <Projectcard
+                projectnumber="Project 4:"
+                projectnameclass={this.state.projectname}
+                projectdescclass={this.state.projectdesc}
+                projectdesc="Crypto tracker is a app utilizing coin geckos api to list 100s of avalaible crypto currencies and presenting current prices, 24 hour changes, market caps plus more. This project in particular taught me how to ustilize 3rd party apis in my projects"
+                headerclass1={this.state.projectnumber}
+                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                projectname="Shounen Fit"
+                svg={this.state.projimg1}
+                btn1={this.state.btn}
+                img1={react}
+                img2={css}
+                img3={sass}
               />
             </Container>
           </Slide>
