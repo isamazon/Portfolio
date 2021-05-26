@@ -43,6 +43,7 @@ $font2: "Fjalla One", sans-serif;
           letter-spacing: 10px;
           font-size: 80px;
           transition: 0.5s;
+          top: 20px;
           @media screen and (max-width: 1500px) {
             font-size: 60px;
           }
@@ -56,6 +57,7 @@ $font2: "Fjalla One", sans-serif;
           font-family: $font2;
           font-size: 50px;
           z-index: 3;
+          top: 20px;
           transition: 0.5s;
           @media screen and (max-width: 1500px) {
             font-size: 30px;
@@ -213,7 +215,8 @@ $font2: "Fjalla One", sans-serif;
 #bubble3,
 #bubble4,
 #bubble5,
-#bubble6 {
+#bubble6,
+#cube1 {
   animation: up 15s infinite linear;
   transform-origin: center;
 }
@@ -246,13 +249,16 @@ $font2: "Fjalla One", sans-serif;
   }
 }
 
-#triangle1 {
+#triangle1,
+#Ring,
+#cube1 {
   animation: spin1 10s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
 #innercircle1,
-#innercircle2 {
+#innercircle2,
+#cube4 {
   animation: spin1 3s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
@@ -272,6 +278,9 @@ $font2: "Fjalla One", sans-serif;
 #boxedcont2 {
   animation: down2 10s infinite linear;
 }
+#page {
+  animation: down2 10s infinite linear;
+}
 
 @keyframes down2 {
   0% {
@@ -286,7 +295,8 @@ $font2: "Fjalla One", sans-serif;
 }
 
 #coincont2,
-#coincont3 {
+#coincont3,
+#bracket {
   animation: toleft 10s infinite linear;
 }
 #coincont1 {
@@ -301,5 +311,36 @@ $font2: "Fjalla One", sans-serif;
   }
   100% {
     animation: down2 10s infinite linear;
+  }
+}
+#bracket {
+  animation: toleft2 10s infinite linear;
+}
+@keyframes toleft2 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    animation: down2 10s infinite linear;
+  }
+}
+#steam1,
+#steam2,
+#cube3,
+#cube4 {
+  animation: up2 5s infinite linear;
+}
+@keyframes up2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }

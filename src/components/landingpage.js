@@ -20,8 +20,6 @@ import node from "../assets/node.png";
 // SVGs
 
 import SVG from "./svgs/SVG";
-import portfolioD from "../assets/portfolioD.svg";
-import portfolioL from "../assets/portfolioL.svg";
 // PNGS
 import humbleDpng from "../assets/humbleD.png";
 import humbleLpng from "../assets/humbleL.png";
@@ -50,6 +48,7 @@ class Landing extends React.Component {
       projimg2: SVG.HumbleD,
       projimg3: SVG.CointrackerD,
       projimg4: SVG.BlookifyD,
+      projimg5: SVG.PortfolioD,
       logoimg: logo2,
       png1: humbleDpng,
       projectnumber: "project-number dark-text",
@@ -81,6 +80,7 @@ class Landing extends React.Component {
                         projimg2: SVG.HumbleL,
                         projimg3: SVG.CointrackerL,
                         projimg4: SVG.BlookifyL,
+                        projimg5: SVG.PortfolioL,
                         logoimg: logo,
                         png1: humbleLpng,
                         btn: "btn-1 btn-light",
@@ -105,6 +105,7 @@ class Landing extends React.Component {
                         projimg2: SVG.HumbleD,
                         projimg3: SVG.CointrackerD,
                         projimg4: SVG.BlookifyD,
+                        projimg5: SVG.PortfolioD,
                         logoimg: logo2,
                         png1: humbleDpng,
                         btn: "btn-1 btn-dark",
@@ -216,7 +217,8 @@ class Landing extends React.Component {
                 projectdescclass={this.state.projectdesc}
                 projectdesc="Crypto tracker is a app utilizing coin geckos api to list 100s of avalaible crypto currencies and presenting current prices, 24 hour changes, market caps plus more. This project in particular taught me how to ustilize 3rd party apis in my projects"
                 headerclass1={this.state.projectnumber}
-                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                githublink="https://github.com/isamazon/Cryptotracker"
+                livelink="https://isamazon.github.io/Cryptotracker/"
                 projectname="Crypto Tracker"
                 svg={this.state.projimg3}
                 btn1={this.state.btn}
@@ -228,15 +230,36 @@ class Landing extends React.Component {
           </Slide>
           <Slide className="slide2">
             <Container fluid className={this.state.lp2BG}>
-              <Projectcard
+              <Projectcard2
                 projectnumber="Project 4:"
                 projectnameclass={this.state.projectname}
                 projectdescclass={this.state.projectdesc}
-                projectdesc="Crypto tracker is a app utilizing coin geckos api to list 100s of avalaible crypto currencies and presenting current prices, 24 hour changes, market caps plus more. This project in particular taught me how to ustilize 3rd party apis in my projects"
+                projectdesc="Shounen fit is another in development MERN application, it is built with the purpose to inspire all anime fans to get in shape by doing exercises that their favorite anime characters would do. This app uses React to its full potential by utilizing reacts ability to reuse components and to change and make each of those components completely unique while being able to use less code and creating a cleaner code enviroment"
                 headerclass1={this.state.projectnumber}
-                githublink="https://github.com/isamazon/Humble-Nutrtion"
+                githublink="https://github.com/isamazon/ShounenFit"
+                livelink="https://shounenfit.com/"
                 projectname="Shounen Fit"
                 svg={this.state.projimg1}
+                btn1={this.state.btn}
+                img1={react}
+                img2={css}
+                img3={sass}
+              />
+            </Container>
+          </Slide>
+          {/* Project 5 */}
+          <Slide className="slide2">
+            <Container fluid className={this.state.lp2BG}>
+              <Projectcard
+                projectnumber="Project 5:"
+                projectnameclass={this.state.projectname}
+                projectdescclass={this.state.projectdesc}
+                projectdesc="The last project is my person portfolio which is what youre seeing now, this project was made with react "
+                headerclass1={this.state.projectnumber}
+                livelink="https://isamaz.com/"
+                githublink=""
+                projectname="Personal portfolio"
+                svg={this.state.projimg5}
                 btn1={this.state.btn}
                 img1={react}
                 img2={css}

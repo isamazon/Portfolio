@@ -7,6 +7,8 @@ import CointrackerD from "./cointrackerD";
 import CointrackerL from "./cointrackL";
 import BlookifyD from "./blookifyD";
 import BlookifyL from "./blookifyL";
+import PortfolioD from "./portfolioD";
+import PortfolioL from "./portfolioL";
 import "../../CSS/project.css";
 const SVGS = {
   HumbleD: <HumbleD className="svg" height="100%" width="100%" />,
@@ -17,5 +19,7 @@ const SVGS = {
   CointrackerL: <CointrackerL className="svg" height="100%" width="100%" />,
   BlookifyD: <BlookifyD className="svg" height="100%" width="100%" />,
   BlookifyL: <BlookifyL className="svg" height="100%" width="100%" />,
+  PortfolioD: <PortfolioD className="svg" height="100%" width="100%" />,
+  PortfolioL: <PortfolioL className="svg" height="100%" width="100%" />,
 };
 export default SVGS;
