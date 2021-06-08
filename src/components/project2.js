@@ -34,7 +34,7 @@ class Projectcard2 extends Component {
                 <img src={this.props.img4} className="img" alt="" />
                 <img src={this.props.img5} className="img" alt="" />
                 <img src={this.props.img6} className="img" alt="" />
-                <img src={this.props.img6} className="img" alt="" />
+                <img src={this.props.img7} className="img" alt="" />
               </div>
               <div className="btn-cnt">
                 <a className={this.props.btn1} href={this.props.githublink}>

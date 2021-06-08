@@ -8,7 +8,7 @@ import { FullPage, Slide } from "react-full-page";
 import video1 from "../assets/clouds.mp4";
 import video2 from "../assets/sunbg.mp4";
 import resume from "../assets/resume.pdf";
-import BGdark from "../assets/BGdark.png";
+
 import logo from "../assets/logo.png";
 import logo2 from "../assets/logo2.png";
 import html from "../assets/html5.png";
@@ -17,6 +17,8 @@ import react from "../assets/react.png";
 import sass from "../assets/sass.png";
 import mongoDB from "../assets/mongodb.png";
 import node from "../assets/node.png";
+import javascript from "../assets/javascript.png";
+import bootstrap from "../assets/bootstrap.png";
 // SVGs
 
 import SVG from "./svgs/SVG";
@@ -183,6 +185,8 @@ class Landing extends React.Component {
                 img1={html}
                 img2={css}
                 img3={sass}
+                img4={javascript}
+                img5={bootstrap}
               />
             </Container>
           </Slide>
@@ -225,6 +229,7 @@ class Landing extends React.Component {
                 img1={react}
                 img2={css}
                 img3={sass}
+                img4={bootstrap}
               />
             </Container>
           </Slide>
@@ -244,6 +249,8 @@ class Landing extends React.Component {
                 img1={react}
                 img2={css}
                 img3={sass}
+                img5={node}
+                img6={mongoDB}
               />
             </Container>
           </Slide>
@@ -264,6 +271,7 @@ class Landing extends React.Component {
                 img1={react}
                 img2={css}
                 img3={sass}
+                img4={bootstrap}
               />
             </Container>
           </Slide>

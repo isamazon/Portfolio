@@ -2,23 +2,37 @@
 $monoton: "Monoton", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 $font2: "Fjalla One", sans-serif;
+
 .projects-fld-cnt {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 900px) {
+    padding: 0px 0px;
+  }
   .particles-1 {
     position: fixed;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
   }
   .row-1 {
     position: relative;
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      justify-content: space-around;
+    }
     .col-1 {
       position: relative;
       display: flex;
@@ -26,6 +40,10 @@ $font2: "Fjalla One", sans-serif;
       align-items: center;
       order: 1;
       background: none;
+      @media screen and (max-width: 800px) {
+        align-items: center;
+        height: 300px;
+      }
       .project-info {
         position: relative;
         top: 0%;
@@ -50,6 +68,13 @@ $font2: "Fjalla One", sans-serif;
           @media screen and (max-width: 1200px) {
             font-size: 40px;
           }
+          @media screen and (max-width: 450px) {
+            font-size: 30px;
+          }
+          @media screen and (max-width: 350px) {
+            font-size: 35px;
+            letter-spacing: 0px;
+          }
         }
         .project-name {
           position: relative;
@@ -61,6 +86,9 @@ $font2: "Fjalla One", sans-serif;
           transition: 0.5s;
           @media screen and (max-width: 1500px) {
             font-size: 30px;
+          }
+          @media screen and (max-width: 450px) {
+            font-size: 20px;
           }
         }
         .project-p {
@@ -78,32 +106,47 @@ $font2: "Fjalla One", sans-serif;
             height: 100px;
             overflow-y: auto;
           }
+          @media screen and (max-width: 450px) {
+            font-size: 10px;
+            margin: 20px 0px;
+          }
         }
         .skillsused-h3 {
+          position: relative;
           color: white;
           font-size: 30px;
           font-family: $font2;
-          border-radius: 20px;
+          margin: 10px 0px;
+          border-bottom: 2px solid white;
+          @media screen and (max-width: 350px) {
+            font-size: 15px;
+          }
         }
       }
       .languages-cnt {
         position: relative;
         width: 100%;
         background: none;
-        height: 100px;
+        height: 150px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        overflow-x: auto;
+
         @media screen and (max-width: 500px) {
-          height: 50px;
+          height: 100px;
+          overflow-x: auto;
         }
         .img {
           position: relative;
-          height: 100%;
+          height: 80%;
           width: auto;
           z-index: 5;
+          margin: 0px 0px;
+          transition: 0.5s;
+          &:hover {
+            transform: translateY(-10px);
+          }
         }
       }
       .btn-cnt {
@@ -123,13 +166,19 @@ $font2: "Fjalla One", sans-serif;
           padding: 10px 30px;
           border-top-left-radius: 20px;
           border-bottom-right-radius: 20px;
+          @media screen and (max-width: 450px) {
+            font-size: 10px;
+          }
+          @media screen and (max-width: 350px) {
+            padding: 10px 20px;
+          }
         }
         .btn-dark {
           color: #6523ac;
           background: none;
           transition: 0.5s;
           border: 3px solid #8f33f1;
-          z-index: 10;
+
           cursor: pointer;
           &:hover {
             transform: translateY(-5px);
@@ -145,7 +194,6 @@ $font2: "Fjalla One", sans-serif;
           background: none;
           transition: 0.5s;
           border: 3px solid #00ffe5;
-          z-index: 10;
           cursor: pointer;
           &:hover {
             color: #03dac6;
@@ -167,6 +215,13 @@ $font2: "Fjalla One", sans-serif;
       align-items: center;
       justify-content: center;
       background: none;
+      @media screen and (max-width: 450px) {
+        height: 150px;
+        width: 100%;
+      }
+      @media screen and (max-width: 1000px) {
+        height: 300px;
+      }
       .svg {
         height: 100%;
         width: 100%;
@@ -199,10 +254,17 @@ $font2: "Fjalla One", sans-serif;
           height: auto;
           z-index: 0;
         }
+        @media screen and (max-width: 450px) {
+          height: 200px;
+          width: 200px;
+          left: 0;
+          display: none;
+        }
       }
     }
   }
 }
+
 .dark-text {
   color: #6523ac;
 }

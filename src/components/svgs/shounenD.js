@@ -3,8 +3,8 @@ import React from "react";
 function ShounenD(props) {
   return (
     <svg
-      width="926"
-      height="550"
+      width={props.width}
+      height={props.height}
       viewBox="0 0 926 550"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

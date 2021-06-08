@@ -236,6 +236,12 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .fluid-cont .main-cont .welcome-h1 {
+    font-size: 45px;
+  }
+}
+
 .fluid-cont .main-cont .name-h1 {
   position: relative;
   bottom: 5%;

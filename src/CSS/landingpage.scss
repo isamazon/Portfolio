@@ -152,6 +152,9 @@ $font2: "Fjalla One", sans-serif;
       @media screen and (max-width: 500px) {
         font-size: 50px;
       }
+      @media screen and (max-width: 400px) {
+        font-size: 45px;
+      }
     }
     .name-h1 {
       position: relative;
