@@ -10,6 +10,7 @@ $font2: "Fjalla One", sans-serif;
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   @media screen and (max-width: 900px) {
     padding: 0px 0px;
   }
@@ -25,11 +26,15 @@ $font2: "Fjalla One", sans-serif;
   }
   .row-1 {
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: none;
+    @media screen and (max-width: 1200px) {
+      height: 100%;
+    }
     @media screen and (max-width: 800px) {
       justify-content: space-around;
     }
@@ -39,10 +44,13 @@ $font2: "Fjalla One", sans-serif;
       flex-direction: column;
       align-items: center;
       order: 1;
-      background: none;
+
       @media screen and (max-width: 800px) {
         align-items: center;
-        height: 300px;
+        height: 60%;
+      }
+      @media screen and (max-width: 500px) {
+        align-items: center;
       }
       .project-info {
         position: relative;
@@ -98,17 +106,21 @@ $font2: "Fjalla One", sans-serif;
           padding: 20px 100px;
           font-family: $font2;
           height: 150px;
+          display: flex;
+          align-items: center;
           color: white;
           @media screen and (max-width: 1500px) {
             padding: 10px 50px;
+            padding: 20px 0px;
           }
           @media screen and (max-width: 500px) {
             height: 100px;
             overflow-y: auto;
           }
           @media screen and (max-width: 450px) {
-            font-size: 10px;
+            font-size: 12px;
             margin: 20px 0px;
+            height: 200px;
           }
         }
         .skillsused-h3 {
@@ -126,13 +138,13 @@ $font2: "Fjalla One", sans-serif;
       .languages-cnt {
         position: relative;
         width: 100%;
-        background: none;
+
         height: 150px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
+        overflow-x: hidden;
         @media screen and (max-width: 500px) {
           height: 100px;
           overflow-x: auto;
@@ -216,11 +228,13 @@ $font2: "Fjalla One", sans-serif;
       justify-content: center;
       background: none;
       @media screen and (max-width: 450px) {
-        height: 150px;
+        height: 40%;
         width: 100%;
       }
       @media screen and (max-width: 1000px) {
-        height: 300px;
+        order: 0;
+        top: 10%;
+        margin-top: 100px;
       }
       .svg {
         height: 100%;
