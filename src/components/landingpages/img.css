@@ -60,6 +60,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .portfolio-img-container .react-img .img,
@@ -92,21 +93,71 @@
 }
 
 .portfolio-img-container .react-img .text-img,
+.portfolio-img-container .react-img .text-img2,
+.portfolio-img-container .react-img .text-img3,
 .portfolio-img-container .bootstrap-img .text-img,
+.portfolio-img-container .bootstrap-img .text-img2,
+.portfolio-img-container .bootstrap-img .text-img3,
 .portfolio-img-container .css-img .text-img,
+.portfolio-img-container .css-img .text-img2,
+.portfolio-img-container .css-img .text-img3,
 .portfolio-img-container .sass-img .text-img,
+.portfolio-img-container .sass-img .text-img2,
+.portfolio-img-container .sass-img .text-img3,
 .portfolio-img-container .html-img .text-img,
+.portfolio-img-container .html-img .text-img2,
+.portfolio-img-container .html-img .text-img3,
 .portfolio-img-container .express-img .text-img,
+.portfolio-img-container .express-img .text-img2,
+.portfolio-img-container .express-img .text-img3,
 .portfolio-img-container .redux-img .text-img,
+.portfolio-img-container .redux-img .text-img2,
+.portfolio-img-container .redux-img .text-img3,
 .portfolio-img-container .node-img .text-img,
+.portfolio-img-container .node-img .text-img2,
+.portfolio-img-container .node-img .text-img3,
 .portfolio-img-container .js-img .text-img,
-.portfolio-img-container .mongo-img .text-img {
+.portfolio-img-container .js-img .text-img2,
+.portfolio-img-container .js-img .text-img3,
+.portfolio-img-container .mongo-img .text-img,
+.portfolio-img-container .mongo-img .text-img2,
+.portfolio-img-container .mongo-img .text-img3 {
   color: white;
   text-shadow: 0px 5px 10px black;
   position: absolute;
   bottom: 20px;
   font-size: 20px;
   font-family: "Arimo", sans-serif;
+  z-index: -1;
+}
+
+.portfolio-img-container .react-img .text-img2,
+.portfolio-img-container .bootstrap-img .text-img2,
+.portfolio-img-container .css-img .text-img2,
+.portfolio-img-container .sass-img .text-img2,
+.portfolio-img-container .html-img .text-img2,
+.portfolio-img-container .express-img .text-img2,
+.portfolio-img-container .redux-img .text-img2,
+.portfolio-img-container .node-img .text-img2,
+.portfolio-img-container .js-img .text-img2,
+.portfolio-img-container .mongo-img .text-img2 {
+  bottom: -20px;
+}
+
+.portfolio-img-container .react-img .text-img3,
+.portfolio-img-container .bootstrap-img .text-img3,
+.portfolio-img-container .css-img .text-img3,
+.portfolio-img-container .sass-img .text-img3,
+.portfolio-img-container .html-img .text-img3,
+.portfolio-img-container .express-img .text-img3,
+.portfolio-img-container .redux-img .text-img3,
+.portfolio-img-container .node-img .text-img3,
+.portfolio-img-container .js-img .text-img3,
+.portfolio-img-container .mongo-img .text-img3 {
+  bottom: -20px;
+  width: 200px;
+  text-align: center;
+  padding-left: 20px;
 }
 
 .portfolio-img-container .react-img {

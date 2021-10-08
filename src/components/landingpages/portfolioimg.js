@@ -59,14 +59,102 @@ class PortfolioImg extends React.Component {
             <p className="text-img">{this.state.p2}</p>
           </Zoom>
         </div>
-        <img src={csslogo} alt="" className="css-img" />
-        <img src={sass} alt="" className="sass-img" />
-        <img src={htmllogo} alt="" className="html-img" />
-        <img src={express} alt="" className="express-img" />
-        <img src={reduximg} alt="" className="redux-img" />
-        <img src={node} alt="" className="node-img" />
-        <img src={javascript} alt="" className="js-img" />
-        <img src={mongodb} alt="" className="mongo-img" />
+        <div className="css-img">
+          <img
+            src={csslogo}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p3: 'CSS3', show: true })}
+            onMouseLeave={() => this.setState({ p3: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p3}</p>
+          </Zoom>
+        </div>
+        <div className="sass-img">
+          <img
+            src={sass}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p4: 'SASS/SCSS', show: true })}
+            onMouseLeave={() => this.setState({ p4: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p4}</p>
+          </Zoom>
+        </div>
+        <div className="html-img">
+          <img
+            src={htmllogo}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p5: 'HTML5', show: true })}
+            onMouseLeave={() => this.setState({ p5: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p5}</p>
+          </Zoom>
+        </div>
+        <div className="express-img">
+          <img
+            src={express}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p6: 'Express', show: true })}
+            onMouseLeave={() => this.setState({ p6: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p6}</p>
+          </Zoom>
+        </div>
+        <div className="redux-img">
+          <img
+            src={reduximg}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p7: 'Redux', show: true })}
+            onMouseLeave={() => this.setState({ p7: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p7}</p>
+          </Zoom>
+        </div>
+        <div className="node-img">
+          <img
+            src={node}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p8: 'Node.js', show: true })}
+            onMouseLeave={() => this.setState({ p8: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p8}</p>
+          </Zoom>
+        </div>
+        <div className="js-img">
+          <img
+            src={javascript}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p9: 'Javascript', show: true })}
+            onMouseLeave={() => this.setState({ p9: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img2">{this.state.p9}</p>
+          </Zoom>
+        </div>
+        <div className="mongo-img">
+          <img
+            src={mongodb}
+            alt=""
+            className="img"
+            onMouseEnter={() => this.setState({ p10: 'MongoDB', show: true })}
+            onMouseLeave={() => this.setState({ p10: ' ', show: false })}
+          />
+          <Zoom opposite cascade when={this.state.show}>
+            <p className="text-img3">{this.state.p10}</p>
+          </Zoom>
+        </div>
       </div>
     );
   }
