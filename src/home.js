@@ -1,23 +1,16 @@
-import React, { useEffect, useRef } from "react";
-
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import './components/home.css';
 // components
-import Navbar from "./components/navbar";
-import Landing from "./components/landingpage";
-// CSS
-import "./CSS/landingpage.css";
+import Portfolio from './components/landingpages/portfolio';
+function Home() {
+  // Setting initial state for page
 
-// Dependancies
-import { Col, Container, Row } from "reactstrap";
-
-// Scroll to function
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-
-const Home = () => {
   return (
-    <div className="parent-cont">
-      <Landing />
-    </div>
+    <Container fluid className="home-container">
+      <Portfolio />
+    </Container>
   );
-};
+}
 
 export default Home;

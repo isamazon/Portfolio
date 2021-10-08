@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
+.landing-page-cont {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #2b2c28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing-page-cont .info-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 0px;
+}
+
+.landing-page-cont .info-container .text-content-container {
+  position: absolute;
+  width: 876px;
+  background: none;
+  top: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 76px;
+}
+
+.landing-page-cont .info-container .text-content-container .portfolio-h1-1 {
+  position: relative;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 120px;
+  text-shadow: 0px 10px 20px black;
+  margin-bottom: -10px;
+}
+
+.landing-page-cont .info-container .text-content-container .portfolio-h1-2 {
+  position: relative;
+  font-family: "Arimo", sans-serif;
+  color: white;
+  font-size: 90px;
+  text-shadow: 0px 10px 20px black;
+}
+
+.landing-page-cont .info-container .text-content-container .portfolio-h1-3 {
+  position: relative;
+  font-family: "Trirong", serif;
+  color: #7de2d1;
+  font-size: 65px;
+  letter-spacing: 10px;
+  text-shadow: 5px 10px 12px black;
+}
+
+.landing-page-cont .info-container .text-content-container .portfolio-p {
+  position: relative;
+  font-family: "Hind Gunter", sans-serif;
+  color: #7de2d1;
+  padding-left: 15px;
+  width: 80%;
+  font-size: 20px;
+  text-shadow: 5px 10px 12px black;
+}
+
+.landing-page-cont .right-col {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 0px;
+}
+
+.landing-page-cont .right-col .gradient-box {
+  position: absolute;
+  height: 100%;
+  width: 486px;
+  background: #7de2d1;
+  right: 386px;
+  -webkit-box-shadow: 0px 0px 20px black;
+          box-shadow: 0px 0px 20px black;
+  background: linear-gradient(359deg, #23524b, #339989, #4ceed3, #80ffea);
+  background-size: 800% 800%;
+  -webkit-animation: portfolio-bg 9s ease infinite;
+  animation: portfolio-bg 9s ease infinite;
+}
+
+@-webkit-keyframes portfolio-bg {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
+
+@keyframes portfolio-bg {
+  0% {
+    background-position: 9% 0%;
+  }
+  50% {
+    background-position: 92% 100%;
+  }
+  100% {
+    background-position: 9% 0%;
+  }
+}
+/*# sourceMappingURL=landingpage.css.map */

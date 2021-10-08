@@ -1,14 +1,15 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
 //
 // Components
-import Home from "./home";
-import { Route, Link } from "react-router-dom";
+import Home from './Home';
+import { Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-      <Route exact path="/" component={Home} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
     </div>
   );
 }
