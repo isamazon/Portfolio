@@ -1,0 +1,113 @@
+.portfolio-img-container {
+  position: absolute;
+  z-index: 2;
+  width: 850px;
+  height: 850px;
+  background: none;
+  right: 100px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1700px) {
+  .portfolio-img-container {
+    right: 50px;
+  }
+}
+
+.portfolio-img-container .cube-img {
+  position: relative;
+  height: 700px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.portfolio-img-container .react-img,
+.portfolio-img-container .bootstrap-img,
+.portfolio-img-container .css-img,
+.portfolio-img-container .sass-img,
+.portfolio-img-container .html-img,
+.portfolio-img-container .express-img,
+.portfolio-img-container .redux-img,
+.portfolio-img-container .node-img,
+.portfolio-img-container .js-img,
+.portfolio-img-container .mongo-img {
+  position: absolute;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.portfolio-img-container .react-img:hover,
+.portfolio-img-container .bootstrap-img:hover,
+.portfolio-img-container .css-img:hover,
+.portfolio-img-container .sass-img:hover,
+.portfolio-img-container .html-img:hover,
+.portfolio-img-container .express-img:hover,
+.portfolio-img-container .redux-img:hover,
+.portfolio-img-container .node-img:hover,
+.portfolio-img-container .js-img:hover,
+.portfolio-img-container .mongo-img:hover {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  cursor: pointer;
+}
+
+.portfolio-img-container .react-img {
+  top: -30px;
+}
+
+.portfolio-img-container .bootstrap-img {
+  top: 360px;
+}
+
+.portfolio-img-container .css-img {
+  top: 350px;
+  left: 225px;
+}
+
+.portfolio-img-container .sass-img {
+  left: 511px;
+  top: 390px;
+}
+
+.portfolio-img-container .html-img {
+  top: 530px;
+  left: 370px;
+}
+
+.portfolio-img-container .express-img {
+  top: 117px;
+  left: 236px;
+}
+
+.portfolio-img-container .redux-img {
+  top: 120px;
+  left: 500px;
+}
+
+.portfolio-img-container .node-img {
+  top: 245px;
+  left: 606px;
+}
+
+.portfolio-img-container .js-img {
+  top: 249px;
+}
+
+.portfolio-img-container .mongo-img {
+  top: 227px;
+  left: 135px;
+}
+/*# sourceMappingURL=img.css.map */

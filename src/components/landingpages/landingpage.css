@@ -99,13 +99,40 @@
   height: 100%;
   width: 486px;
   background: #7de2d1;
-  right: 386px;
+  right: 268px;
   -webkit-box-shadow: 0px 0px 20px black;
           box-shadow: 0px 0px 20px black;
   background: linear-gradient(359deg, #23524b, #339989, #4ceed3, #80ffea);
   background-size: 800% 800%;
   -webkit-animation: portfolio-bg 9s ease infinite;
   animation: portfolio-bg 9s ease infinite;
+}
+
+@media screen and (max-width: 1700px) {
+  .landing-page-cont .right-col .gradient-box {
+    right: 218px;
+  }
+}
+
+.landing-page-cont .project-container {
+  position: absolute;
+  width: 840px;
+  height: 200px;
+  background: #339989;
+  right: 100px;
+  bottom: 24px;
+  z-index: 3;
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 20px black;
+          box-shadow: 0px 5px 20px black;
 }
 
 @-webkit-keyframes portfolio-bg {

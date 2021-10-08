@@ -3,11 +3,16 @@ import { Col } from 'react-bootstrap';
 import styled from 'styled-components';
 // CSS
 import './landingpage.css';
-
+// Components
+import PortfolioImg from './portfolioimg';
 class Portfolio extends React.Component {
   constructor() {
     super();
     this.state = {
+      // States
+      portfolioState: true,
+      blookifyState: false,
+      ahesState: false,
       // Header content
       header1: 'Hello,',
       header2: 'Im Isaiah Mazon',
@@ -15,8 +20,17 @@ class Portfolio extends React.Component {
       // Header classes
     };
   }
+  setPortfolio() {
+    this.setState(!this.state.portfolioState);
+  }
 
   render() {
+    let img;
+    if (this.state.portfolioState) {
+      img = <PortfolioImg />;
+    } else {
+      img = null;
+    }
     return (
       <div className="landing-page-cont">
         <Col xl={4} className="info-container">
@@ -33,7 +47,9 @@ class Portfolio extends React.Component {
           </div>
         </Col>
         <Col xl={8} className="right-col">
+          {img}
           <div className="gradient-box"></div>
+          <div className="project-container"></div>
         </Col>
       </div>
     );

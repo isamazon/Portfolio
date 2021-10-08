@@ -1,0 +1,75 @@
+.portfolio-img-container {
+  position: absolute;
+  z-index: 2;
+  width: 850px;
+  height: 850px;
+  background: none;
+  right: 100px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1700px) {
+    right: 50px;
+  }
+  .cube-img {
+    position: relative;
+    height: 700px;
+    justify-self: center;
+  }
+  .react-img,
+  .bootstrap-img,
+  .css-img,
+  .sass-img,
+  .html-img,
+  .express-img,
+  .redux-img,
+  .node-img,
+  .js-img,
+  .mongo-img {
+    position: absolute;
+    transition: 0.6s;
+    &:hover {
+      transform: translateY(-25px);
+      cursor: pointer;
+    }
+  }
+  .react-img {
+    top: -30px;
+  }
+  .bootstrap-img {
+    top: 360px;
+  }
+  .css-img {
+    top: 350px;
+    left: 225px;
+  }
+  .sass-img {
+    left: 511px;
+    top: 390px;
+  }
+  .html-img {
+    top: 530px;
+    left: 370px;
+  }
+  .express-img {
+    top: 117px;
+    left: 236px;
+  }
+  .redux-img {
+    top: 120px;
+    left: 500px;
+  }
+  .node-img {
+    top: 245px;
+    left: 606px;
+  }
+  .js-img {
+    top: 249px;
+  }
+  .mongo-img {
+    top: 227px;
+    left: 135px;
+  }
+}
