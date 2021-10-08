@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
 .portfolio-img-container {
   position: absolute;
   z-index: 2;
@@ -47,21 +50,63 @@
   position: absolute;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.portfolio-img-container .react-img:hover,
-.portfolio-img-container .bootstrap-img:hover,
-.portfolio-img-container .css-img:hover,
-.portfolio-img-container .sass-img:hover,
-.portfolio-img-container .html-img:hover,
-.portfolio-img-container .express-img:hover,
-.portfolio-img-container .redux-img:hover,
-.portfolio-img-container .node-img:hover,
-.portfolio-img-container .js-img:hover,
-.portfolio-img-container .mongo-img:hover {
+.portfolio-img-container .react-img .img,
+.portfolio-img-container .bootstrap-img .img,
+.portfolio-img-container .css-img .img,
+.portfolio-img-container .sass-img .img,
+.portfolio-img-container .html-img .img,
+.portfolio-img-container .express-img .img,
+.portfolio-img-container .redux-img .img,
+.portfolio-img-container .node-img .img,
+.portfolio-img-container .js-img .img,
+.portfolio-img-container .mongo-img .img {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.portfolio-img-container .react-img .img:hover,
+.portfolio-img-container .bootstrap-img .img:hover,
+.portfolio-img-container .css-img .img:hover,
+.portfolio-img-container .sass-img .img:hover,
+.portfolio-img-container .html-img .img:hover,
+.portfolio-img-container .express-img .img:hover,
+.portfolio-img-container .redux-img .img:hover,
+.portfolio-img-container .node-img .img:hover,
+.portfolio-img-container .js-img .img:hover,
+.portfolio-img-container .mongo-img .img:hover {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
   cursor: pointer;
+}
+
+.portfolio-img-container .react-img .text-img,
+.portfolio-img-container .bootstrap-img .text-img,
+.portfolio-img-container .css-img .text-img,
+.portfolio-img-container .sass-img .text-img,
+.portfolio-img-container .html-img .text-img,
+.portfolio-img-container .express-img .text-img,
+.portfolio-img-container .redux-img .text-img,
+.portfolio-img-container .node-img .text-img,
+.portfolio-img-container .js-img .text-img,
+.portfolio-img-container .mongo-img .text-img {
+  color: white;
+  text-shadow: 0px 5px 10px black;
+  position: absolute;
+  bottom: 20px;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
 }
 
 .portfolio-img-container .react-img {
