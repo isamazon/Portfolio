@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 .landing-page-cont {
   position: relative;
   height: 100%;
@@ -63,10 +64,10 @@
 
 .landing-page-cont .info-container .text-content-container .portfolio-h1-3 {
   position: relative;
-  font-family: "Trirong", serif;
-  color: #7de2d1;
+  font-family: "Unica One", cursive;
+  color: #58eed5;
   font-size: 65px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 .landing-page-cont .info-container .text-content-container .portfolio-p {
@@ -76,6 +77,41 @@
   padding-left: 15px;
   width: 80%;
   font-size: 20px;
+}
+
+.landing-page-cont .info-container .text-content-container .important-links {
+  position: relative;
+  width: 80%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50px;
+}
+
+.landing-page-cont .info-container .text-content-container .important-links .icon {
+  color: #00ffd5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 100px;
+}
+
+.landing-page-cont .info-container .text-content-container .important-links .icon:hover {
+  color: #00a388;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.landing-page-cont .info-container .text-content-container .important-links .icon-text {
+  position: absolute;
+  color: white;
+  font-family: "Hind Gunter", sans-serif;
 }
 
 .landing-page-cont .right-col {
@@ -92,6 +128,21 @@
   padding: 0px 0px;
 }
 
+.landing-page-cont .right-col .tech-h1 {
+  position: absolute;
+  color: #00ffd5;
+  font-size: 80px;
+  top: 15%;
+  left: 550px;
+  opacity: 0;
+  -webkit-animation: techh1 5s ease-in-out;
+          animation: techh1 5s ease-in-out;
+}
+
+.landing-page-cont .right-col .img-zoom {
+  z-index: 3;
+}
+
 .landing-page-cont .right-col .gradient-box {
   position: absolute;
   height: 100%;
@@ -102,13 +153,14 @@
           box-shadow: 0px 0px 5 0px black;
   background: linear-gradient(359deg, #23524b, #339989, #4ceed3, #80ffea);
   background-size: 800% 800%;
+  z-index: 0;
   -webkit-animation: portfolio-bg 9s ease infinite;
   animation: portfolio-bg 9s ease infinite;
 }
 
 @media screen and (max-width: 1700px) {
   .landing-page-cont .right-col .gradient-box {
-    right: 218px;
+    right: 168px;
   }
 }
 
@@ -118,9 +170,24 @@
   height: 200px;
   background: #339989;
   right: 100px;
-  bottom: 24px;
+  bottom: 50px;
   z-index: 3;
-  overflow-x: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+}
+
+@media screen and (max-width: 1700px) {
+  .landing-page-cont .project-container {
+    right: 45px;
+    width: 740px;
+  }
+}
+
+.landing-page-cont .project-container .img-container {
+  position: relative;
+  height: 200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,9 +195,36 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 20px black;
-          box-shadow: 0px 5px 20px black;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.landing-page-cont .project-container .img-container .project-imgs {
+  position: relative;
+  height: 130px;
+  width: 258px;
+  top: 30px;
+  margin: 0px 10px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 1700px) {
+  .landing-page-cont .project-container .img-container .project-imgs {
+    height: 120px;
+    width: 220px;
+  }
+}
+
+.landing-page-cont .project-container .img-container .project-imgs:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
 }
 
 @-webkit-keyframes portfolio-bg {
@@ -154,6 +248,50 @@
   }
   100% {
     background-position: 9% 0%;
+  }
+}
+
+@-webkit-keyframes techh1 {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  25% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 1;
+  }
+  65% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
+  }
+}
+
+@keyframes techh1 {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  25% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 1;
+  }
+  65% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=landingpage.css.map */

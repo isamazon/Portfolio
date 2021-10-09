@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 // Portfolio-fonts
 $font1: 'Arimo', sans-serif;
 $font2: 'Trirong', serif;
 $font3: 'Hind Gunter', sans-serif;
-
+$font4: 'Unica One', cursive;
 .landing-page-cont {
   position: relative;
   height: 100%;
@@ -46,10 +47,10 @@ $font3: 'Hind Gunter', sans-serif;
       }
       .portfolio-h1-3 {
         position: relative;
-        font-family: $font2;
-        color: #7de2d1;
+        font-family: $font4;
+        color: #58eed5;
         font-size: 65px;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
       }
       .portfolio-p {
         position: relative;
@@ -58,6 +59,29 @@ $font3: 'Hind Gunter', sans-serif;
         padding-left: 15px;
         width: 80%;
         font-size: 20px;
+      }
+      .important-links {
+        position: relative;
+        width: 80%;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50px;
+        .icon {
+          color: #00ffd5;
+          transition: 0.5s;
+          margin-right: 100px;
+          &:hover {
+            color: #00a388;
+            transform: translateY(-10px);
+          }
+        }
+        .icon-text {
+          position: absolute;
+          color: white;
+          font-family: $font3;
+        }
       }
     }
   }
@@ -68,6 +92,18 @@ $font3: 'Hind Gunter', sans-serif;
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+    .tech-h1 {
+      position: absolute;
+      color: #00ffd5;
+      font-size: 80px;
+      top: 15%;
+      left: 550px;
+      opacity: 0;
+      animation: techh1 5s ease-in-out;
+    }
+    .img-zoom {
+      z-index: 3;
+    }
     .gradient-box {
       position: absolute;
       height: 100%;
@@ -77,12 +113,12 @@ $font3: 'Hind Gunter', sans-serif;
       box-shadow: 0px 0px 5 0px black;
       background: linear-gradient(359deg, #23524b, #339989, #4ceed3, #80ffea);
       background-size: 800% 800%;
-
+      z-index: 0;
       -webkit-animation: portfolio-bg 9s ease infinite;
       -moz-animation: portfolio-bg 9s ease infinite;
       animation: portfolio-bg 9s ease infinite;
       @media screen and (max-width: 1700px) {
-        right: 218px;
+        right: 168px;
       }
     }
   }
@@ -92,13 +128,41 @@ $font3: 'Hind Gunter', sans-serif;
     height: 200px;
     background: #339989;
     right: 100px;
-    bottom: 24px;
+    bottom: 50px;
     z-index: 3;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px black;
+
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+    @media screen and (max-width: 1700px) {
+      right: 45px;
+      width: 740px;
+    }
+    .img-container {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      .project-imgs {
+        position: relative;
+        height: 130px;
+        width: 258px;
+        top: 30px;
+        margin: 0px 10px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+        transition: 0.6s;
+        @media screen and (max-width: 1700px) {
+          height: 120px;
+          width: 220px;
+        }
+        &:hover {
+          transform: translateY(-10px);
+          cursor: pointer;
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
+        }
+      }
+    }
   }
 }
 
@@ -134,5 +198,23 @@ $font3: 'Hind Gunter', sans-serif;
   }
   100% {
     background-position: 9% 0%;
+  }
+}
+
+@keyframes techh1 {
+  0% {
+    transform: translateX(-100px);
+  }
+  25% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
   }
 }
