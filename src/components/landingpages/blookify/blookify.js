@@ -19,6 +19,7 @@ import Blookifyimg from '../../../assets/blookifyimg.png';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
+
 // Sound
 import Sound1 from '../../../assets/clicksfx.mp3';
 class Portfolio extends React.Component {
@@ -29,7 +30,8 @@ class Portfolio extends React.Component {
       show2: false,
       show3: false,
       show4: false,
-      intitalP: '',
+      intitalP: 'Click above for project info :)',
+      intialPclass: 'text-content-container',
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleHover2 = this.handleHover2.bind(this);
@@ -68,6 +70,7 @@ class Portfolio extends React.Component {
     this.setState({
       intitalP:
         'Blookify is a fullstack application using the MERN stack utilizing the GOOGLE books api.',
+      intialPclass: 'text-content-container',
     });
   }
   handleClick3() {
@@ -75,6 +78,7 @@ class Portfolio extends React.Component {
     this.setState({
       intitalP:
         'Blookify is a fullstack application using the MERN stack utilizing the GOOGLE books api. And giving the user the ability to send books they have already read or are reading currently to their very own library',
+      intialPclass: 'text-content-container',
     });
   }
   handleClick4() {
@@ -82,6 +86,7 @@ class Portfolio extends React.Component {
     this.setState({
       intitalP:
         'Blookify is a full stack MERN application also using googleOauth and also has user authenification using JWT middleware.And giving the user the ability to send books they have already read or are reading currently to their very own library. This project is showcasing my skills in the MERN stack by showing efficiency in the backend creating endpoints and functionality and connecting all of that to the front end using redux for state management and showcasing the ability of using react hooks like useState, useEffect and useRef.',
+      intialPclass: 'text-content-container-long',
     });
   }
   handleClick5() {
@@ -89,6 +94,7 @@ class Portfolio extends React.Component {
     this.setState({
       intitalP:
         'Blookify is a fullstack application using the MERN tech stack, blookify utilizes the GOOGLE books api utilizing over seven millions books for the users disposal giving them the option to send whatever book theyre currently reading or whatver books theyve already read to their own personal libraries! Utilizing the API built using Nodejs/Express for the backend and MongoDB as the database! This application was a passion project for me not only because im a big book reader but it also really taught me how the backend works and how to creat databases to store important data!',
+      intialPclass: 'text-content-container-long',
     });
   }
   render() {
@@ -104,7 +110,7 @@ class Portfolio extends React.Component {
     return (
       <div className="blookify-page-cont">
         <Col xl={4} className="info-container">
-          <div className="text-content-container">
+          <div className={this.state.intialPclass}>
             <Fade bottom cascade>
               <h1 className="blookify-h1-1">Blookify</h1>
             </Fade>

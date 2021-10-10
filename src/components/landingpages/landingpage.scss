@@ -30,6 +30,7 @@ $font4: 'Unica One', cursive;
       display: flex;
       flex-direction: column;
       padding-left: 76px;
+      transition: 0.5s;
       .portfolio-h1-1 {
         position: relative;
         font-family: $font1;
@@ -164,6 +165,149 @@ $font4: 'Unica One', cursive;
         }
       }
     }
+    .text-content-container-long {
+      position: absolute;
+      width: 876px;
+      background: none;
+      top: 150px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 76px;
+      transition: 0.5s;
+      .portfolio-h1-1 {
+        position: relative;
+        font-family: $font1;
+        color: white;
+        font-size: 120px;
+        text-shadow: 0px 10px 20px black;
+        margin-bottom: -10px;
+      }
+      .portfolio-h1-2 {
+        position: relative;
+        font-family: $font1;
+        color: white;
+        font-size: 90px;
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.438);
+      }
+      .portfolio-h1-3 {
+        position: relative;
+        font-family: $font4;
+        color: #58eed5;
+        font-size: 65px;
+        letter-spacing: 5px;
+      }
+      .adjust-container {
+        position: relative;
+        height: 100px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background: none;
+        margin: 10px 0px;
+        p {
+          color: #00ffd583;
+          text-transform: uppercase;
+          padding-left: 15px;
+        }
+        .button-cnt {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          background: none;
+          padding-left: 15px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          background: none;
+          .radio {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 0px;
+          }
+          .button {
+            position: relative;
+            left: 25px;
+            opacity: 0;
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+          }
+          .radio__radio {
+            width: 25px;
+            height: 25px;
+            border: 2px solid #00bb9c;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-sizing: border-box;
+            padding: 3px;
+          }
+          .radio__radio::after {
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #00ffd5;
+            border-radius: 50%;
+
+            transform: scale(0);
+            transition: 0.35s;
+          }
+          .button:checked + .radio__radio::after {
+            transform: scale(1);
+          }
+        }
+
+        .button-text {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          height: 30px;
+          .shortest {
+            position: absolute;
+            left: 0px;
+          }
+          .longest {
+            position: absolute;
+            right: 0px;
+          }
+        }
+      }
+      .portfolio-p {
+        position: relative;
+        font-family: $font3;
+        color: #7de2d1;
+        padding-left: 15px;
+        width: 80%;
+        height: 100%;
+        font-size: 18px;
+      }
+      .important-links {
+        position: relative;
+        width: 80%;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        .icon {
+          color: #00ffd5;
+          transition: 0.5s;
+          margin-right: 100px;
+          &:hover {
+            color: #00a388;
+            transform: translateY(-10px);
+          }
+        }
+        .icon-text {
+          position: absolute;
+          color: white;
+          font-family: $font3;
+        }
+      }
+    }
   }
   .right-col {
     position: relative;
@@ -178,7 +322,7 @@ $font4: 'Unica One', cursive;
       font-size: 80px;
       text-transform: uppercase;
       top: 15%;
-      left: 550px;
+      left: -100px;
       opacity: 0;
       animation: techh1 5s ease-in-out;
     }
@@ -287,18 +431,18 @@ $font4: 'Unica One', cursive;
 
 @keyframes techh1 {
   0% {
-    transform: translateX(-100px);
+    transform: translateY(-100px);
   }
   25% {
-    transform: translateX(-600px);
+    transform: translateY(0px);
     opacity: 1;
   }
-  65% {
-    transform: translateX(-600px);
+  50% {
+    transform: translateY(0px);
     opacity: 1;
   }
   100% {
-    transform: translateX(0px);
+    transform: translateY(-100px);
     opacity: 0;
   }
 }

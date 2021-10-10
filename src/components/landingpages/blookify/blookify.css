@@ -43,6 +43,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 76px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .blookify-page-cont .info-container .text-content-container .blookify-h1-1 {
@@ -274,6 +276,257 @@
 }
 
 .blookify-page-cont .info-container .text-content-container .important-links .icon-text {
+  position: absolute;
+  color: #7f5539;
+  font-family: "Hind Gunter", sans-serif;
+}
+
+.blookify-page-cont .info-container .text-content-container-long {
+  position: absolute;
+  width: 876px;
+  background: none;
+  top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 76px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .blookify-h1-1 {
+  position: relative;
+  font-family: "Lobster", cursive;
+  color: #7e5438;
+  font-size: 120px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  margin-bottom: -10px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container {
+  position: relative;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container .link-container {
+  position: relative;
+  margin-right: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container .link-container:hover {
+  text-decoration: none;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container .link-container .icon {
+  color: #523523;
+  margin-right: 20px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container .link-container .link-button {
+  height: 100%;
+  width: 100%;
+  background: #e6ccb2;
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #7f5539;
+  font-family: "Hind Gunter", sans-serif;
+  font-size: 20px;
+  text-transform: none;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .button-container .link-container .link-button:hover {
+  background: #caa885;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.267);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.267);
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container {
+  position: relative;
+  height: 100px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: none;
+  margin: 10px 0px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container p {
+  color: #9c6644;
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: none;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: none;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt .radio {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt .button {
+  position: relative;
+  left: 25px;
+  opacity: 0;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt .radio__radio {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #9c6644;
+  border-radius: 50%;
+  margin-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 3px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt .radio__radio::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #7f5539;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-cnt .button:checked + .radio__radio::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-text {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-text .shortest {
+  position: absolute;
+  left: 0px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .adjust-container .button-text .longest {
+  position: absolute;
+  right: 0px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .blookify-p {
+  position: relative;
+  font-family: "Hind Gunter", sans-serif;
+  color: #9c6644;
+  padding-left: 15px;
+  padding-right: 0px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .important-links {
+  position: relative;
+  width: 80%;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .important-links .icon {
+  color: #9c6644;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-right: 100px;
+}
+
+.blookify-page-cont .info-container .text-content-container-long .important-links .icon:hover {
+  color: #774b30;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.blookify-page-cont .info-container .text-content-container-long .important-links .icon-text {
   position: absolute;
   color: #7f5539;
   font-family: "Hind Gunter", sans-serif;

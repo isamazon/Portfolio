@@ -19,6 +19,7 @@ import PortfolioImg from './portfolioimg';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
+import { BsArrowDownRight } from 'react-icons/bs';
 
 class Portfolio extends React.Component {
   constructor() {
@@ -29,7 +30,8 @@ class Portfolio extends React.Component {
       show3: false,
       show4: false,
       //   Paragraph
-      intitalP: '',
+      intitalP: 'Click above for bio :)',
+      intialPclass: 'text-content-container',
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleHover2 = this.handleHover2.bind(this);
@@ -61,34 +63,40 @@ class Portfolio extends React.Component {
   //
   handleClick() {
     this.playAudio();
-    this.setState({ intitalP: 'Isaiah is a web dev' });
+    this.setState({
+      intitalP: 'I am a web dev',
+      intialPclass: 'text-content-container',
+    });
   }
   handleClick2() {
     this.playAudio();
     this.setState({
-      intitalP:
-        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+      intitalP: 'I am a self taught web dev living in Albuquerque New Mexico',
+      intialPclass: 'text-content-container',
     });
   }
   handleClick3() {
     this.playAudio();
     this.setState({
       intitalP:
-        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients.',
+      intialPclass: 'text-content-container',
     });
   }
   handleClick4() {
     this.playAudio();
     this.setState({
       intitalP:
-        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES',
+      intialPclass: 'text-content-container-long',
     });
   }
   handleClick5() {
     this.playAudio();
     this.setState({
       intitalP:
-        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES, im always eager to learn more and gain the experience in order to become the best developer i possibly can be!',
+      intialPclass: 'text-content-container-long',
     });
   }
 
@@ -105,7 +113,7 @@ class Portfolio extends React.Component {
     return (
       <div className="landing-page-cont">
         <Col xl={4} className="info-container">
-          <div className="text-content-container">
+          <div className={this.state.intialPclass}>
             <Fade bottom cascade>
               <h1 className="portfolio-h1-1">Hello,</h1>
             </Fade>
@@ -222,7 +230,9 @@ class Portfolio extends React.Component {
           </div>
         </Col>
         <Col xl={8} className="right-col">
-          <h1 className="tech-h1">Tech i know:</h1>
+          <h1 className="tech-h1">
+            Tech i know <BsArrowDownRight />
+          </h1>
           <PortfolioImg />
           <div className="gradient-box"></div>
           {/* SLider */}
