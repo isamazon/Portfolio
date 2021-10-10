@@ -161,49 +161,117 @@
 }
 
 .portfolio-img-container .react-img {
-  top: -30px;
+  top: 0px;
+  -webkit-animation: float 12s infinite ease-in-out;
+          animation: float 12s infinite ease-in-out;
 }
 
 .portfolio-img-container .bootstrap-img {
   top: 360px;
+  -webkit-animation: float 15.5s infinite ease-in-out;
+          animation: float 15.5s infinite ease-in-out;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .portfolio-img-container .css-img {
   top: 350px;
   left: 225px;
+  -webkit-animation: float 15s infinite ease-in-out;
+          animation: float 15s infinite ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .portfolio-img-container .sass-img {
   left: 511px;
   top: 390px;
+  -webkit-animation: float 15s infinite ease-in-out;
+          animation: float 15s infinite ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .portfolio-img-container .html-img {
   top: 530px;
   left: 370px;
+  -webkit-animation: float 16s infinite ease-in-out;
+          animation: float 16s infinite ease-in-out;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .portfolio-img-container .express-img {
   top: 117px;
   left: 236px;
+  -webkit-animation: float 13s infinite ease-in-out;
+          animation: float 13s infinite ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .portfolio-img-container .redux-img {
   top: 120px;
   left: 500px;
+  -webkit-animation: float 13s infinite ease-in-out;
+          animation: float 13s infinite ease-in-out;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .portfolio-img-container .node-img {
   top: 245px;
   left: 606px;
+  -webkit-animation: float 14s infinite ease-in-out;
+          animation: float 14s infinite ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .portfolio-img-container .js-img {
   top: 249px;
+  -webkit-animation: float 14.5s infinite ease-in-out;
+          animation: float 14.5s infinite ease-in-out;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .portfolio-img-container .mongo-img {
   top: 227px;
   left: 135px;
+  -webkit-animation: float 14s infinite ease-in-out;
+          animation: float 14s infinite ease-in-out;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 /*# sourceMappingURL=img.css.map */

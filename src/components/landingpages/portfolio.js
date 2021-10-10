@@ -12,11 +12,14 @@ import './landingpage.css';
 import Blookify from '../../assets/blookify.PNG';
 import Ahes from '../../assets/ahes.PNG';
 import Humble from '../../assets/humble.PNG';
+// SFX
+import Sound1 from '../../assets/clicksfx.mp3';
 // Components
 import PortfolioImg from './portfolioimg';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
+
 class Portfolio extends React.Component {
   constructor() {
     super();
@@ -25,12 +28,24 @@ class Portfolio extends React.Component {
       show2: false,
       show3: false,
       show4: false,
+      //   Paragraph
+      intitalP: '',
     };
     this.handleHover = this.handleHover.bind(this);
     this.handleHover2 = this.handleHover2.bind(this);
     this.handleHover3 = this.handleHover3.bind(this);
     this.handleHover4 = this.handleHover4.bind(this);
+    //   Paragraph
+    this.handleClick = this.handleClick.bind(this);
+    this.handleClick2 = this.handleClick2.bind(this);
+    this.handleClick3 = this.handleClick3.bind(this);
+    this.handleClick4 = this.handleClick4.bind(this);
+    this.handleClick5 = this.handleClick5.bind(this);
   }
+  // Audio
+  playAudio = () => {
+    new Audio(Sound1).play();
+  };
   handleHover() {
     this.setState({ show: !this.state.show });
   }
@@ -43,6 +58,40 @@ class Portfolio extends React.Component {
   handleHover4() {
     this.setState({ show4: !this.state.show4 });
   }
+  //
+  handleClick() {
+    this.playAudio();
+    this.setState({ intitalP: 'Isaiah is a web dev' });
+  }
+  handleClick2() {
+    this.playAudio();
+    this.setState({
+      intitalP:
+        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+    });
+  }
+  handleClick3() {
+    this.playAudio();
+    this.setState({
+      intitalP:
+        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+    });
+  }
+  handleClick4() {
+    this.playAudio();
+    this.setState({
+      intitalP:
+        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+    });
+  }
+  handleClick5() {
+    this.playAudio();
+    this.setState({
+      intitalP:
+        'Isaiah is a self taught web dev living in Albuquerque New Mexico',
+    });
+  }
+
   render() {
     //   REACT SLIDER SETTINGS
     const settings = {
@@ -67,12 +116,58 @@ class Portfolio extends React.Component {
               <h1 className="portfolio-h1-3">Web developer</h1>
             </Fade>
             <Fade bottom cascade>
-              <p className="portfolio-p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur velit ipsum odit dicta, sequi facilis temporibus
-                soluta, porro quibusdam maiores possimus ipsam fugit rem,
-                officiis ea sit totam eveniet asperiores!
-              </p>
+              <div className="adjust-container">
+                <p>Adjust bio length:</p>
+                <div className="button-cnt">
+                  <label
+                    htmlFor="button"
+                    className="radio"
+                    onClick={this.handleClick}
+                  >
+                    <input type="radio" name="button" className="button" />
+                    <div className="radio__radio"></div>
+                  </label>
+                  <label
+                    htmlFor="button"
+                    className="radio"
+                    onClick={this.handleClick2}
+                  >
+                    <input type="radio" name="button" className="button" />
+                    <div className="radio__radio"></div>
+                  </label>
+                  <label
+                    htmlFor="button"
+                    className="radio"
+                    onClick={this.handleClick3}
+                  >
+                    <input type="radio" name="button" className="button" />
+                    <div className="radio__radio"></div>
+                  </label>
+                  <label
+                    htmlFor="button"
+                    className="radio"
+                    onClick={this.handleClick4}
+                  >
+                    <input type="radio" name="button" className="button" />
+                    <div className="radio__radio"></div>
+                  </label>
+                  <label
+                    htmlFor="button"
+                    className="radio"
+                    onClick={this.handleClick5}
+                  >
+                    <input type="radio" name="button" className="button" />
+                    <div className="radio__radio"></div>
+                  </label>
+                </div>
+                <div className="button-text">
+                  <p className="shortest">Shortest</p>
+                  <p className="longest">Longest</p>
+                </div>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <p className="portfolio-p">{this.state.intitalP}</p>
             </Fade>
             <Fade bottom cascade>
               <div className="important-links">

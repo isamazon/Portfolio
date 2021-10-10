@@ -71,40 +71,71 @@ $font3: 'Hind Gunter', sans-serif;
     }
   }
   .react-img {
-    top: -30px;
+    top: 0px;
+    animation: float 12s infinite ease-in-out;
   }
   .bootstrap-img {
     top: 360px;
+    animation: float 15.5s infinite ease-in-out;
+    animation-delay: 2.5s;
   }
   .css-img {
     top: 350px;
     left: 225px;
+    animation: float 15s infinite ease-in-out;
+    animation-delay: 2s;
   }
   .sass-img {
     left: 511px;
     top: 390px;
+    animation: float 15s infinite ease-in-out;
+    animation-delay: 2s;
   }
   .html-img {
     top: 530px;
     left: 370px;
+    animation: float 16s infinite ease-in-out;
+    animation-delay: 2.5s;
   }
   .express-img {
     top: 117px;
     left: 236px;
+    animation: float 13s infinite ease-in-out;
+    animation-delay: 0.5s;
   }
   .redux-img {
     top: 120px;
     left: 500px;
+    animation: float 13s infinite ease-in-out;
+    animation-delay: 0.5s;
   }
   .node-img {
     top: 245px;
     left: 606px;
+    animation: float 14s infinite ease-in-out;
+    animation-delay: 1s;
   }
   .js-img {
     top: 249px;
+    animation: float 14.5s infinite ease-in-out;
+    animation-delay: 1.5s;
   }
   .mongo-img {
     top: 227px;
     left: 135px;
+    animation: float 14s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
