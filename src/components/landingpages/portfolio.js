@@ -146,7 +146,14 @@ class Portfolio extends React.Component {
 
     return (
       <div className="landing-page-cont">
-        <SideMenu />
+        <SideMenu
+          // Icon color
+          iconcolor="#7de2d1"
+          // Links color
+          linkcolor={{ color: '#7de2d1' }}
+          //   Link text color
+          linkpcolor={{ color: 'white' }}
+        />
         <Col xl={4} md={12} className="info-container">
           <div className={this.state.intialPclass}>
             <Fade bottom cascade>

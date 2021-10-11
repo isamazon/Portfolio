@@ -16,6 +16,7 @@ import Humble from '../../../assets/humble.PNG';
 import PortfolioPic from '../../../assets/portfolio.PNG';
 // Components
 import Blookifyimg from '../../../assets/blookifyimg.png';
+import SideMenu from '../../sidemenu/sidemenu';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
@@ -112,6 +113,12 @@ class Portfolio extends React.Component {
 
     return (
       <div className="blookify-page-cont">
+        <SideMenu
+          // Icon color
+          iconcolor="#7e5438"
+          // Links color
+          linkcolor={{ color: '#7e5438' }}
+        />
         <Col xl={4} className="info-container">
           <div className={this.state.intialPclass}>
             <Fade bottom cascade>
