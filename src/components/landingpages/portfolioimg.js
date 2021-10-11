@@ -12,7 +12,9 @@ import mongodb from '../../assets/mongodb.png';
 import sass from '../../assets/sass.png';
 import node from '../../assets/node.png';
 //
+import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
+import Blocklayout from '../../assets/Blocklayout.png';
 class PortfolioImg extends React.Component {
   constructor() {
     super();
@@ -34,12 +36,15 @@ class PortfolioImg extends React.Component {
   render() {
     return (
       <div className="portfolio-img-container">
+        <Slide bottom>
+          <img src={Blocklayout} alt="" className="block-img" />
+        </Slide>
         <img src={Cube} alt="" className="cube-img" />
         <div className="react-img">
           <img
             src={ReactImg}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p1: 'React.js', show: true })}
             onMouseLeave={() => this.setState({ p1: ' ', show: false })}
           />
@@ -51,7 +56,7 @@ class PortfolioImg extends React.Component {
           <img
             src={Bootstraplogo}
             alt=""
-            className="img"
+            className="img bootstrapimg"
             onMouseEnter={() => this.setState({ p2: 'Bootstrap', show: true })}
             onMouseLeave={() => this.setState({ p2: ' ', show: false })}
           />
@@ -59,11 +64,11 @@ class PortfolioImg extends React.Component {
             <p className="text-img">{this.state.p2}</p>
           </Zoom>
         </div>
-        <div className="css-img">
+        <div className="css-img ">
           <img
             src={csslogo}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p3: 'CSS3', show: true })}
             onMouseLeave={() => this.setState({ p3: ' ', show: false })}
           />
@@ -75,7 +80,7 @@ class PortfolioImg extends React.Component {
           <img
             src={sass}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p4: 'SASS/SCSS', show: true })}
             onMouseLeave={() => this.setState({ p4: ' ', show: false })}
           />
@@ -87,7 +92,7 @@ class PortfolioImg extends React.Component {
           <img
             src={htmllogo}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p5: 'HTML5', show: true })}
             onMouseLeave={() => this.setState({ p5: ' ', show: false })}
           />
@@ -99,7 +104,7 @@ class PortfolioImg extends React.Component {
           <img
             src={express}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p6: 'Express', show: true })}
             onMouseLeave={() => this.setState({ p6: ' ', show: false })}
           />
@@ -111,7 +116,7 @@ class PortfolioImg extends React.Component {
           <img
             src={reduximg}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p7: 'Redux', show: true })}
             onMouseLeave={() => this.setState({ p7: ' ', show: false })}
           />
@@ -119,11 +124,11 @@ class PortfolioImg extends React.Component {
             <p className="text-img2">{this.state.p7}</p>
           </Zoom>
         </div>
-        <div className="node-img">
+        <div className="node-img ">
           <img
             src={node}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p8: 'Node.js', show: true })}
             onMouseLeave={() => this.setState({ p8: ' ', show: false })}
           />
@@ -147,7 +152,7 @@ class PortfolioImg extends React.Component {
           <img
             src={mongodb}
             alt=""
-            className="img"
+            className="img "
             onMouseEnter={() => this.setState({ p10: 'MongoDB', show: true })}
             onMouseLeave={() => this.setState({ p10: ' ', show: false })}
           />

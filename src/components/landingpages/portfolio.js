@@ -12,10 +12,12 @@ import './landingpage.css';
 import Blookify from '../../assets/blookify.PNG';
 import Ahes from '../../assets/ahes.PNG';
 import Humble from '../../assets/humble.PNG';
+
 // SFX
 import Sound1 from '../../assets/clicksfx.mp3';
 // Components
 import PortfolioImg from './portfolioimg';
+import SideMenu from '../sidemenu/sidemenu';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
@@ -29,8 +31,9 @@ class Portfolio extends React.Component {
       show2: false,
       show3: false,
       show4: false,
+
       //   Paragraph
-      intitalP: 'Click above for bio :)',
+      intitalP: 'Click the circles above for bio :)',
       intialPclass: 'text-content-container',
     };
     this.handleHover = this.handleHover.bind(this);
@@ -43,6 +46,7 @@ class Portfolio extends React.Component {
     this.handleClick3 = this.handleClick3.bind(this);
     this.handleClick4 = this.handleClick4.bind(this);
     this.handleClick5 = this.handleClick5.bind(this);
+    // Portfolio pic/component
   }
   // Audio
   playAudio = () => {
@@ -60,6 +64,7 @@ class Portfolio extends React.Component {
   handleHover4() {
     this.setState({ show4: !this.state.show4 });
   }
+
   //
   handleClick() {
     this.playAudio();
@@ -108,11 +113,41 @@ class Portfolio extends React.Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+      ],
     };
 
     return (
       <div className="landing-page-cont">
-        <Col xl={4} className="info-container">
+        <SideMenu />
+        <Col xl={4} md={12} className="info-container">
           <div className={this.state.intialPclass}>
             <Fade bottom cascade>
               <h1 className="portfolio-h1-1">Hello,</h1>
@@ -229,11 +264,11 @@ class Portfolio extends React.Component {
             </Fade>
           </div>
         </Col>
-        <Col xl={8} className="right-col">
+        <Col xl={8} md={12} className="right-col">
           <h1 className="tech-h1">
-            Tech i know <BsArrowDownRight />
+            Tech i know <BsArrowDownRight size="60" />
           </h1>
-          <PortfolioImg />
+          <PortfolioImg cubeimg="cube-img" />
           <div className="gradient-box"></div>
           {/* SLider */}
           <Slider {...settings} className="project-container">
@@ -258,14 +293,6 @@ class Portfolio extends React.Component {
                 src={Humble}
                 alt=""
                 onClick={this.props.humbletoggle}
-                className="project-imgs"
-              />
-            </div>
-            <div className="img-container">
-              <img
-                src={Humble}
-                alt=""
-                onClick={this.props.portfoliotoggle}
                 className="project-imgs"
               />
             </div>

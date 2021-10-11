@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
 .portfolio-img-container {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 850px;
   height: 850px;
   background: none;
@@ -30,11 +30,35 @@
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .portfolio-img-container {
+    right: -100px;
+  }
+}
+
 .portfolio-img-container .cube-img {
   position: relative;
   height: 700px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .portfolio-img-container .cube-img {
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .portfolio-img-container .cube-img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio-img-container .cube-img {
+    display: none;
+  }
 }
 
 .portfolio-img-container .react-img,
@@ -75,6 +99,37 @@
 .portfolio-img-container .mongo-img .img {
   -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+@media screen and (max-width: 1120px) {
+  .portfolio-img-container .react-img .img,
+  .portfolio-img-container .bootstrap-img .img,
+  .portfolio-img-container .css-img .img,
+  .portfolio-img-container .sass-img .img,
+  .portfolio-img-container .html-img .img,
+  .portfolio-img-container .express-img .img,
+  .portfolio-img-container .redux-img .img,
+  .portfolio-img-container .node-img .img,
+  .portfolio-img-container .js-img .img,
+  .portfolio-img-container .mongo-img .img {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .portfolio-img-container .react-img .img,
+  .portfolio-img-container .bootstrap-img .img,
+  .portfolio-img-container .css-img .img,
+  .portfolio-img-container .sass-img .img,
+  .portfolio-img-container .html-img .img,
+  .portfolio-img-container .express-img .img,
+  .portfolio-img-container .redux-img .img,
+  .portfolio-img-container .node-img .img,
+  .portfolio-img-container .js-img .img,
+  .portfolio-img-container .mongo-img .img {
+    display: none;
+  }
 }
 
 .portfolio-img-container .react-img .img:hover,

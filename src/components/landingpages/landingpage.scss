@@ -15,6 +15,8 @@ $font4: 'Unica One', cursive;
   background: #2b2c28;
   display: flex;
   flex-direction: row;
+  z-index: 1;
+
   .info-container {
     position: relative;
     height: 100%;
@@ -22,6 +24,51 @@ $font4: 'Unica One', cursive;
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+    @media screen and (max-width: 1200px) {
+      position: absolute;
+      z-index: 3;
+    }
+    @media screen and (max-width: 800px) {
+      text-align: center;
+      width: 100%;
+    }
+    .text-content-container-long {
+      position: absolute;
+      width: 876px;
+      background: none;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 76px;
+      transition: 0.5s;
+      z-index: 2;
+      @media screen and (max-width: 1500px) {
+        padding-left: 30px;
+      }
+      @media screen and (max-width: 1200px) {
+        padding-left: 30px;
+        top: 50px;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+      .portfolio-p {
+        @media screen and (max-width: 550px) {
+          padding: 20px 15px;
+          font-size: 15px;
+          height: 250px;
+          overflow-y: auto;
+        }
+        @media screen and (max-height: 750px) {
+          padding: 0px 15px;
+          font-size: 18px;
+          height: 200px;
+          font-size: 15px;
+          padding-bottom: 100px;
+        }
+      }
+    }
     .text-content-container {
       position: absolute;
       width: 876px;
@@ -31,281 +78,213 @@ $font4: 'Unica One', cursive;
       flex-direction: column;
       padding-left: 76px;
       transition: 0.5s;
-      .portfolio-h1-1 {
-        position: relative;
-        font-family: $font1;
-        color: white;
-        font-size: 120px;
-        text-shadow: 0px 10px 20px black;
-        margin-bottom: -10px;
+      z-index: 2;
+      @media screen and (max-width: 1500px) {
+        padding-left: 30px;
       }
-      .portfolio-h1-2 {
-        position: relative;
-        font-family: $font1;
-        color: white;
-        font-size: 90px;
-        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.438);
+      @media screen and (max-width: 1200px) {
+        padding-left: 30px;
+        top: 100px;
       }
-      .portfolio-h1-3 {
-        position: relative;
-        font-family: $font4;
-        color: #58eed5;
-        font-size: 65px;
-        letter-spacing: 5px;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding-left: 0px;
       }
-      .adjust-container {
-        position: relative;
-        height: 100px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        background: none;
-        margin: 10px 0px;
-        p {
-          color: #00ffd583;
-          text-transform: uppercase;
-          padding-left: 15px;
-        }
-        .button-cnt {
-          position: relative;
-          width: 100%;
-          height: 50px;
-          background: none;
-          padding-left: 15px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          background: none;
-          .radio {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-            margin-right: 20px;
-          }
-          .button {
-            position: relative;
-            left: 25px;
-            opacity: 0;
-            cursor: pointer;
-            height: 25px;
-            width: 25px;
-          }
-          .radio__radio {
-            width: 25px;
-            height: 25px;
-            border: 2px solid #00bb9c;
-            border-radius: 50%;
-            margin-right: 10px;
-            box-sizing: border-box;
-            padding: 3px;
-          }
-          .radio__radio::after {
-            content: ' ';
-            width: 100%;
-            height: 100%;
-            display: block;
-            background: #00ffd5;
-            border-radius: 50%;
-
-            transform: scale(0);
-            transition: 0.35s;
-          }
-          .button:checked + .radio__radio::after {
-            transform: scale(1);
-          }
-        }
-
-        .button-text {
-          position: relative;
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          height: 30px;
-          .shortest {
-            position: absolute;
-            left: 0px;
-          }
-          .longest {
-            position: absolute;
-            right: 0px;
-          }
-        }
+      @media screen and (max-width: 550px) {
+        top: 200px;
       }
-      .portfolio-p {
-        position: relative;
-        font-family: $font3;
-        color: #7de2d1;
+      @media screen and (max-height: 820px) {
+        top: 150px;
+      }
+    }
+    .portfolio-h1-1 {
+      position: relative;
+      font-family: $font1;
+      color: white;
+      font-size: 120px;
+      text-shadow: 0px 10px 20px black;
+      margin-bottom: -10px;
+      @media screen and (max-width: 1500px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 70px;
+      }
+    }
+    .portfolio-h1-2 {
+      position: relative;
+      font-family: $font1;
+      color: white;
+      font-size: 90px;
+      text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.438);
+      @media screen and (max-width: 1500px) {
+        font-size: 70px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 45px;
+      }
+    }
+    .portfolio-h1-3 {
+      position: relative;
+      font-family: $font4;
+      color: #58eed5;
+      font-size: 65px;
+      letter-spacing: 5px;
+      @media screen and (max-width: 1500px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 30px;
+      }
+    }
+    .adjust-container {
+      position: relative;
+      height: 100px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      background: none;
+      margin: 10px 0px;
+      @media screen and (max-width: 800px) {
+        width: 70%;
+        left: 15%;
+      }
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        left: 0%;
+      }
+      p {
+        color: #00ffd583;
+        text-transform: uppercase;
         padding-left: 15px;
-        width: 80%;
-        height: 100%;
-        font-size: 20px;
-      }
-      .important-links {
-        position: relative;
-        width: 80%;
-        background: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 50px;
-        .icon {
-          color: #00ffd5;
-          transition: 0.5s;
-          margin-right: 100px;
-          &:hover {
-            color: #00a388;
-            transform: translateY(-10px);
-          }
+        @media screen and (max-width: 800px) {
+          text-align: center;
         }
-        .icon-text {
+      }
+      .button-cnt {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: none;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        @media screen and (max-width: 800px) {
+          padding-left: 0px;
+        }
+        .radio {
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          margin-right: 0px;
+        }
+        .button {
+          position: relative;
+          left: 25px;
+          opacity: 0;
+          cursor: pointer;
+          height: 25px;
+          width: 25px;
+        }
+        .radio__radio {
+          width: 25px;
+          height: 25px;
+          border: 2px solid #00bb9c;
+          border-radius: 50%;
+          margin-right: 10px;
+          box-sizing: border-box;
+          padding: 3px;
+        }
+        .radio__radio::after {
+          content: ' ';
+          width: 100%;
+          height: 100%;
+          display: block;
+          background: #00ffd5;
+          border-radius: 50%;
+
+          transform: scale(0);
+          transition: 0.35s;
+        }
+        .button:checked + .radio__radio::after {
+          transform: scale(1);
+        }
+      }
+
+      .button-text {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        .shortest {
           position: absolute;
-          color: white;
-          font-family: $font3;
+          left: 0px;
+        }
+        .longest {
+          position: absolute;
+          right: 0px;
         }
       }
     }
-    .text-content-container-long {
-      position: absolute;
-      width: 876px;
-      background: none;
-      top: 150px;
-      display: flex;
-      flex-direction: column;
-      padding-left: 76px;
-      transition: 0.5s;
-      .portfolio-h1-1 {
-        position: relative;
-        font-family: $font1;
-        color: white;
-        font-size: 120px;
-        text-shadow: 0px 10px 20px black;
-        margin-bottom: -10px;
+    .portfolio-p {
+      position: relative;
+      font-family: $font3;
+      color: #7de2d1;
+      padding-left: 15px;
+      width: 80%;
+      height: 100%;
+      font-size: 18px;
+      @media screen and (max-width: 1500px) {
+        width: 60%;
       }
-      .portfolio-h1-2 {
-        position: relative;
-        font-family: $font1;
-        color: white;
-        font-size: 90px;
-        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.438);
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        width: 100%;
       }
-      .portfolio-h1-3 {
-        position: relative;
-        font-family: $font4;
-        color: #58eed5;
-        font-size: 65px;
-        letter-spacing: 5px;
-      }
-      .adjust-container {
-        position: relative;
-        height: 100px;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        background: none;
-        margin: 10px 0px;
-        p {
-          color: #00ffd583;
-          text-transform: uppercase;
-          padding-left: 15px;
-        }
-        .button-cnt {
-          position: relative;
-          width: 100%;
-          height: 50px;
-          background: none;
-          padding-left: 15px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          background: none;
-          .radio {
-            display: inline-flex;
-            align-items: center;
-            cursor: pointer;
-            margin-right: 0px;
-          }
-          .button {
-            position: relative;
-            left: 25px;
-            opacity: 0;
-            cursor: pointer;
-            height: 25px;
-            width: 25px;
-          }
-          .radio__radio {
-            width: 25px;
-            height: 25px;
-            border: 2px solid #00bb9c;
-            border-radius: 50%;
-            margin-right: 10px;
-            box-sizing: border-box;
-            padding: 3px;
-          }
-          .radio__radio::after {
-            content: ' ';
-            width: 100%;
-            height: 100%;
-            display: block;
-            background: #00ffd5;
-            border-radius: 50%;
-
-            transform: scale(0);
-            transition: 0.35s;
-          }
-          .button:checked + .radio__radio::after {
-            transform: scale(1);
-          }
-        }
-
-        .button-text {
-          position: relative;
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          height: 30px;
-          .shortest {
-            position: absolute;
-            left: 0px;
-          }
-          .longest {
-            position: absolute;
-            right: 0px;
-          }
-        }
-      }
-      .portfolio-p {
-        position: relative;
-        font-family: $font3;
-        color: #7de2d1;
-        padding-left: 15px;
-        width: 80%;
-        height: 100%;
+      @media screen and (max-width: 550px) {
+        padding: 0px 15px;
         font-size: 18px;
       }
-      .important-links {
-        position: relative;
-        width: 80%;
-        background: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0px;
-        .icon {
-          color: #00ffd5;
-          transition: 0.5s;
-          margin-right: 100px;
-          &:hover {
-            color: #00a388;
-            transform: translateY(-10px);
-          }
+    }
+    .important-links {
+      position: relative;
+      width: 80%;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0px;
+      @media screen and (max-width: 1500px) {
+        width: 60%;
+        justify-content: space-between;
+        left: 15px;
+      }
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      .icon {
+        color: #00ffd5;
+        transition: 0.5s;
+        margin-right: 100px;
+        &:hover {
+          color: #00a388;
+          transform: translateY(-10px);
         }
-        .icon-text {
-          position: absolute;
-          color: white;
-          font-family: $font3;
+        @media screen and (max-width: 1500px) {
+          margin-right: 60px;
         }
+      }
+      .icon-text {
+        position: absolute;
+        color: white;
+        font-family: $font3;
       }
     }
   }
@@ -316,16 +295,49 @@ $font4: 'Unica One', cursive;
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+    @media screen and (max-width: 550px) {
+      justify-content: center;
+    }
+    .block-img {
+      position: absolute;
+      z-index: 3;
+      height: 700px;
+      width: 700px;
+      top: 50px;
+      left: 120px;
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
+      @media screen and (max-width: 1050px) {
+        height: 600px;
+        width: 600px;
+        top: 100px;
+        left: 220px;
+      }
+      @media screen and (max-width: 950px) {
+        height: 550px;
+        width: 550px;
+        top: 150px;
+        left: 270px;
+      }
+      @media screen and (max-width: 850px) {
+        display: none;
+      }
+    }
     .tech-h1 {
       position: absolute;
       color: #00ffd57a;
       font-size: 80px;
       text-transform: uppercase;
       top: 15%;
-      left: -100px;
+      left: -200px;
       opacity: 0;
       animation: techh1 5s ease-in-out;
+      @media screen and (max-width: 1350px) {
+        display: none;
+      }
     }
+
     .img-zoom {
       z-index: 3;
     }
@@ -342,8 +354,26 @@ $font4: 'Unica One', cursive;
       -webkit-animation: portfolio-bg 9s ease infinite;
       -moz-animation: portfolio-bg 9s ease infinite;
       animation: portfolio-bg 9s ease infinite;
+      transition: 0.5s;
       @media screen and (max-width: 1700px) {
         right: 168px;
+      }
+      @media screen and (max-width: 1350px) {
+        left: 300px;
+        width: 350px;
+      }
+      @media screen and (max-width: 1200px) {
+        left: 700px;
+      }
+      @media screen and (max-width: 800px) {
+        left: 0px;
+        height: 150px;
+        bottom: 0px;
+        width: 100%;
+      }
+      @media screen and (max-height: 700px) {
+        height: 120px;
+        bottom: 0px;
       }
     }
   }
@@ -355,12 +385,40 @@ $font4: 'Unica One', cursive;
     right: 100px;
     bottom: 30px;
     z-index: 3;
-
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
     @media screen and (max-width: 1700px) {
       right: 45px;
       width: 740px;
+    }
+    @media screen and (max-width: 1700px) {
+      right: 45px;
+      width: 740px;
+    }
+    @media screen and (max-width: 1350px) {
+      width: 600px;
+      height: 150px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+      bottom: 0px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      bottom: 0px;
+      left: 5%;
+      right: 0px;
+      bottom: 30px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.651);
+      background: #393a35;
+    }
+    @media screen and (max-width: 550px) {
+      width: 85%;
+      left: 10%;
+      bottom: 10px;
+    }
+    @media screen and (max-height: 700px) {
+      height: 120px;
     }
     .img-container {
       position: relative;
@@ -380,6 +438,25 @@ $font4: 'Unica One', cursive;
         @media screen and (max-width: 1700px) {
           height: 120px;
           width: 220px;
+        }
+        @media screen and (max-width: 1350px) {
+          width: 180px;
+          height: 50%;
+          top: 30px;
+        }
+        @media screen and (max-width: 1200px) {
+          width: 90%;
+          height: 120px;
+          top: 20px;
+        }
+        @media screen and (max-height: 700px) {
+          height: 100px;
+          top: 10px;
+        }
+        @media screen and (max-width: 450px) {
+          top: 15px;
+          width: 85%;
+          left: 4.5%;
         }
         &:hover {
           transform: translateY(-10px);
