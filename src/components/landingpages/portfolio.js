@@ -272,9 +272,9 @@ class Portfolio extends React.Component {
           </div>
         </Col>
         <Col xl={8} md={12} className="right-col">
-          <h1 className="tech-h1">
+          {/* <h1 className="tech-h1">
             Tech i know <BsArrowDownRight size="60" />
-          </h1>
+          </h1> */}
           <PortfolioImg cubeimg="cube-img" />
           <div className="gradient-box"></div>
           {/* SLider */}

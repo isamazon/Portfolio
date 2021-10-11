@@ -50,56 +50,56 @@ function SideMenu(props) {
               />
             </div>
           </div>
-          <a
-            href=""
-            className="icon-links"
-            onMouseEnter={ToggleLinkP1}
-            onMouseLeave={ToggleLinkP1}
-          >
-            <FaGithub className="icons" color={props.iconcolor} />
+          <a href="" className="icon-links">
+            <FaGithub
+              className="icons"
+              color={props.iconcolor}
+              onMouseEnter={ToggleLinkP1}
+              onMouseLeave={ToggleLinkP1}
+            />
             <Zoom opposite cascade when={linkP}>
-              <p className="link-p " style={props.linkpcolor}>
+              <p className="link-p one" style={props.linkpcolor}>
                 {linkP ? 'Github' : null}
               </p>
             </Zoom>
           </a>
           {/* LinkedIn */}
-          <a
-            href=""
-            className="icon-links"
-            onMouseEnter={ToggleLinkP2}
-            onMouseLeave={ToggleLinkP2}
-          >
-            <FaLinkedin className="icons" color={props.iconcolor} />
+          <a href="" className="icon-links">
+            <FaLinkedin
+              className="icons"
+              color={props.iconcolor}
+              onMouseEnter={ToggleLinkP2}
+              onMouseLeave={ToggleLinkP2}
+            />
             <Zoom opposite cascade when={linkP2}>
-              <p className="link-p " style={props.linkpcolor}>
+              <p className="link-p two" style={props.linkpcolor}>
                 {linkP2 ? 'LinkedIn' : null}
               </p>
             </Zoom>
           </a>
           {/* Indeed */}
-          <a
-            href=""
-            className="icon-links"
-            onMouseEnter={ToggleLinkP3}
-            onMouseLeave={ToggleLinkP3}
-          >
-            <SiIndeed className="icons" color={props.iconcolor} />
+          <a href="" className="icon-links">
+            <SiIndeed
+              className="icons"
+              color={props.iconcolor}
+              onMouseEnter={ToggleLinkP3}
+              onMouseLeave={ToggleLinkP3}
+            />
             <Zoom opposite cascade when={linkP3}>
-              <p className="link-p " style={props.linkpcolor}>
+              <p className="link-p three" style={props.linkpcolor}>
                 {linkP3 ? 'Indeed' : null}
               </p>
             </Zoom>
           </a>
-          <a
-            href=""
-            className="icon-links"
-            onMouseEnter={ToggleLinkP4}
-            onMouseLeave={ToggleLinkP4}
-          >
-            <FaRegFileAlt className="icons" color={props.iconcolor} />
+          <a href="" className="icon-links">
+            <FaRegFileAlt
+              className="icons"
+              color={props.iconcolor}
+              onMouseEnter={ToggleLinkP4}
+              onMouseLeave={ToggleLinkP4}
+            />
             <Zoom opposite cascade when={linkP4}>
-              <p className="link-p " style={props.linkpcolor}>
+              <p className="link-p four" style={props.linkpcolor}>
                 {linkP4 ? 'Resume' : null}
               </p>
             </Zoom>
@@ -124,7 +124,7 @@ function SideMenu(props) {
         </div>
       ) : (
         <div className="side-menu-closed" onClick={ToggleMenu}>
-          <div className="arrow-container arrowcnt1">
+          <div className="arrow-container">
             <div className="arrow">
               <FaAngleLeft className="arrow-icon one" color={props.iconcolor} />
               <FaAngleLeft className="arrow-icon two" color={props.iconcolor} />
@@ -135,9 +135,21 @@ function SideMenu(props) {
             </div>
           </div>
           <p className="linksp" style={props.linkcolor}>
-            Important links
+            L
           </p>
-          <div className="arrow-container arrowcnt2">
+          <p className="linksp" style={props.linkcolor}>
+            I
+          </p>
+          <p className="linksp" style={props.linkcolor}>
+            N
+          </p>
+          <p className="linksp" style={props.linkcolor}>
+            K
+          </p>
+          <p className="linksp" style={props.linkcolor}>
+            S
+          </p>
+          <div className="arrow-container">
             <div className="arrow">
               <FaAngleLeft className="arrow-icon one" color={props.iconcolor} />
 

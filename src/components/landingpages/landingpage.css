@@ -83,6 +83,12 @@
   }
 }
 
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .text-content-container-long {
+    top: 80px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .landing-page-cont .info-container .text-content-container-long .portfolio-p {
     padding: 20px 15px;
@@ -99,6 +105,14 @@
     height: 200px;
     font-size: 15px;
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .text-content-container-long .portfolio-p {
+    padding-top: 20px;
+    height: 150px;
+    font-size: 12px;
   }
 }
 
@@ -152,6 +166,12 @@
   }
 }
 
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .text-content-container {
+    top: 80px;
+  }
+}
+
 .landing-page-cont .info-container .portfolio-h1-1 {
   position: relative;
   font-family: "Arimo", sans-serif;
@@ -167,9 +187,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .landing-page-cont .info-container .portfolio-h1-1 {
+    text-align: start;
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .landing-page-cont .info-container .portfolio-h1-1 {
     font-size: 70px;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .portfolio-h1-1 {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.281);
   }
 }
 
@@ -187,15 +224,31 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .landing-page-cont .info-container .portfolio-h1-2 {
+    text-align: start;
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .landing-page-cont .info-container .portfolio-h1-2 {
     font-size: 50px;
+    text-align: center;
+    padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .landing-page-cont .info-container .portfolio-h1-2 {
     font-size: 45px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .portfolio-h1-2 {
+    font-size: 35px;
+    text-align: center;
   }
 }
 
@@ -213,9 +266,26 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .landing-page-cont .info-container .portfolio-h1-3 {
+    text-align: start;
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .landing-page-cont .info-container .portfolio-h1-3 {
     font-size: 30px;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .portfolio-h1-3 {
+    font-size: 25px;
+    text-align: center;
+    margin: -10px 0px;
   }
 }
 
@@ -245,6 +315,12 @@
   .landing-page-cont .info-container .adjust-container {
     width: 100%;
     left: 0%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .adjust-container {
+    height: 80px;
   }
 }
 
@@ -308,6 +384,13 @@
   width: 25px;
 }
 
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .adjust-container .button-cnt .button {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .landing-page-cont .info-container .adjust-container .button-cnt .radio__radio {
   width: 25px;
   height: 25px;
@@ -317,6 +400,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3px;
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .adjust-container .button-cnt .radio__radio {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .landing-page-cont .info-container .adjust-container .button-cnt .radio__radio::after {
@@ -387,6 +477,15 @@
   .landing-page-cont .info-container .portfolio-p {
     padding: 0px 15px;
     font-size: 18px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .landing-page-cont .info-container .portfolio-p {
+    padding: 20px 15px;
+    font-size: 15px;
+    height: 150px;
+    overflow-y: auto;
   }
 }
 
@@ -474,7 +573,7 @@
   z-index: 3;
   height: 700px;
   width: 700px;
-  top: 50px;
+  top: 100px;
   left: 120px;
 }
 
@@ -488,7 +587,7 @@
   .landing-page-cont .right-col .block-img {
     height: 600px;
     width: 600px;
-    top: 100px;
+    top: 200px;
     left: 220px;
   }
 }
@@ -497,8 +596,8 @@
   .landing-page-cont .right-col .block-img {
     height: 550px;
     width: 550px;
-    top: 150px;
-    left: 270px;
+    top: 250px;
+    left: 300px;
   }
 }
 
@@ -638,8 +737,8 @@
 
 @media screen and (max-width: 550px) {
   .landing-page-cont .project-container {
-    width: 85%;
-    left: 10%;
+    width: 90%;
+    left: 5%;
     bottom: 10px;
   }
 }
