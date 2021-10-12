@@ -196,8 +196,8 @@ $font4: 'Unica One', cursive;
         left: 15%;
       }
       @media screen and (max-width: 550px) {
-        width: 100%;
-        left: 0%;
+        width: 95%;
+        left: 2.5%;
       }
       @media screen and (max-height: 600px) {
         height: 80px;
@@ -208,6 +208,9 @@ $font4: 'Unica One', cursive;
         padding-left: 15px;
         @media screen and (max-width: 800px) {
           text-align: center;
+        }
+        @media screen and (max-width: 550px) {
+          padding-left: 0px;
         }
       }
       .button-cnt {
@@ -224,6 +227,9 @@ $font4: 'Unica One', cursive;
         @media screen and (max-width: 800px) {
           padding-left: 0px;
         }
+        @media screen and (max-width: 550px) {
+          justify-content: center;
+        }
         .radio {
           display: inline-flex;
           align-items: center;
@@ -237,7 +243,7 @@ $font4: 'Unica One', cursive;
           cursor: pointer;
           height: 25px;
           width: 25px;
-          @media screen and (max-height: 600px) {
+          @media screen and (max-width: 350px) {
             height: 20px;
             width: 20px;
           }
@@ -250,7 +256,7 @@ $font4: 'Unica One', cursive;
           margin-right: 10px;
           box-sizing: border-box;
           padding: 3px;
-          @media screen and (max-height: 600px) {
+          @media screen and (max-width: 350px) {
             height: 20px;
             width: 20px;
           }
@@ -332,7 +338,7 @@ $font4: 'Unica One', cursive;
       .icon {
         color: #00ffd5;
         transition: 0.5s;
-        margin-right: 100px;
+        margin-right: 80px;
         &:hover {
           color: #00a388;
           transform: translateY(-10px);
@@ -461,7 +467,7 @@ $font4: 'Unica One', cursive;
     }
     @media screen and (max-width: 1200px) {
       width: 90%;
-      bottom: 0px;
+      bottom: 30px;
     }
     @media screen and (max-width: 800px) {
       width: 90%;
@@ -473,9 +479,9 @@ $font4: 'Unica One', cursive;
       background: #393a35;
     }
     @media screen and (max-width: 550px) {
-      width: 90%;
-      left: 5%;
-      bottom: 10px;
+      width: 100%;
+      left: 0%;
+      bottom: 30px;
     }
     @media screen and (max-height: 700px) {
       height: 120px;
@@ -495,6 +501,9 @@ $font4: 'Unica One', cursive;
         margin: 0px 10px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
         transition: 0.6s;
+        @media screen and (max-width: 450px) {
+          height: 100%;
+        }
         @media screen and (max-width: 1700px) {
           height: 120px;
           width: 220px;

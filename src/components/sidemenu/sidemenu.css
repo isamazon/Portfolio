@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .side-menu-container {
   position: absolute;
   height: 80px;
@@ -19,7 +21,7 @@
 
 @media screen and (max-width: 800px) {
   .side-menu-container {
-    height: 350px;
+    height: 400px;
     width: 80px;
   }
 }
@@ -160,6 +162,15 @@
   margin: 0px 0px;
   font-weight: 400;
   text-align: center;
+}
+
+.side-menu-container .side-menu-closed .blookifyp {
+  font-family: "Lobster", cursive;
+}
+
+.side-menu-container .side-menu-closed .portfoliop {
+  font-family: "Arimo", sans-serif;
+  font-weight: 900;
 }
 
 .side-menu-container .side-menu-opened {
@@ -376,7 +387,7 @@
   text-transform: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1200px) {
   .side-menu-container .side-menu-opened .icon-links .link-p {
     display: none;
   }
@@ -396,6 +407,17 @@
 
 .side-menu-container .side-menu-opened .icon-links .four {
   top: 82%;
+}
+
+.blookify {
+  background: rgba(127, 85, 57, 0.65);
+}
+
+@media screen and (max-width: 500px) {
+  .blookify {
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  }
 }
 
 @-webkit-keyframes pulse {

@@ -22,6 +22,7 @@ import SideMenu from '../sidemenu/sidemenu';
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
 import { BsArrowDownRight } from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 
 class Portfolio extends React.Component {
   constructor() {
@@ -31,7 +32,7 @@ class Portfolio extends React.Component {
       show2: false,
       show3: false,
       show4: false,
-
+      show5: false,
       //   Paragraph
       intitalP: 'Click the circles above for bio :)',
       intialPclass: 'text-content-container',
@@ -40,6 +41,7 @@ class Portfolio extends React.Component {
     this.handleHover2 = this.handleHover2.bind(this);
     this.handleHover3 = this.handleHover3.bind(this);
     this.handleHover4 = this.handleHover4.bind(this);
+    this.handleHover5 = this.handleHover5.bind(this);
     //   Paragraph
     this.handleClick = this.handleClick.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
@@ -63,6 +65,9 @@ class Portfolio extends React.Component {
   }
   handleHover4() {
     this.setState({ show4: !this.state.show4 });
+  }
+  handleHover5() {
+    this.setState({ show5: !this.state.show5 });
   }
 
   //
@@ -115,21 +120,11 @@ class Portfolio extends React.Component {
       slidesToScroll: 3,
       responsive: [
         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
           breakpoint: 650,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true,
+            slidesToScroll: 2,
+            initialSlide: 2,
           },
         },
         {
@@ -137,8 +132,6 @@ class Portfolio extends React.Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true,
-            dots: true,
           },
         },
       ],
@@ -147,6 +140,8 @@ class Portfolio extends React.Component {
     return (
       <div className="landing-page-cont">
         <SideMenu
+          linksp="linksp portfoliop"
+          maincontainer="side-menu-container"
           // Icon color
           iconcolor="#7de2d1"
           // Links color
@@ -265,6 +260,17 @@ class Portfolio extends React.Component {
                   <FaRegFileAlt size="45" className="icon" />
                   <Zoom opposite when={this.state.show4}>
                     <p className="icon-text">Resume</p>
+                  </Zoom>
+                </a>
+                <a
+                  href="https://github.com/isamazon"
+                  onMouseEnter={this.handleHover5}
+                  onMouseLeave={this.handleHover5}
+                  className="link"
+                >
+                  <FiMail size="45" className="icon" />
+                  <Zoom opposite when={this.state.show5}>
+                    <p className="icon-text">Email me</p>
                   </Zoom>
                 </a>
               </div>

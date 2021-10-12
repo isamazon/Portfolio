@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { SiIndeed } from 'react-icons/si';
+import { FiMail } from 'react-icons/fi';
 // CSS
 import './sidemenu.css';
 import Zoom from 'react-reveal/Zoom';
 function SideMenu(props) {
   const [sideMenu, setSideMenu] = useState(false);
   const ToggleMenu = () => {
-    console.log('works?');
     setSideMenu(!sideMenu);
   };
   const [linkP, setLinkP] = useState(false);
@@ -27,9 +27,13 @@ function SideMenu(props) {
   const ToggleLinkP4 = () => {
     setLinkP4(!linkP4);
   };
+  const [linkP5, setLinkP5] = useState(false);
+  const ToggleLinkP5 = () => {
+    setLinkP5(!linkP5);
+  };
 
   return (
-    <div className="side-menu-container">
+    <div className={props.maincontainer}>
       {sideMenu ? (
         <div className="side-menu-opened">
           <div className="arrow-container">
@@ -104,6 +108,19 @@ function SideMenu(props) {
               </p>
             </Zoom>
           </a>
+          <a href="" className="icon-links">
+            <FiMail
+              className="icons"
+              color={props.iconcolor}
+              onMouseEnter={ToggleLinkP5}
+              onMouseLeave={ToggleLinkP5}
+            />
+            <Zoom opposite cascade when={linkP5}>
+              <p className="link-p five" style={props.linkpcolor}>
+                {linkP5 ? 'Email' : null}
+              </p>
+            </Zoom>
+          </a>
           {/* Arrow container */}
           <div className="arrow-container">
             <div className="arrow" onClick={ToggleMenu}>
@@ -134,19 +151,19 @@ function SideMenu(props) {
               />
             </div>
           </div>
-          <p className="linksp" style={props.linkcolor}>
+          <p className={props.linksp} style={props.linkcolor}>
             L
           </p>
-          <p className="linksp" style={props.linkcolor}>
+          <p className={props.linksp} style={props.linkcolor}>
             I
           </p>
-          <p className="linksp" style={props.linkcolor}>
+          <p className={props.linksp} style={props.linkcolor}>
             N
           </p>
-          <p className="linksp" style={props.linkcolor}>
+          <p className={props.linksp} style={props.linkcolor}>
             K
           </p>
-          <p className="linksp" style={props.linkcolor}>
+          <p className={props.linksp} style={props.linkcolor}>
             S
           </p>
           <div className="arrow-container">

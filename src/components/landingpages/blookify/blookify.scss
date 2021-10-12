@@ -22,6 +22,14 @@ $font3: 'Hind Gunter', sans-serif;
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
+    @media screen and (max-width: 1200px) {
+      position: absolute;
+      z-index: 3;
+    }
+    @media screen and (max-width: 800px) {
+      text-align: center;
+      width: 100%;
+    }
     .text-content-container-long {
       position: absolute;
       width: 876px;
@@ -31,6 +39,20 @@ $font3: 'Hind Gunter', sans-serif;
       flex-direction: column;
       padding-left: 76px;
       transition: 0.5s;
+      @media screen and (max-width: 1500px) {
+        padding-left: 30px;
+      }
+      @media screen and (max-width: 1200px) {
+        padding-left: 30px;
+        top: 50px;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+      @media screen and (max-height: 820px) {
+        top: 55px;
+      }
     }
     .text-content-container {
       position: absolute;
@@ -41,8 +63,121 @@ $font3: 'Hind Gunter', sans-serif;
       flex-direction: column;
       padding-left: 76px;
       transition: 0.5s;
+      z-index: 2;
+      @media screen and (max-width: 1500px) {
+        padding-left: 30px;
+      }
+      @media screen and (max-width: 1200px) {
+        padding-left: 30px;
+        top: 100px;
+      }
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+      @media screen and (max-width: 550px) {
+        top: 200px;
+      }
+      @media screen and (max-height: 820px) {
+        top: 150px;
+      }
+      @media screen and (max-height: 600px) {
+        top: 80px;
+      }
     }
-    
+    .blookify-h1-1 {
+      position: relative;
+      font-family: $font1;
+      color: #7e5438;
+      font-size: 120px;
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+      margin-bottom: -10px;
+      @media screen and (max-width: 1500px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 70px;
+        text-align: center;
+        padding-left: 0px;
+      }
+      @media screen and (max-height: 600px) {
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.281);
+      }
+    }
+    .button-container {
+      position: relative;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 10px;
+      @media screen and (max-width: 550px) {
+        text-align: start;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        justify-content: space-evenly;
+      }
+      @media screen and (max-width: 420px) {
+        flex-direction: column-reverse;
+      }
+      .link-container {
+        position: relative;
+        margin-right: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: 550px) {
+          justify-content: center;
+          margin-right: 0px;
+        }
+        @media screen and (max-width: 420px) {
+          margin-bottom: 10px;
+          width: 200px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+
+        .icon {
+          color: #523523;
+          margin-right: 20px;
+          font-size: 40px;
+          @media screen and (max-width: 420px) {
+            font-size: 25px;
+          }
+        }
+        .link-button {
+          height: 100%;
+          width: 100%;
+          background: #e6ccb2;
+          padding: 5px 20px;
+          border-radius: 20px;
+          color: #7f5539;
+          font-family: $font3;
+          font-size: 20px;
+          text-transform: none;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+          transition: 0.5s;
+          &:hover {
+            background: #caa885;
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.267);
+          }
+          @media screen and (max-width: 420px) {
+            font-size: 15px;
+          }
+        }
+      }
     }
     .adjust-container {
       position: relative;
@@ -52,10 +187,27 @@ $font3: 'Hind Gunter', sans-serif;
       flex-direction: column;
       background: none;
       margin: 10px 0px;
+      @media screen and (max-width: 800px) {
+        width: 70%;
+        left: 15%;
+      }
+      @media screen and (max-width: 550px) {
+        width: 90%;
+        left: 5%;
+      }
+      @media screen and (max-height: 600px) {
+        height: 80px;
+      }
       p {
         color: #9c6644;
         text-transform: uppercase;
         padding-left: 15px;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+        }
+        @media screen and (max-width: 550px) {
+          padding-left: 0px;
+        }
       }
       .button-cnt {
         position: relative;
@@ -68,6 +220,12 @@ $font3: 'Hind Gunter', sans-serif;
         align-items: center;
         justify-content: space-between;
         background: none;
+        @media screen and (max-width: 800px) {
+          padding-left: 0px;
+        }
+        @media screen and (max-width: 550px) {
+          justify-content: center;
+        }
         .radio {
           display: inline-flex;
           align-items: center;
@@ -81,6 +239,10 @@ $font3: 'Hind Gunter', sans-serif;
           cursor: pointer;
           height: 25px;
           width: 25px;
+          @media screen and (max-width: 350px) {
+            height: 20px;
+            width: 20px;
+          }
         }
         .radio__radio {
           width: 25px;
@@ -90,6 +252,10 @@ $font3: 'Hind Gunter', sans-serif;
           margin-right: 10px;
           box-sizing: border-box;
           padding: 3px;
+          @media screen and (max-width: 350px) {
+            height: 20px;
+            width: 20px;
+          }
         }
         .radio__radio::after {
           content: ' ';
@@ -132,6 +298,34 @@ $font3: 'Hind Gunter', sans-serif;
       width: 100%;
       font-size: 20px;
       margin-top: 20px;
+      @media screen and (max-width: 1500px) {
+        width: 60%;
+      }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+      }
+
+      @media screen and (max-height: 600px) {
+        padding: 20px 0px;
+        font-size: 15px;
+        height: 150px;
+        overflow-y: auto;
+      }
+      @media screen and (max-height: 900px) {
+        font-size: 16px;
+        padding-right: 0px;
+      }
+      @media screen and (max-height: 800px) {
+        height: 150px;
+        overflow: auto;
+        padding-bottom: 80px;
+      }
+      @media screen and (max-width: 550px) {
+        padding-left: 0px;
+        font-size: 12px;
+      }
     }
     .important-links {
       position: relative;
@@ -141,6 +335,14 @@ $font3: 'Hind Gunter', sans-serif;
       justify-content: center;
       align-items: center;
       top: 50px;
+      @media screen and (max-width: 1500px) {
+        width: 60%;
+        justify-content: space-between;
+        left: 15px;
+      }
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
       .icon {
         color: #9c6644;
         transition: 0.5s;
@@ -148,6 +350,9 @@ $font3: 'Hind Gunter', sans-serif;
         &:hover {
           color: #774b30;
           transform: translateY(-10px);
+        }
+        @media screen and (max-width: 1500px) {
+          margin-right: 60px;
         }
       }
       .icon-text {
@@ -164,7 +369,7 @@ $font3: 'Hind Gunter', sans-serif;
     display: flex;
     flex-direction: column;
     padding: 0px 0px;
-    @media screen and (max-width: 1700px) {
+    @media screen and (max-width: 550px) {
       justify-content: center;
     }
     .blookify-img {
@@ -177,6 +382,22 @@ $font3: 'Hind Gunter', sans-serif;
       animation: float 5s infinite;
       @media screen and (max-width: 1700px) {
         left: 350px;
+      }
+      @media screen and (max-width: 1200px) {
+        left: 600px;
+        top: 120px;
+      }
+      @media screen and (max-width: 1050px) {
+        left: 500px;
+        top: 120px;
+      }
+      @media screen and (max-width: 950px) {
+        height: 680px;
+        width: 494px;
+        top: 200px;
+      }
+      @media screen and (max-width: 950px) {
+        display: none;
       }
     }
     .blookify-gradient-box {
@@ -191,8 +412,26 @@ $font3: 'Hind Gunter', sans-serif;
       -moz-animation: Blookify-gradient 6s ease infinite;
       animation: Blookify-gradient 6s ease infinite;
       box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.39);
+      transition: 0.5s;
       @media screen and (max-width: 1700px) {
         right: 168px;
+      }
+      @media screen and (max-width: 1350px) {
+        left: 300px;
+        width: 350px;
+      }
+      @media screen and (max-width: 1200px) {
+        left: 700px;
+      }
+      @media screen and (max-width: 800px) {
+        left: 0px;
+        height: 150px;
+        bottom: 0px;
+        width: 100%;
+      }
+      @media screen and (max-height: 700px) {
+        height: 120px;
+        bottom: 0px;
       }
     }
   }
@@ -204,12 +443,39 @@ $font3: 'Hind Gunter', sans-serif;
     right: 100px;
     bottom: 30px;
     z-index: 3;
-
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
     @media screen and (max-width: 1700px) {
       right: 45px;
       width: 740px;
+    }
+    @media screen and (max-width: 1700px) {
+      right: 45px;
+      width: 740px;
+    }
+    @media screen and (max-width: 1350px) {
+      width: 600px;
+      height: 150px;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+      bottom: 30px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      bottom: 0px;
+      left: 5%;
+      right: 0px;
+      bottom: 30px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.651);
+    }
+    @media screen and (max-width: 550px) {
+      width: 100%;
+      left: 0%;
+      bottom: 30px;
+    }
+    @media screen and (max-height: 700px) {
+      height: 120px;
     }
     .img-container {
       position: relative;
@@ -218,6 +484,9 @@ $font3: 'Hind Gunter', sans-serif;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      @media screen and (max-width: 450px) {
+        height: 100%;
+      }
       .project-imgs {
         position: relative;
         height: 130px;
@@ -230,10 +499,32 @@ $font3: 'Hind Gunter', sans-serif;
           height: 120px;
           width: 220px;
         }
+        @media screen and (max-width: 1350px) {
+          width: 180px;
+          height: 50%;
+          top: 30px;
+        }
+        @media screen and (max-width: 1200px) {
+          width: 90%;
+          height: 120px;
+          top: 20px;
+        }
+        @media screen and (max-height: 700px) {
+          height: 100px;
+          top: 10px;
+        }
+        @media screen and (max-width: 450px) {
+          top: 15px;
+          width: 85%;
+          left: 4.5%;
+        }
         &:hover {
           transform: translateY(-10px);
           cursor: pointer;
           box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
+          @media screen and (max-width: 450px) {
+            transform: translateY(0px);
+          }
         }
       }
     }

@@ -109,17 +109,38 @@ class Portfolio extends React.Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
 
     return (
       <div className="blookify-page-cont">
         <SideMenu
+          // Links p
+          linksp="linksp blookifyp"
+          // Main container
+          maincontainer="side-menu-container blookify"
           // Icon color
-          iconcolor="#7e5438"
+          iconcolor="#e6ccb2"
           // Links color
-          linkcolor={{ color: '#7e5438' }}
+          linkcolor={{ color: '#e6ccb2' }}
         />
-        <Col xl={4} className="info-container">
+        <Col xl={4} md={12} className="info-container">
           <div className={this.state.intialPclass}>
             <Fade bottom cascade>
               <h1 className="blookify-h1-1">Blookify</h1>
@@ -131,12 +152,12 @@ class Portfolio extends React.Component {
                   className="link-container"
                 >
                   <Button className="link-button">
-                    <FaGithub className="icon" size="40" /> Source Code
+                    <FaGithub className="icon" /> Source Code
                   </Button>
                 </a>
                 <a href="https://blookify.com/" className="link-container">
                   <Button className="link-button">
-                    <FaGlobe className="icon" size="40" /> Live site
+                    <FaGlobe className="icon" /> Live site
                   </Button>
                 </a>
               </div>
@@ -247,7 +268,7 @@ class Portfolio extends React.Component {
             </Fade>
           </div>
         </Col>
-        <Col xl={8} className="right-col">
+        <Col xl={8} md={12} className="right-col">
           <img src={Blookifyimg} alt="" className="blookify-img" />
           <div className="blookify-gradient-box"></div>
           {/* SLider */}
@@ -272,14 +293,6 @@ class Portfolio extends React.Component {
               <img
                 src={Humble}
                 onClick={this.props.humbletoggle}
-                alt=""
-                className="project-imgs"
-              />
-            </div>
-            <div className="img-container">
-              <img
-                src={Blookify}
-                onClick={this.props.blookifytoggle}
                 alt=""
                 className="project-imgs"
               />

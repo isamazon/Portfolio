@@ -13,7 +13,6 @@ function Home() {
   };
   const [blookify, setBlookify] = useState(false);
   const ToggleBlookify = () => {
-    console.log('click');
     setPorfolio(false);
     setBlookify(true);
   };
