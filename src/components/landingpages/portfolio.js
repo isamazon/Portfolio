@@ -240,7 +240,7 @@ class Portfolio extends React.Component {
                   </Zoom>
                 </a>
                 {/* Indeed */}
-                <a
+                {/* <a
                   href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage&_ga=2.1294257.1439842392.1633753792-1298732303.1633753792"
                   onMouseEnter={this.handleHover3}
                   onMouseLeave={this.handleHover3}
@@ -250,9 +250,9 @@ class Portfolio extends React.Component {
                   <Zoom opposite when={this.state.show3}>
                     <p className="icon-text">Indeed</p>
                   </Zoom>
-                </a>
+                </a> */}
                 <a
-                  href="https://github.com/isamazon"
+                  href="../../../assets/resume.pdf"
                   onMouseEnter={this.handleHover4}
                   onMouseLeave={this.handleHover4}
                   className="link"

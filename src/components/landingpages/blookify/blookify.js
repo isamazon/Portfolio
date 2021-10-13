@@ -10,7 +10,6 @@ import { Button } from '@material-ui/core';
 // CSS
 import './blookify.css';
 // imgs
-import Blookify from '../../../assets/blookify.PNG';
 import Ahes from '../../../assets/ahes.PNG';
 import Humble from '../../../assets/humble.PNG';
 import PortfolioPic from '../../../assets/portfolio.PNG';
@@ -19,8 +18,8 @@ import Blookifyimg from '../../../assets/blookifyimg.png';
 import SideMenu from '../../sidemenu/sidemenu';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
-import { SiIndeed } from 'react-icons/si';
 
+import { FiMail } from 'react-icons/fi';
 // Sound
 import Sound1 from '../../../assets/clicksfx.mp3';
 class Portfolio extends React.Component {
@@ -31,6 +30,7 @@ class Portfolio extends React.Component {
       show2: false,
       show3: false,
       show4: false,
+      show5: false,
       intitalP: 'Click above for project info :)',
       intialPclass: 'text-content-container',
     };
@@ -38,6 +38,7 @@ class Portfolio extends React.Component {
     this.handleHover2 = this.handleHover2.bind(this);
     this.handleHover3 = this.handleHover3.bind(this);
     this.handleHover4 = this.handleHover4.bind(this);
+    this.handleHover5 = this.handleHover5.bind(this);
     //   Paragraph
     this.handleClick = this.handleClick.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
@@ -60,6 +61,9 @@ class Portfolio extends React.Component {
   }
   handleHover4() {
     this.setState({ show4: !this.state.show4 });
+  }
+  handleHover5() {
+    this.setState({ show5: !this.state.show5 });
   }
   //
   handleClick() {
@@ -242,7 +246,7 @@ class Portfolio extends React.Component {
                   </Zoom>
                 </a>
                 {/* Indeed */}
-                <a
+                {/* <a
                   href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage&_ga=2.1294257.1439842392.1633753792-1298732303.1633753792"
                   onMouseEnter={this.handleHover3}
                   onMouseLeave={this.handleHover3}
@@ -252,9 +256,10 @@ class Portfolio extends React.Component {
                   <Zoom opposite when={this.state.show3}>
                     <p className="icon-text">Indeed</p>
                   </Zoom>
-                </a>
+                </a> */}
                 <a
-                  href="https://github.com/isamazon"
+                  href="../../../assets/resume.pdf"
+                  download
                   onMouseEnter={this.handleHover4}
                   onMouseLeave={this.handleHover4}
                   className="link"
@@ -262,6 +267,17 @@ class Portfolio extends React.Component {
                   <FaRegFileAlt size="45" className="icon" />
                   <Zoom opposite when={this.state.show4}>
                     <p className="icon-text">Resume</p>
+                  </Zoom>
+                </a>
+                <a
+                  href="https://github.com/isamazon"
+                  onMouseEnter={this.handleHover5}
+                  onMouseLeave={this.handleHover5}
+                  className="link"
+                >
+                  <FiMail size="45" className="icon" />
+                  <Zoom opposite when={this.state.show5}>
+                    <p className="icon-text">Email me</p>
                   </Zoom>
                 </a>
               </div>

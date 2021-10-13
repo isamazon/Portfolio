@@ -39,7 +39,7 @@ class PortfolioImg extends React.Component {
         <Slide bottom>
           <img src={Blocklayout} alt="" className="block-img" />
         </Slide>
-        <img src={Cube} alt="" className="cube-img" />
+        <img src={Cube} alt="" className={this.props.cubeimg} />
         <div className="react-img">
           <img
             src={ReactImg}

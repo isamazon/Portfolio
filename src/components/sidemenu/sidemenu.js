@@ -68,7 +68,11 @@ function SideMenu(props) {
             </Zoom>
           </a>
           {/* LinkedIn */}
-          <a href="" className="icon-links">
+          <a
+            href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
+            target="_blank"
+            className="icon-links"
+          >
             <FaLinkedin
               className="icons"
               color={props.iconcolor}
@@ -82,7 +86,11 @@ function SideMenu(props) {
             </Zoom>
           </a>
           {/* Indeed */}
-          <a href="" className="icon-links">
+          {/* <a
+            href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage&_ga=2.99687390.1773698261.1634067836-1298732303.1633753792"
+            target="_blank"
+            className="icon-links"
+          >
             <SiIndeed
               className="icons"
               color={props.iconcolor}
@@ -94,7 +102,7 @@ function SideMenu(props) {
                 {linkP3 ? 'Indeed' : null}
               </p>
             </Zoom>
-          </a>
+          </a> */}
           <a href="" className="icon-links">
             <FaRegFileAlt
               className="icons"

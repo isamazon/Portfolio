@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .side-menu-container {
   position: absolute;
   height: 80px;
@@ -166,6 +167,10 @@
 
 .side-menu-container .side-menu-closed .blookifyp {
   font-family: "Lobster", cursive;
+}
+
+.side-menu-container .side-menu-closed .ahesp {
+  font-family: "Anton", sans-serif;
 }
 
 .side-menu-container .side-menu-closed .portfoliop {
@@ -415,6 +420,17 @@
 
 @media screen and (max-width: 500px) {
   .blookify {
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.ahes {
+  background: rgba(29, 53, 87, 0.65);
+}
+
+@media screen and (max-width: 500px) {
+  .ahes {
     -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
   }

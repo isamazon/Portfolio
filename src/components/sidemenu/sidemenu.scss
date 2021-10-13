@@ -1,10 +1,12 @@
 //                              FONTS                              //
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 // Portfolio-fonts
 $font0: 'Arimo', sans-serif;
 // Blookify-fonts
 $font1: 'Lobster', cursive;
+$font2: 'Anton', sans-serif;
 
 .side-menu-container {
   position: absolute;
@@ -101,6 +103,9 @@ $font1: 'Lobster', cursive;
     }
     .blookifyp {
       font-family: $font1;
+    }
+    .ahesp {
+      font-family: $font2;
     }
     .portfoliop {
       font-family: $font0;
@@ -238,6 +243,12 @@ $font1: 'Lobster', cursive;
 }
 .blookify {
   background: rgba(127, 85, 57, 0.65);
+  @media screen and (max-width: 500px) {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  }
+}
+.ahes {
+  background: rgba(29, 53, 87, 0.65);
   @media screen and (max-width: 500px) {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
   }
