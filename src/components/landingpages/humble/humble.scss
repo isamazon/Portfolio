@@ -418,10 +418,19 @@ $font4: 'Unica One', cursive;
       left: 20%;
       display: flex;
       justify-content: center;
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 1050px) {
+        display: none;
+      }
       .drinkimg {
         position: absolute;
         bottom: 0px;
         height: 491px;
+        @media screen and (max-width: 1200px) {
+          height: 391px;
+        }
       }
       .img3 {
         position: absolute;
@@ -430,6 +439,15 @@ $font4: 'Unica One', cursive;
         z-index: 4;
         right: -50px;
         animation: float 19s infinite ease-in-out;
+        @media screen and (max-width: 1600px) {
+          height: 591px;
+          top: 300px;
+        }
+        @media screen and (max-width: 1200px) {
+          height: 491px;
+          top: 450px;
+          right: 50px;
+        }
       }
       .img4 {
         position: absolute;
@@ -438,6 +456,15 @@ $font4: 'Unica One', cursive;
         left: -50px;
         z-index: 3;
         animation: float 15s infinite ease-in-out;
+        @media screen and (max-width: 1600px) {
+          height: 591px;
+          top: 300px;
+        }
+        @media screen and (max-width: 1200px) {
+          height: 491px;
+          top: 450px;
+          left: 250px;
+        }
       }
       .img5 {
         position: absolute;
@@ -445,6 +472,15 @@ $font4: 'Unica One', cursive;
         height: 791px;
         z-index: 4;
         animation: float 10s infinite ease-in-out;
+        @media screen and (max-width: 1600px) {
+          height: 591px;
+          top: 250px;
+        }
+        @media screen and (max-width: 1200px) {
+          height: 491px;
+          top: 400px;
+          left: 430px;
+        }
       }
     }
 
@@ -494,16 +530,13 @@ $font4: 'Unica One', cursive;
       }
     }
   }
-  .project-container {
+  .slider-container {
     position: absolute;
     width: 840px;
     height: 200px;
-    background: #40916c;
     right: 100px;
     bottom: 30px;
-    z-index: 3;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+    z-index: 5;
     @media screen and (max-width: 1700px) {
       right: 45px;
       width: 740px;
@@ -537,6 +570,33 @@ $font4: 'Unica One', cursive;
     @media screen and (max-height: 700px) {
       height: 120px;
     }
+  }
+  .projects-p {
+    position: absolute;
+    bottom: -10px;
+    z-index: 6;
+    width: 100%;
+    text-align: center;
+    color: #b7e4c7;
+    font-family: $font3;
+    text-transform: uppercase;
+    animation: pulsefade 5s infinite ease-in-out;
+    @media screen and (max-width: 1350px) {
+      bottom: -40px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 15px;
+    }
+  }
+  .project-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #40916c;
+    z-index: 5;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+
     .img-container {
       position: relative;
       height: 200px;
@@ -577,6 +637,8 @@ $font4: 'Unica One', cursive;
           top: 15px;
           width: 85%;
           left: 4.5%;
+          height: 140px;
+          top: 5px;
         }
         &:hover {
           transform: translateY(-10px);

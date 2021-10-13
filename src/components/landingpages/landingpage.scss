@@ -443,16 +443,13 @@ $font4: 'Unica One', cursive;
       }
     }
   }
-  .project-container {
+  .slider-container {
     position: absolute;
     width: 840px;
     height: 200px;
-    background: #339989;
     right: 100px;
     bottom: 30px;
-    z-index: 3;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+    z-index: 5;
     @media screen and (max-width: 1700px) {
       right: 45px;
       width: 740px;
@@ -486,51 +483,80 @@ $font4: 'Unica One', cursive;
     @media screen and (max-height: 700px) {
       height: 120px;
     }
-    .img-container {
-      position: relative;
-      height: 200px;
+
+    .projects-p {
+      position: absolute;
+      bottom: -10px;
+      z-index: 6;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      .project-imgs {
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: $font3;
+      text-transform: uppercase;
+      animation: pulsefade 5s infinite ease-in-out;
+      @media screen and (max-width: 1350px) {
+        bottom: -40px;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 15px;
+      }
+    }
+    .project-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #339989;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+      z-index: 5;
+      .img-container {
         position: relative;
-        height: 130px;
-        width: 258px;
-        top: 30px;
-        margin: 0px 10px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
-        transition: 0.6s;
-        @media screen and (max-width: 450px) {
-          height: 100%;
-        }
-        @media screen and (max-width: 1700px) {
-          height: 120px;
-          width: 220px;
-        }
-        @media screen and (max-width: 1350px) {
-          width: 180px;
-          height: 50%;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .project-imgs {
+          position: relative;
+          height: 130px;
+          width: 258px;
           top: 30px;
-        }
-        @media screen and (max-width: 1200px) {
-          width: 90%;
-          height: 120px;
-          top: 20px;
-        }
-        @media screen and (max-height: 700px) {
-          height: 100px;
-          top: 10px;
-        }
-        @media screen and (max-width: 450px) {
-          top: 15px;
-          width: 85%;
-          left: 4.5%;
-        }
-        &:hover {
-          transform: translateY(-10px);
-          cursor: pointer;
-          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
+          margin: 0px 10px;
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+          transition: 0.6s;
+          @media screen and (max-width: 450px) {
+            height: 100%;
+          }
+          @media screen and (max-width: 1700px) {
+            height: 120px;
+            width: 220px;
+          }
+          @media screen and (max-width: 1350px) {
+            width: 180px;
+            height: 50%;
+            top: 30px;
+          }
+          @media screen and (max-width: 1200px) {
+            width: 90%;
+            height: 120px;
+            top: 20px;
+          }
+          @media screen and (max-height: 700px) {
+            height: 100px;
+            top: 10px;
+          }
+          @media screen and (max-width: 450px) {
+            top: 15px;
+            width: 85%;
+            left: 4.5%;
+            height: 140px;
+            top: 5px;
+          }
+          &:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+            box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.288);
+          }
         }
       }
     }
@@ -590,5 +616,20 @@ $font4: 'Unica One', cursive;
   100% {
     transform: translateY(-100px);
     opacity: 0;
+  }
+}
+
+@keyframes pulsefade {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(0px);
   }
 }

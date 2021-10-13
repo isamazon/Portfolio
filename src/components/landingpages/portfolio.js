@@ -113,7 +113,7 @@ class Portfolio extends React.Component {
   render() {
     //   REACT SLIDER SETTINGS
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
@@ -284,32 +284,37 @@ class Portfolio extends React.Component {
           <PortfolioImg cubeimg="cube-img" />
           <div className="gradient-box"></div>
           {/* SLider */}
-          <Slider {...settings} className="project-container">
-            <div className="img-container">
-              <img
-                src={Ahes}
-                onClick={this.props.ahestoggle}
-                alt=""
-                className="project-imgs"
-              />
-            </div>
-            <div className="img-container">
-              <img
-                src={Blookify}
-                onClick={this.props.blookifytoggle}
-                alt=""
-                className="project-imgs"
-              />
-            </div>
-            <div className="img-container">
-              <img
-                src={Humble}
-                alt=""
-                onClick={this.props.humbletoggle}
-                className="project-imgs"
-              />
-            </div>
-          </Slider>
+          <div className="slider-container">
+            <p className="projects-p">
+              Click images above to view each project
+            </p>
+            <Slider {...settings} className="project-container">
+              <div className="img-container">
+                <img
+                  src={Ahes}
+                  onClick={this.props.ahestoggle}
+                  alt=""
+                  className="project-imgs"
+                />
+              </div>
+              <div className="img-container">
+                <img
+                  src={Blookify}
+                  onClick={this.props.blookifytoggle}
+                  alt=""
+                  className="project-imgs"
+                />
+              </div>
+              <div className="img-container">
+                <img
+                  src={Humble}
+                  alt=""
+                  onClick={this.props.humbletoggle}
+                  className="project-imgs"
+                />
+              </div>
+            </Slider>
+          </div>
         </Col>
       </div>
     );
