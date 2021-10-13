@@ -217,7 +217,8 @@ class Portfolio extends React.Component {
             <Fade bottom cascade>
               <div className="important-links">
                 <a
-                  href="https://github.com/isamazon"
+                  href="https://github.com/isamazon/Portfolio"
+                  target="_blank"
                   onMouseEnter={this.handleHover}
                   onMouseLeave={this.handleHover}
                   className="link"
@@ -230,6 +231,7 @@ class Portfolio extends React.Component {
                 {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
+                  target="_blank"
                   onMouseEnter={this.handleHover2}
                   onMouseLeave={this.handleHover2}
                   className="link"
@@ -253,6 +255,7 @@ class Portfolio extends React.Component {
                 </a> */}
                 <a
                   href="../../../assets/resume.pdf"
+                  download
                   onMouseEnter={this.handleHover4}
                   onMouseLeave={this.handleHover4}
                   className="link"
@@ -263,7 +266,7 @@ class Portfolio extends React.Component {
                   </Zoom>
                 </a>
                 <a
-                  href="https://github.com/isamazon"
+                  href="mailto: isaiahmazon0622@gmail.com"
                   onMouseEnter={this.handleHover5}
                   onMouseLeave={this.handleHover5}
                   className="link"

@@ -75,14 +75,15 @@ class Portfolio extends React.Component {
   handleClick() {
     this.playAudio();
     this.setState({
-      intitalP: 'I am a web dev',
+      intitalP: 'Humble nutrition is a front end only webpage.',
       intialPclass: 'text-content-container',
     });
   }
   handleClick2() {
     this.playAudio();
     this.setState({
-      intitalP: 'I am a self taught web dev living in Albuquerque New Mexico',
+      intitalP:
+        'Humble nutrition is a static webpage made for the small buisness located in Albuquerque New Mexico',
       intialPclass: 'text-content-container',
     });
   }
@@ -90,7 +91,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients.',
+        'Humble nutrition is a static webpage made for the small buisness located in Albuquerque New Mexico. This web page was made with HTML5, CSS, SCSS and vanilla javascript.',
       intialPclass: 'text-content-container',
     });
   }
@@ -98,7 +99,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES',
+        'Humble nutrition is a static webpage made for the small buisness located in Albuquerque New Mexico. This web page was made with HTML5, CSS, SCSS and vanilla javascript. This page was built with the intent to give the small buisness a face on the internet and a base for all their customers to come and look at the menu.',
       intialPclass: 'text-content-container-long',
     });
   }
@@ -106,7 +107,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES, im always eager to learn more and gain the experience in order to become the best developer i possibly can be!',
+        'Humble nutrition is a static webpage made for the small buisness located in Albuquerque New Mexico. This web page was made with HTML5, CSS, SCSS and vanilla javascript. This page was built with the intent to give the small buisness a face on the internet and a base for all their customers to come and look at the menu. This project was my first real client work my duty was to carry out the clients wishes to make a fresh modern responsive page for all device',
       intialPclass: 'text-content-container-long',
     });
   }
@@ -231,7 +232,8 @@ class Portfolio extends React.Component {
             <Fade bottom cascade>
               <div className="important-links">
                 <a
-                  href="https://github.com/isamazon"
+                  href="https://github.com/isamazon/Humble-Nutrtion"
+                  target="_blank"
                   onMouseEnter={this.handleHover}
                   onMouseLeave={this.handleHover}
                   className="link"
@@ -244,6 +246,7 @@ class Portfolio extends React.Component {
                 {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
+                  target="_blank"
                   onMouseEnter={this.handleHover2}
                   onMouseLeave={this.handleHover2}
                   className="link"
@@ -267,6 +270,7 @@ class Portfolio extends React.Component {
                 </a> */}
                 <a
                   href="../../../assets/resume.pdf"
+                  download
                   onMouseEnter={this.handleHover4}
                   onMouseLeave={this.handleHover4}
                   className="link"
@@ -277,7 +281,7 @@ class Portfolio extends React.Component {
                   </Zoom>
                 </a>
                 <a
-                  href="https://github.com/isamazon"
+                  href="mailto: isaiahmazon0622@gmail.com"
                   onMouseEnter={this.handleHover5}
                   onMouseLeave={this.handleHover5}
                   className="link"

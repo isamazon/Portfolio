@@ -230,6 +230,7 @@ class Ahes extends React.Component {
               <div className="important-links">
                 <a
                   href="https://github.com/isamazon"
+                  target="_blank"
                   onMouseEnter={this.handleHover}
                   onMouseLeave={this.handleHover}
                   className="link"
@@ -242,6 +243,7 @@ class Ahes extends React.Component {
                 {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
+                  target="_blank"
                   onMouseEnter={this.handleHover2}
                   onMouseLeave={this.handleHover2}
                   className="link"
@@ -276,7 +278,7 @@ class Ahes extends React.Component {
                   </Zoom>
                 </a>
                 <a
-                  href="https://github.com/isamazon"
+                  href="mailto: isaiahmazon0622@gmail.com"
                   onMouseEnter={this.handleHover5}
                   onMouseLeave={this.handleHover5}
                   className="link"
