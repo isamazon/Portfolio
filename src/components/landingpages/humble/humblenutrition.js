@@ -161,14 +161,19 @@ class Portfolio extends React.Component {
             <Fade bottom cascade>
               <div className="button-container">
                 <a
-                  href="https://github.com/isamazon/Blookify"
+                  href="https://github.com/isamazon/Humble-Nutrtion"
+                  target="_blank"
                   className="link-container"
                 >
                   <Button className="link-button">
                     <FaGithub className="icon" /> Source Code
                   </Button>
                 </a>
-                <a href="https://blookify.com/" className="link-container">
+                <a
+                  href="https://humblenutritionnm.com/"
+                  target="_blank"
+                  className="link-container"
+                >
                   <Button className="link-button">
                     <FaGlobe className="icon" /> Live site
                   </Button>
