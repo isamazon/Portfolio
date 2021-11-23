@@ -287,7 +287,7 @@ class Portfolio extends React.Component {
           <PortfolioImg cubeimg="cube-img" />
           <div className="gradient-box"></div>
           {/* SLider */}
-          <div className="slider-container">
+          {/* <div className="slider-container">
             <p className="projects-p">
               Click images above to view each project
             </p>
@@ -317,7 +317,7 @@ class Portfolio extends React.Component {
                 />
               </div>
             </Slider>
-          </div>
+          </div> */}
         </Col>
       </div>
     );

@@ -8,7 +8,7 @@
   height: 850px;
   background: none;
   right: 100px;
-  top: 20px;
+  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,8 +225,8 @@
   top: 360px;
   -webkit-animation: float 15.5s infinite ease-in-out;
           animation: float 15.5s infinite ease-in-out;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .portfolio-img-container .css-img {
@@ -234,8 +234,8 @@
   left: 225px;
   -webkit-animation: float 15s infinite ease-in-out;
           animation: float 15s infinite ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .portfolio-img-container .sass-img {
@@ -243,8 +243,8 @@
   top: 390px;
   -webkit-animation: float 15s infinite ease-in-out;
           animation: float 15s infinite ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .portfolio-img-container .html-img {
@@ -252,8 +252,8 @@
   left: 370px;
   -webkit-animation: float 16s infinite ease-in-out;
           animation: float 16s infinite ease-in-out;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
 .portfolio-img-container .express-img {

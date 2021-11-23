@@ -6,6 +6,43 @@
   margin: 0px 0px;
   background: #ffffff;
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+
+.home-container .transition-img-cont {
+  position: relative;
+  height: 330px;
+  width: 100%;
+  background-image: url("../assets/transition2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-container .transition-img-cont2 {
+  position: relative;
+  height: 330px;
+  width: 100%;
+  background-image: url("../assets/transition1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2b2c28;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #58eed5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #37b49f;
 }
 /*# sourceMappingURL=home.css.map */

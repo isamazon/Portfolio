@@ -13,7 +13,7 @@ $font3: 'Hind Gunter', sans-serif;
   height: 850px;
   background: none;
   right: 100px;
-  top: 20px;
+  top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -30,6 +30,7 @@ $font3: 'Hind Gunter', sans-serif;
     position: relative;
     height: 700px;
     justify-self: center;
+
     @media screen and (max-width: 1500px) {
       height: 650px;
     }
@@ -101,25 +102,25 @@ $font3: 'Hind Gunter', sans-serif;
   .bootstrap-img {
     top: 360px;
     animation: float 15.5s infinite ease-in-out;
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
   }
   .css-img {
     top: 350px;
     left: 225px;
     animation: float 15s infinite ease-in-out;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
   }
   .sass-img {
     left: 511px;
     top: 390px;
     animation: float 15s infinite ease-in-out;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
   }
   .html-img {
     top: 530px;
     left: 370px;
     animation: float 16s infinite ease-in-out;
-    animation-delay: 2.5s;
+    animation-delay: 1.8s;
   }
   .express-img {
     top: 117px;
