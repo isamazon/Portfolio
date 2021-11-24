@@ -38,11 +38,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #58eed5;
+  background: white;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #37b49f;
+  background: #a3a3a3;
 }
 /*# sourceMappingURL=home.css.map */

@@ -17,7 +17,16 @@ import PortfolioPic from '../../../assets/portfolio.PNG';
 import Blookifyimg from '../../../assets/blookifyimg.png';
 import SideMenu from '../../sidemenu/sidemenu';
 // Icons
-import { FaGithub, FaLinkedin, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaLinkedin,
+  FaRegFileAlt,
+  FaGlobe,
+  FaReact,
+  FaNodeJs,
+} from 'react-icons/fa';
+import { DiMongodb } from 'react-icons/di';
+import { SiExpress, SiSass, SiRedux } from 'react-icons/si';
 
 import { FiMail } from 'react-icons/fi';
 // Sound
@@ -108,8 +117,85 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className="blookify-page-cont">
-        <Col xl={4} md={12} className="info-container"></Col>
-        <Col xl={8} md={12} className="right-col"></Col>
+        <Col xl={5} md={12} className="info-container">
+          <div className="video-container"></div>
+          <a className="link-container" href="">
+            <FaGithub className="link-icon" />
+            Gitub
+          </a>
+          <a className="link-container" href="">
+            <FaGlobe className="link-icon" />
+            Live demo
+          </a>
+          <h1 className="project-title">Project 1:</h1>
+        </Col>
+        <Col xl={7} md={12} className="right-col">
+          <h1 className="project-name">Blookify</h1>
+
+          <div className="tech-used-container">
+            <h1>Tech used</h1>
+            <div className="tech">
+              <DiMongodb className="tech-icon" />
+              <SiExpress className="tech-icon" />
+              <FaReact className="tech-icon" />
+              <SiRedux className="tech-icon" />
+              <FaNodeJs className="tech-icon" />
+              <SiSass className="tech-icon" />
+            </div>
+          </div>
+
+          <div className="adjust-container">
+            <p>Adjust info length:</p>
+            <div className="button-cnt">
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick2}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick3}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick4}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick5}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+            </div>
+            <div className="button-text">
+              <p className="shortest">Shortest</p>
+              <p className="longest">Longest</p>
+            </div>
+          </div>
+
+          <p className="blookify-p">{this.state.intitalP}</p>
+        </Col>
       </div>
     );
   }
