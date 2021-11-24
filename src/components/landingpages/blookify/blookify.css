@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
 .blookify-page-cont {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background: #ede0d4;
   display: -webkit-box;
@@ -14,6 +14,16 @@
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont {
+    height: 1300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .blookify-page-cont .info-container {
@@ -32,14 +42,35 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .info-container {
+    height: 500px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 0px;
+    padding-top: 50px;
+  }
+}
+
 .blookify-page-cont .info-container .video-container {
   position: relative;
   height: 60%;
-  width: 100%;
-  background: black;
+  width: 750px;
+  background: url("../../../assets/blookify.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
+}
+
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .info-container .video-container {
+    width: 850px;
+    height: 500px;
+  }
 }
 
 .blookify-page-cont .info-container .link-container {
@@ -67,6 +98,14 @@
   font-size: 25px;
 }
 
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .info-container .link-container {
+    width: 50%;
+    height: 50px;
+    margin: 20px 0px;
+  }
+}
+
 .blookify-page-cont .info-container .link-container:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -90,6 +129,13 @@
   color: #b08968;
 }
 
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .info-container .project-title {
+    left: 0px;
+    text-align: center;
+  }
+}
+
 .blookify-page-cont .right-col {
   position: relative;
   height: 100%;
@@ -107,6 +153,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .right-col {
+    position: absolute;
+    bottom: 0px;
+    height: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 0px;
+    padding-top: 50px;
+  }
 }
 
 .blookify-page-cont .right-col .project-name {
@@ -359,7 +418,8 @@
   color: #7f5539;
   text-align: center;
   width: 70%;
-  height: 300px;
+  min-height: 350px;
+  z-index: 6;
   font-size: 20px;
   margin-top: 20px;
   overflow-y: auto;
@@ -413,5 +473,9 @@
 
 .blookify-page-cont .right-col .blookify-p::-webkit-scrollbar-track {
   background: #ddb892;
+}
+
+.blookify-page-cont .right-col .blookify-p::-webkit-scrollbar-thumb {
+  background: #7f5539;
 }
 /*# sourceMappingURL=blookify.css.map */

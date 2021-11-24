@@ -8,7 +8,9 @@
   overflow-x: hidden;
 }
 
-.home-container .transition-img-cont {
+.home-container .transition-img-cont,
+.home-container .transition-img-cont2,
+.home-container .transition-img-cont3 {
   position: relative;
   height: 330px;
   width: 100%;
@@ -18,12 +20,11 @@
 }
 
 .home-container .transition-img-cont2 {
-  position: relative;
-  height: 330px;
-  width: 100%;
   background-image: url("../assets/transition1.png");
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.home-container .transition-img-cont3 {
+  background-image: url("../assets/transition3.png");
 }
 
 /* width */

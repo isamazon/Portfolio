@@ -9,12 +9,16 @@ $font3: 'Hind Gunter', sans-serif;
 
 .blookify-page-cont {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background: #ede0d4;
   display: flex;
   flex-direction: row;
   padding: 0px 0px;
+  @media screen and (max-width: 1200px) {
+    height: 1300px;
+    flex-direction: column;
+  }
   .info-container {
     position: relative;
     height: 100%;
@@ -24,14 +28,26 @@ $font3: 'Hind Gunter', sans-serif;
     padding: 50px 50px;
     display: flex;
     flex-direction: column;
-
+    @media screen and (max-width: 1200px) {
+      height: 500px;
+      align-items: center;
+      padding: 0px 0px;
+      padding-top: 50px;
+    }
     .video-container {
       position: relative;
       height: 60%;
-      width: 100%;
-      background: black;
+      width: 750px;
+      background: url('../../../assets/blookify.PNG');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       border-radius: 20px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
+      @media screen and (max-width: 1200px) {
+        width: 850px;
+        height: 500px;
+      }
     }
     .link-container {
       position: relative;
@@ -48,6 +64,11 @@ $font3: 'Hind Gunter', sans-serif;
       color: #9c6644;
       font-family: $font1;
       font-size: 25px;
+      @media screen and (max-width: 1200px) {
+        width: 50%;
+        height: 50px;
+        margin: 20px 0px;
+      }
       &:hover {
         transform: translateY(-5px);
         text-decoration: none;
@@ -67,6 +88,10 @@ $font3: 'Hind Gunter', sans-serif;
       font-size: 65px;
       font-family: $font1;
       color: #b08968;
+      @media screen and (max-width: 1200px) {
+        left: 0px;
+        text-align: center;
+      }
     }
   }
   .right-col {
@@ -79,6 +104,14 @@ $font3: 'Hind Gunter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 1200px) {
+      position: absolute;
+      bottom: 0px;
+      height: 50%;
+      align-items: center;
+      padding: 0px 0px;
+      padding-top: 50px;
+    }
     .project-name {
       position: relative;
       width: 100%;
@@ -240,7 +273,8 @@ $font3: 'Hind Gunter', sans-serif;
       color: #7f5539;
       text-align: center;
       width: 70%;
-      height: 300px;
+      min-height: 350px;
+      z-index: 6;
       font-size: 20px;
       margin-top: 20px;
       overflow-y: auto;
@@ -276,6 +310,9 @@ $font3: 'Hind Gunter', sans-serif;
     }
     .blookify-p::-webkit-scrollbar-track {
       background: #ddb892;
+    }
+    .blookify-p::-webkit-scrollbar-thumb {
+      background: #7f5539;
     }
   }
 }

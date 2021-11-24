@@ -6,7 +6,9 @@
   margin: 0px 0px;
   background: #ffffff;
   overflow-x: hidden;
-  .transition-img-cont {
+  .transition-img-cont,
+  .transition-img-cont2,
+  .transition-img-cont3 {
     position: relative;
     height: 330px;
     width: 100%;
@@ -15,12 +17,10 @@
     background-repeat: no-repeat;
   }
   .transition-img-cont2 {
-    position: relative;
-    height: 330px;
-    width: 100%;
     background-image: url('../assets/transition1.png');
-    background-position: center;
-    background-repeat: no-repeat;
+  }
+  .transition-img-cont3 {
+    background-image: url('../assets/transition3.png');
   }
 }
 /* width */
