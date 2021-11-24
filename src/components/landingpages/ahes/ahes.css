@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
 .ahes-page-cont {
   position: relative;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   background: #a6d8da;
   display: -webkit-box;
@@ -37,9 +37,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 50px;
+  padding-top: 50px;
   display: flex;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media screen and (max-width: 1200px) {
@@ -55,31 +57,36 @@
 
 .ahes-page-cont .info-container .video-container {
   position: relative;
-  height: 60%;
-  width: 750px;
-  background: url("../../../assets/ahes.PNG");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 500px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.877);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.877);
 }
 
 @media screen and (max-width: 1200px) {
   .ahes-page-cont .info-container .video-container {
-    width: 850px;
-    height: 500px;
+    width: 85%;
+    height: 400px;
   }
 }
 
 .ahes-page-cont .info-container .link-container {
   position: relative;
-  width: 70%;
-  height: 60px;
+  width: 90%;
+  height: 65px;
   background: #e63946;
   border-radius: 20px;
-  margin: 30px 0px;
+  margin: 20px 0px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
   -webkit-transition: 0.5s;
@@ -100,7 +107,7 @@
 
 @media screen and (max-width: 1200px) {
   .ahes-page-cont .info-container .link-container {
-    width: 50%;
+    width: 85%;
     height: 50px;
     margin: 20px 0px;
   }
@@ -121,7 +128,7 @@
 
 .ahes-page-cont .info-container .project-title {
   position: absolute;
-  top: -13px;
+  top: -15px;
   left: 70px;
   width: 100%;
   font-size: 65px;
@@ -158,7 +165,7 @@
 @media screen and (max-width: 1200px) {
   .ahes-page-cont .right-col {
     position: absolute;
-    bottom: 0px;
+    bottom: 80px;
     height: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -212,7 +219,7 @@
 .ahes-page-cont .right-col .tech-used-container .tech {
   position: relative;
   height: 100%;
-  width: 50%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,6 +229,12 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+  .ahes-page-cont .right-col .tech-used-container .tech {
+    width: 90%;
+  }
 }
 
 .ahes-page-cont .right-col .tech-used-container .tech .tech-icon {
@@ -254,8 +267,8 @@
 
 @media screen and (max-width: 800px) {
   .ahes-page-cont .right-col .adjust-container {
-    width: 70%;
-    left: 15%;
+    width: 80%;
+    left: 0%;
   }
 }
 

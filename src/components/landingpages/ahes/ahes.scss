@@ -9,7 +9,7 @@ $font3: 'Hind Gunter', sans-serif;
 
 .ahes-page-cont {
   position: relative;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
   background: #a6d8da;
   display: flex;
@@ -25,9 +25,9 @@ $font3: 'Hind Gunter', sans-serif;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 50px 50px;
+    padding-top: 50px;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
     @media screen and (max-width: 1200px) {
       height: 500px;
       align-items: center;
@@ -36,26 +36,25 @@ $font3: 'Hind Gunter', sans-serif;
     }
     .video-container {
       position: relative;
-      height: 60%;
-      width: 750px;
-      background: url('../../../assets/ahes.PNG');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      height: 500px;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 20px;
-      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.459);
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.877);
       @media screen and (max-width: 1200px) {
-        width: 850px;
-        height: 500px;
+        width: 85%;
+        height: 400px;
       }
     }
     .link-container {
       position: relative;
-      width: 70%;
-      height: 60px;
+      width: 90%;
+      height: 65px;
       background: #e63946;
       border-radius: 20px;
-      margin: 30px 0px;
+      margin: 20px 0px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
       transition: 0.5s;
       display: flex;
@@ -66,7 +65,7 @@ $font3: 'Hind Gunter', sans-serif;
       font-size: 25px;
 
       @media screen and (max-width: 1200px) {
-        width: 50%;
+        width: 85%;
         height: 50px;
         margin: 20px 0px;
       }
@@ -83,7 +82,7 @@ $font3: 'Hind Gunter', sans-serif;
     }
     .project-title {
       position: absolute;
-      top: -13px;
+      top: -15px;
       left: 70px;
       width: 100%;
       font-size: 65px;
@@ -107,7 +106,7 @@ $font3: 'Hind Gunter', sans-serif;
     align-items: center;
     @media screen and (max-width: 1200px) {
       position: absolute;
-      bottom: 0px;
+      bottom: 80px;
       height: 50%;
       align-items: center;
       padding: 0px 0px;
@@ -143,10 +142,13 @@ $font3: 'Hind Gunter', sans-serif;
       .tech {
         position: relative;
         height: 100%;
-        width: 50%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        @media screen and (max-width: 800px) {
+          width: 90%;
+        }
         .tech-icon {
           font-size: 50px;
           color: #e63946;
@@ -167,8 +169,8 @@ $font3: 'Hind Gunter', sans-serif;
       background: none;
       margin: 30px 0px;
       @media screen and (max-width: 800px) {
-        width: 70%;
-        left: 15%;
+        width: 80%;
+        left: 0%;
       }
       @media screen and (max-width: 550px) {
         width: 90%;

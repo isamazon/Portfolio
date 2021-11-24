@@ -14,8 +14,7 @@ import Ahes from '../../../assets/ahes.PNG';
 import Humble from '../../../assets/humble.PNG';
 import PortfolioPic from '../../../assets/portfolio.PNG';
 // Components
-import Blookifyimg from '../../../assets/blookifyimg.png';
-import SideMenu from '../../sidemenu/sidemenu';
+import Youtube from '../../youtube';
 // Icons
 import {
   FaGithub,
@@ -110,15 +109,15 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'Blookify is a fullstack application using the MERN tech stack, blookify utilizes the GOOGLE books api utilizing over seven millions books for the users disposal giving them the option to send whatever book they are currently reading or whatver books theyve already read to their own personal libraries! Utilizing the API built using Nodejs/Express for the backend and MongoDB as the database! This application was a passion project for me not only because im a big book reader but it also really taught me how the backend works and how to create databases to store user data!',
+        'Blookify is a fullstack application using the MERN tech stack, blookify utilizes the GOOGLE books api utilizing over seven millions books for the users disposal giving them the option to send whatever book they are currently reading or whatver books theyve already read to their own personal libraries! Utilizing the API built using Nodejs/Express for the backend and MongoDB as the database and Redux is used for global state management for individual users logged in! This application was a passion project for me not only because im a big book reader but it also really taught me how the backend works and how to create databases to store user data!',
       intialPclass: 'text-content-container-long',
     });
   }
   render() {
     return (
       <div className="blookify-page-cont">
-        <Col xl={5} md={12} className="info-container">
-          <div className="video-container"></div>
+        <Col xl={6} md={12} className="info-container">
+          <Youtube urlplayer="https://youtu.be/V8abbfKmukA" />
           <a className="link-container" href="">
             <FaGithub className="link-icon" />
             Gitub
@@ -127,9 +126,9 @@ class Portfolio extends React.Component {
             <FaGlobe className="link-icon" />
             Live demo
           </a>
-          <h1 className="project-title">Project 1:</h1>
+          <h1 className="project-title">Passion project:</h1>
         </Col>
-        <Col xl={7} md={12} className="right-col">
+        <Col xl={6} md={12} className="right-col">
           <h1 className="project-name">Blookify</h1>
 
           <div className="tech-used-container">

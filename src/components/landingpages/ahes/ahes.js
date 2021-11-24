@@ -1,12 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
 // CSS
 import './ahes.css';
-
+// Components
+import Youtube from '../../youtube';
 // Icons
 import { FaGithub, FaGlobe, FaReact, FaNodeJs } from 'react-icons/fa';
 
@@ -100,7 +98,7 @@ class Ahes extends React.Component {
     return (
       <div className="ahes-page-cont">
         <Col xl={6} md={12} className="info-container">
-          <div className="video-container"></div>
+          <Youtube urlplayer="https://youtu.be/8827OSG1XoI" />
           <a className="link-container" href="">
             <FaGithub className="link-icon" />
             Gitub
@@ -109,7 +107,7 @@ class Ahes extends React.Component {
             <FaGlobe className="link-icon" />
             Live demo
           </a>
-          <h1 className="project-title">Project 2:</h1>
+          <h1 className="project-title">Client work:</h1>
         </Col>
         <Col xl={7} md={12} className="right-col">
           <h1 className="project-name">A.H.E.S</h1>
