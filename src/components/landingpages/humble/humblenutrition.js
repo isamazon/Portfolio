@@ -15,8 +15,8 @@ import Sound1 from '../../../assets/clicksfx.mp3';
 
 import Youtube from '../../youtube';
 // Icons
-import { FaGithub, FaGlobe, FaReact, FaNodeJs } from 'react-icons/fa';
-import { SiExpress, SiSass, SiSqlite } from 'react-icons/si';
+import { FaGithub, FaGlobe, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { SiSass, SiJavascript, SiPhp } from 'react-icons/si';
 
 class Portfolio extends React.Component {
   constructor() {
@@ -122,18 +122,17 @@ class Portfolio extends React.Component {
         </Col>
         <Col xl={7} md={12} className="right-col">
           <h1 className="project-name">
-            Humble <span className="nutrition">Nutrition</span>{' '}
+            Humble <span className="nutrition">Nutrition</span>
           </h1>
 
           <div className="tech-used-container">
             <h1>Tech used</h1>
             <div className="tech">
-              <SiSqlite className="tech-icon" />
-              <SiExpress className="tech-icon" />
-              <FaReact className="tech-icon" />
-
-              <FaNodeJs className="tech-icon" />
+              <FaHtml5 className="tech-icon" />
+              <FaCss3Alt className="tech-icon" />
               <SiSass className="tech-icon" />
+              <SiJavascript className="tech-icon" />
+              <SiPhp className="tech-icon" />
             </div>
           </div>
 

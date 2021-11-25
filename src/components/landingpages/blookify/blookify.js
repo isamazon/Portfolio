@@ -1,20 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import styled from 'styled-components';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
-import { Button } from '@material-ui/core';
 // CSS
 import './blookify.css';
-// imgs
-import Ahes from '../../../assets/ahes.PNG';
-import Humble from '../../../assets/humble.PNG';
-import PortfolioPic from '../../../assets/portfolio.PNG';
 // Components
 import Youtube from '../../youtube';
+
 // Icons
 import {
   FaGithub,
@@ -26,8 +16,6 @@ import {
 } from 'react-icons/fa';
 import { DiMongodb } from 'react-icons/di';
 import { SiExpress, SiSass, SiRedux } from 'react-icons/si';
-
-import { FiMail } from 'react-icons/fi';
 // Sound
 import Sound1 from '../../../assets/clicksfx.mp3';
 class Portfolio extends React.Component {

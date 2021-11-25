@@ -6,6 +6,7 @@
   margin: 0px 0px;
   background: #ffffff;
   overflow-x: hidden;
+
   .transition-img-cont,
   .transition-img-cont2,
   .transition-img-cont3,
@@ -16,12 +17,30 @@
     background-image: url('../assets/transition5.png');
     background-position: center;
     background-repeat: no-repeat;
+    .element1 {
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      bottom: -13px;
+    }
   }
   .transition-img-cont2 {
     background-image: url('../assets/transition6.png');
+    .element2 {
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      bottom: -10px;
+    }
   }
   .transition-img-cont3 {
-    background-image: url('../assets/transition3.png');
+    background-image: url('../assets/transition3.2.png');
+    .element3 {
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      bottom: -10px;
+    }
   }
   .transition-img-cont4 {
     background-image: url('../assets/transition4.png');

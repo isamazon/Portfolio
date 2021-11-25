@@ -50,7 +50,7 @@ $font3: 'Hind Gunter', sans-serif;
     }
     .link-container {
       position: relative;
-      width: 90%;
+      width: 60%;
       height: 65px;
       background: #e63946;
       border-radius: 20px;
@@ -111,6 +111,10 @@ $font3: 'Hind Gunter', sans-serif;
       align-items: center;
       padding: 0px 0px;
       padding-top: 50px;
+    }
+    @media screen and (max-width: 750px) {
+      position: relative;
+      bottom: 50px;
     }
     .project-name {
       position: relative;

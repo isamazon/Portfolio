@@ -20,12 +20,36 @@
   background-repeat: no-repeat;
 }
 
+.home-container .transition-img-cont .element1,
+.home-container .transition-img-cont2 .element1,
+.home-container .transition-img-cont3 .element1,
+.home-container .transition-img-cont4 .element1 {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: -13px;
+}
+
 .home-container .transition-img-cont2 {
   background-image: url("../assets/transition6.png");
 }
 
+.home-container .transition-img-cont2 .element2 {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: -10px;
+}
+
 .home-container .transition-img-cont3 {
-  background-image: url("../assets/transition3.png");
+  background-image: url("../assets/transition3.2.png");
+}
+
+.home-container .transition-img-cont3 .element3 {
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  bottom: -10px;
 }
 
 .home-container .transition-img-cont4 {

@@ -1,1 +1,123 @@
-/* No CSS *//*# sourceMappingURL=navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+.nav-bar-container {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-bar-container .nav-bar-icon {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar-container .nav-bar-icon p {
+  font-size: 50px;
+  font-family: "Trirong", serif;
+  color: white;
+}
+
+.nav-bar-container .nav-bar-items {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  right: 50px;
+}
+
+.nav-bar-container .nav-bar-items .links {
+  position: relative;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Arimo", sans-serif;
+}
+
+.nav-bar-container .nav-bar-items .links:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.nav-bar-container .nav-bar-items .blookifylinks {
+  color: #7f5539;
+  font-family: "Lobster", cursive;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-bar-container .nav-bar-items .aheslinks {
+  color: #a8dadc;
+  font-family: "Anton", sans-serif;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-bar-container .nav-bar-items .humblelinks {
+  color: #d8f3dc;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blookify {
+  background: #e6ccb2;
+  -webkit-box-shadow: 0px 10px 20px #38261a6b;
+          box-shadow: 0px 10px 20px #38261a6b;
+}
+
+.ahes {
+  background: #1d3557;
+}
+
+.humble {
+  background: #2d6a4f;
+}
+
+.link-color {
+  color: black;
+}
+/*# sourceMappingURL=navbar.css.map */

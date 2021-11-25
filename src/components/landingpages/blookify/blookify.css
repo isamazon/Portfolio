@@ -82,7 +82,7 @@
 
 .blookify-page-cont .info-container .link-container {
   position: relative;
-  width: 90%;
+  width: 60%;
   height: 65px;
   background: #ddb892;
   border-radius: 20px;
@@ -172,6 +172,13 @@
             align-items: center;
     padding: 0px 0px;
     padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .blookify-page-cont .right-col {
+    position: relative;
+    bottom: 50px;
   }
 }
 

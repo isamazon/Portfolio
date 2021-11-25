@@ -1,0 +1,95 @@
+//                              FONTS                              //
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+// Portfolio-fonts
+$font1: 'Arimo', sans-serif;
+$font2: 'Trirong', serif;
+$font3: 'Lobster', cursive;
+$font4: 'Unica One', cursive;
+$font5: 'Anton', sans-serif;
+$font6: 'Shadows Into Light', cursive;
+.nav-bar-container {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.5s;
+  //   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.308);
+  .nav-bar-icon {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 50px;
+      font-family: $font2;
+      color: white;
+    }
+  }
+  .nav-bar-items {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    right: 50px;
+    .links {
+      position: relative;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+      font-family: $font1;
+      &:hover {
+        text-decoration: none;
+        transform: translateY(-3px);
+      }
+    }
+    .blookifylinks {
+      color: #7f5539;
+      font-family: $font3;
+      transition: 0.5s;
+    }
+    .aheslinks {
+      color: #a8dadc;
+      font-family: $font5;
+      transition: 0.5s;
+    }
+    .humblelinks {
+      color: #d8f3dc;
+      font-family: $font6;
+      font-weight: 300;
+      transition: 0.5s;
+    }
+  }
+}
+
+.blookify {
+  background: #e6ccb2;
+  box-shadow: 0px 10px 20px #38261a6b;
+}
+
+.ahes {
+  background: #1d3557;
+}
+.humble {
+  background: #2d6a4f;
+}
+.link-color {
+  color: black;
+}

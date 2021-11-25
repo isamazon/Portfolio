@@ -13,7 +13,7 @@ $font4: 'Unica One', cursive;
   width: 100%;
   background: #081c15;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   padding: 0px 0px;
   @media screen and (max-width: 1200px) {
     height: 1300px;
@@ -27,7 +27,7 @@ $font4: 'Unica One', cursive;
     flex-direction: column;
     padding-top: 50px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     @media screen and (max-width: 1200px) {
       height: 500px;
       align-items: center;
@@ -50,7 +50,7 @@ $font4: 'Unica One', cursive;
     }
     .link-container {
       position: relative;
-      width: 90%;
+      width: 60%;
       height: 65px;
       background: #b7e4c7;
       border-radius: 20px;
@@ -61,8 +61,9 @@ $font4: 'Unica One', cursive;
       align-items: center;
       justify-content: center;
       color: #2d6a4f;
-      font-family: $font1;
-      font-size: 25px;
+      font-family: $font2;
+      font-weight: 900;
+      font-size: 30px;
 
       @media screen and (max-width: 1200px) {
         width: 85%;
@@ -83,10 +84,10 @@ $font4: 'Unica One', cursive;
     .project-title {
       position: absolute;
       top: -12px;
-      left: 30px;
+      left: 120px;
       width: 100%;
       font-size: 65px;
-      font-family: $font1;
+      font-family: $font2;
       text-transform: uppercase;
       color: #52b7888a;
       @media screen and (max-width: 1200px) {
@@ -112,6 +113,10 @@ $font4: 'Unica One', cursive;
       align-items: center;
       padding: 0px 0px;
       padding-top: 50px;
+    }
+    @media screen and (max-width: 750px) {
+      position: relative;
+      bottom: 50px;
     }
     .project-name {
       position: relative;

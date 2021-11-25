@@ -89,7 +89,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients.',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack. I have experience with making fullstack applications for myself as passion projects and also for paying clients.',
       intialPclass: 'text-content-container',
     });
   }
@@ -97,7 +97,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code since 2020 but ive been learing intensively when landing my first client in febuary 2021 building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES',
       intialPclass: 'text-content-container-long',
     });
   }
@@ -105,7 +105,7 @@ class Portfolio extends React.Component {
     this.playAudio();
     this.setState({
       intitalP:
-        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES, im always eager to learn more and gain the experience in order to become the best developer i possibly can be!',
+        'I am a self taught web dev living in Albuquerque New Mexico, specilizing in the MERN tech stack i have experience with making fullstack applications for myself as passion projects and also for paying clients. I have been learning code since 2020 but ive been learing intensively when landing my first have been learning code intensively since january of 2021 landing my first client in febuary building a static website for Humble Nutrition and in June 2021 i landed my first client in need of a fullstack application AHES, im always eager to learn more and gain the experience in order to become the best developer i possibly can be!',
       intialPclass: 'text-content-container-long',
     });
   }
