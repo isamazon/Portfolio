@@ -14,7 +14,13 @@ import Transition1 from './assets/transition2.png';
 function Home() {
   return (
     <div fluid className="home-container">
-      <Nav toproject1="project1" toproject2="project2" toproject3="project3" />
+      <Nav
+        toproject0="project0"
+        toproject1="project1"
+        toproject2="project2"
+        toproject3="project3"
+      />
+      <Element className="element0" name="project0"></Element>
       <Portfolio />
       <div className="transition-img-cont">
         <Element className="element1" name="project1"></Element>
