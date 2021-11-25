@@ -8,22 +8,15 @@ import Zoom from 'react-reveal/Zoom';
 import { Button } from '@material-ui/core';
 // CSS
 import './humble.css';
-// imgs
-import Blookify from '../../../assets/blookify.PNG';
-import Ahes from '../../../assets/ahes.PNG';
-import Humble from '../../../assets/humble.PNG';
 
-import Drink3 from '../../../assets/humbledrink3.png';
-import Drink4 from '../../../assets/humbledrink4.png';
-import Drink5 from '../../../assets/humbledrink5.png';
 // Sound
 import Sound1 from '../../../assets/clicksfx.mp3';
 // Components
-import SideMenu from '../../sidemenu/sidemenu';
-// Icons
-import { FaGithub, FaLinkedin, FaRegFileAlt, FaGlobe } from 'react-icons/fa';
 
-import { FiMail } from 'react-icons/fi';
+import Youtube from '../../youtube';
+// Icons
+import { FaGithub, FaGlobe, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiExpress, SiSass, SiSqlite } from 'react-icons/si';
 
 class Portfolio extends React.Component {
   constructor() {
@@ -113,232 +106,88 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    //   REACT SLIDER SETTINGS
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 650,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 450,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-
     return (
       <div className="humble-page-cont">
-        <SideMenu
-          linksp="linksp portfoliop"
-          maincontainer="side-menu-container"
-          // Icon color
-          iconcolor="#7de2d1"
-          // Links color
-          linkcolor={{ color: '#7de2d1' }}
-          //   Link text color
-          linkpcolor={{ color: 'white' }}
-        />
-        <Col xl={4} md={12} className="info-container">
-          <div className={this.state.intialPclass}>
-            <Fade bottom cascade>
-              <h1 className="humble-h1-1">
-                Humble <span className="humble-h1-2">Nutrition</span>
-              </h1>
-            </Fade>
-            <Fade bottom cascade>
-              <div className="button-container">
-                <a
-                  href="https://github.com/isamazon/Humble-Nutrtion"
-                  target="_blank"
-                  className="link-container"
-                >
-                  <Button className="link-button">
-                    <FaGithub className="icon" /> Source Code
-                  </Button>
-                </a>
-                <a
-                  href="https://humblenutritionnm.com/"
-                  target="_blank"
-                  className="link-container"
-                >
-                  <Button className="link-button">
-                    <FaGlobe className="icon" /> Live site
-                  </Button>
-                </a>
-              </div>
-            </Fade>
-            <Fade bottom cascade>
-              <div className="adjust-container">
-                <p>Adjust bio length:</p>
-                <div className="button-cnt">
-                  <label
-                    htmlFor="button"
-                    className="radio"
-                    onClick={this.handleClick}
-                  >
-                    <input type="radio" name="button" className="button" />
-                    <div className="radio__radio"></div>
-                  </label>
-                  <label
-                    htmlFor="button"
-                    className="radio"
-                    onClick={this.handleClick2}
-                  >
-                    <input type="radio" name="button" className="button" />
-                    <div className="radio__radio"></div>
-                  </label>
-                  <label
-                    htmlFor="button"
-                    className="radio"
-                    onClick={this.handleClick3}
-                  >
-                    <input type="radio" name="button" className="button" />
-                    <div className="radio__radio"></div>
-                  </label>
-                  <label
-                    htmlFor="button"
-                    className="radio"
-                    onClick={this.handleClick4}
-                  >
-                    <input type="radio" name="button" className="button" />
-                    <div className="radio__radio"></div>
-                  </label>
-                  <label
-                    htmlFor="button"
-                    className="radio"
-                    onClick={this.handleClick5}
-                  >
-                    <input type="radio" name="button" className="button" />
-                    <div className="radio__radio"></div>
-                  </label>
-                </div>
-                <div className="button-text">
-                  <p className="shortest">Shortest</p>
-                  <p className="longest">Longest</p>
-                </div>
-              </div>
-            </Fade>
-            <Fade bottom>
-              <p className="portfolio-p">{this.state.intitalP}</p>
-            </Fade>
-            <Fade bottom cascade>
-              <div className="important-links">
-                <a
-                  href="https://github.com/isamazon/Humble-Nutrtion"
-                  target="_blank"
-                  onMouseEnter={this.handleHover}
-                  onMouseLeave={this.handleHover}
-                  className="link"
-                >
-                  <FaGithub size="45" className="icon" />
-                  <Zoom opposite when={this.state.show}>
-                    <p className="icon-text">Github</p>
-                  </Zoom>
-                </a>
-                {/* LinkedIn */}
-                <a
-                  href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
-                  target="_blank"
-                  onMouseEnter={this.handleHover2}
-                  onMouseLeave={this.handleHover2}
-                  className="link"
-                >
-                  <FaLinkedin size="45" className="icon" />
-                  <Zoom opposite when={this.state.show2}>
-                    <p className="icon-text">LinkedIn</p>
-                  </Zoom>
-                </a>
-                {/* Indeed */}
-                {/* <a
-                  href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage&_ga=2.1294257.1439842392.1633753792-1298732303.1633753792"
-                  onMouseEnter={this.handleHover3}
-                  onMouseLeave={this.handleHover3}
-                  className="link"
-                >
-                  <SiIndeed size="45" className="icon" />
-                  <Zoom opposite when={this.state.show3}>
-                    <p className="icon-text">Indeed</p>
-                  </Zoom>
-                </a> */}
-                <a
-                  href="../../../assets/resume.pdf"
-                  download
-                  onMouseEnter={this.handleHover4}
-                  onMouseLeave={this.handleHover4}
-                  className="link"
-                >
-                  <FaRegFileAlt size="45" className="icon" />
-                  <Zoom opposite when={this.state.show4}>
-                    <p className="icon-text">Resume</p>
-                  </Zoom>
-                </a>
-                <a
-                  href="mailto: isaiahmazon0622@gmail.com"
-                  onMouseEnter={this.handleHover5}
-                  onMouseLeave={this.handleHover5}
-                  className="link"
-                >
-                  <FiMail size="45" className="icon" />
-                  <Zoom opposite when={this.state.show5}>
-                    <p className="icon-text">Email me</p>
-                  </Zoom>
-                </a>
-              </div>
-            </Fade>
-          </div>
+        <Col xl={6} md={12} className="info-container">
+          <Youtube urlplayer="https://youtu.be/8827OSG1XoI" />
+          <a className="link-container" href="">
+            <FaGithub className="link-icon" />
+            Gitub
+          </a>
+          <a className="link-container" href="">
+            <FaGlobe className="link-icon" />
+            Live demo
+          </a>
+          <h1 className="project-title">Client work:</h1>
         </Col>
-        <Col xl={8} md={12} className="right-col">
-          <div className="imgs-container">
-            <img src={Drink3} className="drinkimg img3" alt="" />
-            <img src={Drink4} className="drinkimg img4" alt="" />
-            <img src={Drink5} className="drinkimg img5" alt="" />
+        <Col xl={7} md={12} className="right-col">
+          <h1 className="project-name">
+            Humble <span className="nutrition">Nutrition</span>{' '}
+          </h1>
+
+          <div className="tech-used-container">
+            <h1>Tech used</h1>
+            <div className="tech">
+              <SiSqlite className="tech-icon" />
+              <SiExpress className="tech-icon" />
+              <FaReact className="tech-icon" />
+
+              <FaNodeJs className="tech-icon" />
+              <SiSass className="tech-icon" />
+            </div>
           </div>
-          <div className="gradient-box"></div>
-          {/* SLider */}
-          <div className="slider-container">
-            <p className="projects-p">
-              Click images above to view each project
-            </p>
-            <Slider {...settings} className="project-container">
-              <div className="img-container">
-                <img
-                  src={Ahes}
-                  onClick={this.props.ahestoggle}
-                  alt=""
-                  className="project-imgs"
-                />
-              </div>
-              <div className="img-container">
-                <img
-                  src={Blookify}
-                  onClick={this.props.blookifytoggle}
-                  alt=""
-                  className="project-imgs"
-                />
-              </div>
-              <div className="img-container">
-                <img
-                  src={Humble}
-                  alt=""
-                  onClick={this.props.humbletoggle}
-                  className="project-imgs"
-                />
-              </div>
-            </Slider>
+
+          <div className="adjust-container">
+            <p>Adjust info length:</p>
+            <div className="button-cnt">
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick2}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick3}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick4}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+              <label
+                htmlFor="button"
+                className="radio"
+                onClick={this.handleClick5}
+              >
+                <input type="radio" name="button" className="button" />
+                <div className="radio__radio"></div>
+              </label>
+            </div>
+            <div className="button-text">
+              <p className="shortest">Shortest</p>
+              <p className="longest">Longest</p>
+            </div>
           </div>
+
+          <p className="humble-p">{this.state.intitalP}</p>
         </Col>
       </div>
     );

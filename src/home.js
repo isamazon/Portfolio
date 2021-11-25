@@ -17,6 +17,8 @@ function Home() {
       <div className="transition-img-cont2"></div>
       <Ahes />
       <div className="transition-img-cont3"></div>
+      <Humble />
+      <div className="transition-img-cont4"></div>
     </div>
   );
 }

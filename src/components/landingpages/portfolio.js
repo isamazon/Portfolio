@@ -111,32 +111,6 @@ class Portfolio extends React.Component {
   }
 
   render() {
-    //   REACT SLIDER SETTINGS
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 650,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 450,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-
     return (
       <div className="landing-page-cont">
         <SideMenu
@@ -241,18 +215,6 @@ class Portfolio extends React.Component {
                     <p className="icon-text">LinkedIn</p>
                   </Zoom>
                 </a>
-                {/* Indeed */}
-                {/* <a
-                  href="https://my.indeed.com/resume?hl=en&co=US&from=gnav-homepage&_ga=2.1294257.1439842392.1633753792-1298732303.1633753792"
-                  onMouseEnter={this.handleHover3}
-                  onMouseLeave={this.handleHover3}
-                  className="link"
-                >
-                  <SiIndeed size="45" className="icon" />
-                  <Zoom opposite when={this.state.show3}>
-                    <p className="icon-text">Indeed</p>
-                  </Zoom>
-                </a> */}
                 <a
                   href="../../../assets/resume.pdf"
                   download
@@ -286,38 +248,6 @@ class Portfolio extends React.Component {
           </h1> */}
           <PortfolioImg cubeimg="cube-img" />
           <div className="gradient-box"></div>
-          {/* SLider */}
-          {/* <div className="slider-container">
-            <p className="projects-p">
-              Click images above to view each project
-            </p>
-            <Slider {...settings} className="project-container">
-              <div className="img-container">
-                <img
-                  src={Ahes}
-                  onClick={this.props.ahestoggle}
-                  alt=""
-                  className="project-imgs"
-                />
-              </div>
-              <div className="img-container">
-                <img
-                  src={Blookify}
-                  onClick={this.props.blookifytoggle}
-                  alt=""
-                  className="project-imgs"
-                />
-              </div>
-              <div className="img-container">
-                <img
-                  src={Humble}
-                  alt=""
-                  onClick={this.props.humbletoggle}
-                  className="project-imgs"
-                />
-              </div>
-            </Slider>
-          </div> */}
         </Col>
       </div>
     );

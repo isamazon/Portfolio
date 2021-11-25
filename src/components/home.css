@@ -1,6 +1,6 @@
 .home-container {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 0px 0px;
   margin: 0px 0px;
@@ -10,21 +10,26 @@
 
 .home-container .transition-img-cont,
 .home-container .transition-img-cont2,
-.home-container .transition-img-cont3 {
+.home-container .transition-img-cont3,
+.home-container .transition-img-cont4 {
   position: relative;
   height: 330px;
   width: 100%;
-  background-image: url("../assets/transition2.png");
+  background-image: url("../assets/transition5.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .home-container .transition-img-cont2 {
-  background-image: url("../assets/transition1.png");
+  background-image: url("../assets/transition6.png");
 }
 
 .home-container .transition-img-cont3 {
   background-image: url("../assets/transition3.png");
+}
+
+.home-container .transition-img-cont4 {
+  background-image: url("../assets/transition4.png");
 }
 
 /* width */
