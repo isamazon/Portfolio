@@ -16,7 +16,7 @@ $font4: 'Unica One', cursive;
   flex-direction: row;
   padding: 0px 0px;
   @media screen and (max-width: 1200px) {
-    height: 1300px;
+    height: 1000px;
     flex-direction: column;
   }
   .info-container {
@@ -47,6 +47,11 @@ $font4: 'Unica One', cursive;
         width: 85%;
         height: 400px;
       }
+      @media screen and (max-width: 1200px) {
+        width: 95%;
+        height: 400px;
+        margin-bottom: 10px;
+      }
     }
     .link-container {
       position: relative;
@@ -69,6 +74,11 @@ $font4: 'Unica One', cursive;
         width: 85%;
         height: 50px;
         margin: 20px 0px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0px;
       }
       &:hover {
         transform: translateY(-5px);
@@ -94,6 +104,10 @@ $font4: 'Unica One', cursive;
         left: 0px;
         text-align: center;
       }
+      @media screen and (max-width: 600px) {
+        font-size: 50px;
+        top: 2px;
+      }
     }
   }
   .right-col {
@@ -106,6 +120,7 @@ $font4: 'Unica One', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media screen and (max-width: 1200px) {
       position: absolute;
       bottom: 80px;
@@ -123,12 +138,22 @@ $font4: 'Unica One', cursive;
       width: 100%;
       height: 100px;
       text-align: center;
-      font-size: 80px;
+      font-size: 70px;
       color: #52b788;
       text-transform: uppercase;
       font-family: $font1;
       .nutrition {
         font-family: $font2;
+      }
+      @media screen and (max-width: 1500px) {
+        font-size: 60px;
+      }
+      @media screen and (max-width: 1200px) {
+        font-size: 70px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 60px;
+        margin-bottom: 20px;
       }
     }
     .tech-used-container {
@@ -184,7 +209,6 @@ $font4: 'Unica One', cursive;
       }
       @media screen and (max-width: 550px) {
         width: 90%;
-        left: 5%;
       }
       @media screen and (max-height: 600px) {
         height: 80px;
@@ -299,7 +323,9 @@ $font4: 'Unica One', cursive;
         width: 100%;
         padding-top: 20px;
       }
-
+      @media screen and (max-width: 1200px) {
+        padding: 0px 50px;
+      }
       @media screen and (max-height: 600px) {
         padding: 20px 0px;
         font-size: 15px;

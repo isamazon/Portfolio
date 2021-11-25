@@ -16,7 +16,7 @@ $font3: 'Hind Gunter', sans-serif;
   flex-direction: row;
   padding: 0px 0px;
   @media screen and (max-width: 1200px) {
-    height: 1300px;
+    height: 1000px;
     flex-direction: column;
   }
   .info-container {
@@ -44,8 +44,9 @@ $font3: 'Hind Gunter', sans-serif;
       border-radius: 20px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.877);
       @media screen and (max-width: 1200px) {
-        width: 85%;
+        width: 95%;
         height: 400px;
+        margin-bottom: 10px;
       }
     }
     .link-container {
@@ -69,6 +70,11 @@ $font3: 'Hind Gunter', sans-serif;
         height: 50px;
         margin: 20px 0px;
       }
+      @media screen and (max-width: 500px) {
+        width: 90%;
+        height: 50px;
+        margin: 5px 0px;
+      }
       &:hover {
         transform: translateY(-5px);
         text-decoration: none;
@@ -91,6 +97,10 @@ $font3: 'Hind Gunter', sans-serif;
       @media screen and (max-width: 1200px) {
         left: 0px;
         text-align: center;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 50px;
+        top: 2px;
       }
     }
   }
@@ -178,7 +188,6 @@ $font3: 'Hind Gunter', sans-serif;
       }
       @media screen and (max-width: 550px) {
         width: 90%;
-        left: 5%;
       }
       @media screen and (max-height: 600px) {
         height: 80px;
@@ -293,7 +302,10 @@ $font3: 'Hind Gunter', sans-serif;
         width: 100%;
         padding-top: 20px;
       }
-
+      @media screen and (max-width: 1200px) {
+        padding: 0px 50px;
+        font-size: 15px;
+      }
       @media screen and (max-height: 600px) {
         padding: 20px 0px;
         font-size: 15px;

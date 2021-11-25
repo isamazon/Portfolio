@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1200px) {
   .blookify-page-cont {
-    height: 1300px;
+    height: 1000px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -75,8 +75,9 @@
 
 @media screen and (max-width: 1200px) {
   .blookify-page-cont .info-container .video-container {
-    width: 85%;
+    width: 95%;
     height: 400px;
+    margin-bottom: 10px;
   }
 }
 
@@ -113,6 +114,14 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .blookify-page-cont .info-container .link-container {
+    width: 90%;
+    height: 50px;
+    margin: 5px 0px;
+  }
+}
+
 .blookify-page-cont .info-container .link-container:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -129,7 +138,6 @@
 .blookify-page-cont .info-container .project-title {
   position: absolute;
   top: -13px;
-  left: 120px;
   width: 100%;
   font-size: 65px;
   font-family: "Lobster", cursive;
@@ -140,6 +148,13 @@
   .blookify-page-cont .info-container .project-title {
     left: 0px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blookify-page-cont .info-container .project-title {
+    font-size: 50px;
+    top: 2px;
   }
 }
 
@@ -282,7 +297,6 @@
 @media screen and (max-width: 550px) {
   .blookify-page-cont .right-col .adjust-container {
     width: 90%;
-    left: 5%;
   }
 }
 
@@ -456,6 +470,13 @@
     text-align: center;
     width: 100%;
     padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .blookify-page-cont .right-col .blookify-p {
+    padding: 0px 50px;
+    font-size: 15px;
   }
 }
 

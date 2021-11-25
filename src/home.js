@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import './components/home.css';
 // Dependencies
@@ -11,7 +11,15 @@ import Humble from './components/landingpages/humble/humblenutrition';
 import Nav from './components/navbar/navbar';
 // transition images
 import Transition1 from './assets/transition2.png';
-function Home() {
+const Home = () => {
+  const myRef = useRef(null);
+
+  const scrollTest = () => {
+    if (window.scrollY >= myRef && window.scrollY < myRef) {
+      console.log('hello');
+    }
+  };
+  window.addEventListener('scroll', scrollTest);
   return (
     <div fluid className="home-container">
       <Nav
@@ -20,7 +28,7 @@ function Home() {
         toproject2="project2"
         toproject3="project3"
       />
-      <Element className="element0" name="project0"></Element>
+      <Element ref={myRef} className="element0" name="project0"></Element>
       <Portfolio />
       <div className="transition-img-cont">
         <Element className="element1" name="project1"></Element>
@@ -37,6 +45,6 @@ function Home() {
       <div className="transition-img-cont4"></div>
     </div>
   );
-}
+};
 
 export default Home;
