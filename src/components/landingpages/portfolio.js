@@ -1,18 +1,9 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
-import styled from 'styled-components';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 // CSS
 import './landingpage.css';
-// imgs
-import Blookify from '../../assets/blookify.PNG';
-import Ahes from '../../assets/ahes.PNG';
-import Humble from '../../assets/humble.PNG';
-
 // SFX
 import Sound1 from '../../assets/clicksfx.mp3';
 // Components
@@ -20,8 +11,6 @@ import PortfolioImg from './portfolioimg';
 import SideMenu from '../sidemenu/sidemenu';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
-import { SiIndeed } from 'react-icons/si';
-import { BsArrowDownRight } from 'react-icons/bs';
 import { FiMail } from 'react-icons/fi';
 
 class Portfolio extends React.Component {
@@ -113,7 +102,7 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className="landing-page-cont">
-        <SideMenu
+        {/* <SideMenu
           linksp="linksp portfoliop"
           maincontainer="side-menu-container"
           // Icon color
@@ -122,7 +111,7 @@ class Portfolio extends React.Component {
           linkcolor={{ color: '#7de2d1' }}
           //   Link text color
           linkpcolor={{ color: 'white' }}
-        />
+        /> */}
         <Col xl={4} md={12} className="info-container">
           <div className={this.state.intialPclass}>
             <Fade bottom cascade>

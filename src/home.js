@@ -9,6 +9,7 @@ import Blookify from './components/landingpages/blookify/blookify';
 import Ahes from './components/landingpages/ahes/ahes';
 import Humble from './components/landingpages/humble/humblenutrition';
 import Nav from './components/navbar/navbar';
+import SideMenu from './components/sidemenu/sidemenu';
 // transition images
 import Transition1 from './assets/transition2.png';
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         toproject2="project2"
         toproject3="project3"
       />
+      <SideMenu />
       <Element ref={myRef} className="element0" name="project0"></Element>
       <Portfolio />
       <div className="transition-img-cont">

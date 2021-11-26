@@ -1,533 +1,116 @@
-//                              FONTS                              //
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-// Portfolio-fonts
-$font0: 'Arimo', sans-serif;
-// Blookify-fonts
 $font1: 'Lobster', cursive;
 $font2: 'Anton', sans-serif;
-
-.side-menu-container {
-  position: absolute;
-  height: 80px;
-  width: 450px;
-  top: 0%;
-  right: 0px;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 10;
-  border-bottom-left-radius: 20px;
-
-  @media screen and (min-width: 1200px) {
+.menu-container {
+  position: fixed;
+  height: 75px;
+  width: 75px;
+  background: none;
+  bottom: 20px;
+  right: 50px;
+  z-index: 50;
+  .menu-button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.422);
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.422);
+    }
+    .info-button {
+      position: relative;
+      height: 105%;
+      width: 105%;
+      top: -1px;
+      left: -1px;
+    }
+  }
+  .blookifyButton {
+    background: #e6ccb2;
+    color: #7f5539;
+    transition: 0.5s;
+    &:hover {
+      background: #7f5539;
+      color: #e6ccb2;
+    }
+  }
+  .ahesButton {
+    color: #1d3557;
+    background: #f1faee;
+    transition: 0.5s;
+    &:hover {
+      background: #1d3557;
+      color: #f1faee;
+    }
+  }
+  .menu-item-container {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    background: none;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.479);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    .menu-item {
+      position: relative;
+      min-height: 25%;
+      width: 100%;
+      background: #2b2c28;
+      border-bottom: 1px solid white;
+      transition: 0.5s;
+      .menu-item-link {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      .blookifyLink {
+        background: #e6ccb2;
+        color: #7f5539;
+        font-family: $font1;
+        &:hover {
+          background: #7f5539;
+          color: #e6ccb2;
+        }
+      }
+      .ahesLink {
+        color: #1d3557;
+        background: #f1faee;
+        transition: 0.5s;
+        font-family: $font2;
+        &:hover {
+          background: #1d3557;
+          color: #f1faee;
+        }
+      }
+    }
+    .blookifyButton {
+      background: #e6ccb2;
+      color: #7f5539;
+      border-bottom: 1px solid #4b3222;
+    }
+  }
+  .menu-item-hidden {
     display: none;
   }
-  @media screen and (max-width: 800px) {
-    height: 400px;
-    width: 80px;
-  }
-  @media screen and (max-width: 550px) {
-    height: 60px;
-    width: 90%;
-    left: 5%;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.377);
-  }
-  .side-menu-closed {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: none;
-    justify-content: space-between;
-    cursor: pointer;
-    z-index: 10;
-    animation: slideleft 0.5s ease-in-out;
-    @media screen and (max-width: 800px) {
-      flex-direction: column;
-    }
-    @media screen and (max-width: 550px) {
-      flex-direction: row;
-      animation: slideup 0.5s ease-in-out;
-    }
-    .arrow-container {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      width: 25%;
-      height: 100%;
-      @media screen and (max-width: 800px) {
-        flex-direction: column;
-      }
-      @media screen and (max-width: 550px) {
-        flex-direction: row;
-      }
-
-      .arrow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @media screen and (max-width: 550px) {
-          transform: rotate(-90deg);
-        }
-        .arrow-icon {
-          position: relative;
-          margin: 0px -23px;
-          font-size: 35px;
-          animation: pulse 2s infinite;
-        }
-        .one {
-          animation-delay: 0.6s;
-        }
-        .two {
-          animation-delay: 0.4s;
-        }
-        .three {
-          animation-delay: 0.2s;
-        }
-      }
-    }
-
-    .linksp {
-      //   color: #7de2d1;
-      font-size: 25px;
-      margin: 0px 0px;
-      font-weight: 400;
-      text-align: center;
-    }
-    .blookifyp {
-      font-family: $font1;
-    }
-    .ahesp {
-      font-family: $font2;
-    }
-    .portfoliop {
-      font-family: $font0;
-      font-weight: 900;
-    }
-  }
-  .side-menu-opened {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: none;
-    cursor: pointer;
-    z-index: 11;
-    animation: slideright 0.5s ease-in-out;
-    transition: 0.5s;
-    @media screen and (max-width: 800px) {
-      flex-direction: column;
-    }
-    @media screen and (max-width: 550px) {
-      flex-direction: row;
-      animation: slidedown 0.5s ease-in-out;
-    }
-    .arrow-container {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 20%;
-      @media screen and (max-width: 800px) {
-        flex-direction: column;
-        height: 50%;
-      }
-
-      .arrow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s;
-        @media screen and (max-width: 550px) {
-          transform: rotate(-90deg);
-        }
-        &:hover {
-          transform: translateX(15px);
-          @media screen and (max-width: 800px) {
-            transform: translateX(10px);
-          }
-          @media screen and (max-width: 550px) {
-            transform: translateY(-10px);
-            transform: rotate(-90deg);
-          }
-        }
-        .arrow-icon {
-          position: relative;
-          margin: 0px -23px;
-          font-size: 35px;
-          animation: pulse 2s infinite;
-          @media screen and (max-width: 800px) {
-            font-size: 30px;
-            margin: 0px -20px;
-          }
-        }
-        .one {
-          animation-delay: 0.2s;
-        }
-        .two {
-          animation-delay: 0.4s;
-        }
-        .three {
-          animation-delay: 0.6s;
-        }
-      }
-    }
-    .icon-links {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      transition: 0.5s;
-      height: 100%;
-      width: 100%;
-      @media screen and (max-width: 800px) {
-        flex-direction: column;
-      }
-      @media screen and (max-width: 550px) {
-        flex-direction: row;
-      }
-      .icons {
-        transition: 0.5s;
-        font-size: 40px;
-        margin: 20px 0px;
-        transition: 0.5s;
-        @media screen and (max-width: 800px) {
-          font-size: 30px;
-          width: 100%;
-        }
-        &:hover {
-          transform: translatey(-10px);
-          opacity: 0.5;
-        }
-      }
-      .link-p {
-        position: absolute;
-        font-size: 15px;
-        transition: 0.5s;
-        bottom: -15%;
-        text-align: center;
-        &:hover {
-          text-transform: none;
-        }
-        @media screen and (max-width: 1200px) {
-          display: none;
-        }
-      }
-      .one {
-        top: 25%;
-      }
-      .two {
-        top: 43%;
-      }
-      .three {
-        top: 65%;
-      }
-      .four {
-        top: 82%;
-      }
-    }
-  }
-}
-.blookify {
-  background: rgba(127, 85, 57, 0.65);
-  @media screen and (max-width: 500px) {
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
-  }
-}
-.ahes {
-  background: rgba(29, 53, 87, 0.65);
-  @media screen and (max-width: 500px) {
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
-  }
-}
-// .side-menu-container-blookify {
-//   position: absolute;
-//   height: 80px;
-//   width: 450px;
-//   top: 0%;
-//   right: 0px;
-//   background: rgba(127, 85, 57, 0.65);
-//   backdrop-filter: blur(15px);
-//   -webkit-backdrop-filter: blur(5px);
-//   z-index: 10;
-//   border-bottom-left-radius: 20px;
-
-//   @media screen and (min-width: 1200px) {
-//     display: none;
-//   }
-//   @media screen and (max-width: 800px) {
-//     height: 350px;
-//     width: 80px;
-//   }
-//   @media screen and (max-width: 550px) {
-//     height: 60px;
-//     width: 90%;
-//     left: 5%;
-//     border-bottom-right-radius: 20px;
-//     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.377);
-//   }
-//   .side-menu-closed {
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     background: none;
-//     justify-content: space-between;
-//     cursor: pointer;
-//     z-index: 10;
-//     animation: slideleft 0.5s ease-in-out;
-//     @media screen and (max-width: 800px) {
-//       flex-direction: column;
-//     }
-//     @media screen and (max-width: 550px) {
-//       flex-direction: row;
-//       animation: slideup 0.5s ease-in-out;
-//     }
-//     .arrow-container {
-//       position: relative;
-//       display: flex;
-//       flex-direction: row;
-//       width: 25%;
-//       height: 100%;
-//       @media screen and (max-width: 800px) {
-//         flex-direction: column;
-//       }
-//       @media screen and (max-width: 550px) {
-//         flex-direction: row;
-//       }
-
-//       .arrow {
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         @media screen and (max-width: 550px) {
-//           transform: rotate(-90deg);
-//         }
-//         .arrow-icon {
-//           position: relative;
-//           margin: 0px -23px;
-//           font-size: 35px;
-//           animation: pulse 2s infinite;
-//         }
-//         .one {
-//           animation-delay: 0.6s;
-//         }
-//         .two {
-//           animation-delay: 0.4s;
-//         }
-//         .three {
-//           animation-delay: 0.2s;
-//         }
-//       }
-//     }
-
-//     .linksp {
-//       //   color: #7de2d1;
-//       font-size: 25px;
-//       margin: 0px 0px;
-//       font-weight: 400;
-//       text-align: center;
-//       font-family: $font1;
-//     }
-//   }
-//   .side-menu-opened {
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     top: 0px;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: space-between;
-//     background: none;
-//     cursor: pointer;
-//     z-index: 11;
-//     animation: slideright 0.5s ease-in-out;
-//     transition: 0.5s;
-//     @media screen and (max-width: 800px) {
-//       flex-direction: column;
-//     }
-//     @media screen and (max-width: 550px) {
-//       flex-direction: row;
-//       animation: slidedown 0.5s ease-in-out;
-//     }
-//     .arrow-container {
-//       position: relative;
-//       display: flex;
-//       flex-direction: row;
-//       width: 100%;
-//       height: 20%;
-//       @media screen and (max-width: 800px) {
-//         flex-direction: column;
-//         height: 50%;
-//       }
-
-//       .arrow {
-//         position: absolute;
-//         width: 100%;
-//         height: 100%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         transition: 0.5s;
-//         @media screen and (max-width: 550px) {
-//           transform: rotate(-90deg);
-//         }
-//         &:hover {
-//           transform: translateX(15px);
-//           @media screen and (max-width: 800px) {
-//             transform: translateX(10px);
-//           }
-//           @media screen and (max-width: 550px) {
-//             transform: translateY(-10px);
-//             transform: rotate(-90deg);
-//           }
-//         }
-//         .arrow-icon {
-//           position: relative;
-//           margin: 0px -23px;
-//           font-size: 35px;
-//           animation: pulse 2s infinite;
-//           @media screen and (max-width: 800px) {
-//             font-size: 30px;
-//             margin: 0px -20px;
-//           }
-//         }
-//         .one {
-//           animation-delay: 0.2s;
-//         }
-//         .two {
-//           animation-delay: 0.4s;
-//         }
-//         .three {
-//           animation-delay: 0.6s;
-//         }
-//       }
-//     }
-//     .icon-links {
-//       display: flex;
-//       flex-direction: row;
-//       align-items: center;
-//       transition: 0.5s;
-//       height: 100%;
-//       width: 100%;
-//       @media screen and (max-width: 800px) {
-//         flex-direction: column;
-//       }
-//       @media screen and (max-width: 550px) {
-//         flex-direction: row;
-//       }
-//       .icons {
-//         transition: 0.5s;
-//         font-size: 40px;
-//         margin: 20px 0px;
-//         transition: 0.5s;
-//         @media screen and (max-width: 800px) {
-//           font-size: 30px;
-//           width: 100%;
-//         }
-//         &:hover {
-//           transform: translatey(-10px);
-//           opacity: 0.5;
-//         }
-//       }
-//       .link-p {
-//         position: absolute;
-//         font-size: 15px;
-//         transition: 0.5s;
-//         bottom: -15%;
-//         text-align: center;
-//         &:hover {
-//           text-transform: none;
-//         }
-//         @media screen and (max-width: 1200px) {
-//           display: none;
-//         }
-//       }
-//       .one {
-//         top: 25%;
-//       }
-//       .two {
-//         top: 43%;
-//       }
-//       .three {
-//         top: 65%;
-//       }
-//       .four {
-//         top: 82%;
-//       }
-//     }
-//   }
-// }
-
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes slideright {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
-@keyframes slideleft {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slidedown {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes slideup {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+.hidden {
+  display: none;
 }
