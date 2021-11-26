@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 $font1: 'Lobster', cursive;
 $font2: 'Anton', sans-serif;
+$font3: 'Shadows Into Light', cursive;
 .menu-container {
   position: fixed;
   height: 75px;
@@ -48,6 +50,16 @@ $font2: 'Anton', sans-serif;
       color: #f1faee;
     }
   }
+  .humbleButton {
+    background: #1b4332;
+    color: #95d5b2;
+    transition: 0.5s;
+    font-family: $font3;
+    &:hover {
+      color: #1b4332;
+      background: #95d5b2;
+    }
+  }
   .menu-item-container {
     position: absolute;
     bottom: 100px;
@@ -67,7 +79,7 @@ $font2: 'Anton', sans-serif;
       min-height: 25%;
       width: 100%;
       background: #2b2c28;
-      border-bottom: 1px solid white;
+
       transition: 0.5s;
       .menu-item-link {
         position: relative;
@@ -90,20 +102,29 @@ $font2: 'Anton', sans-serif;
         }
       }
       .ahesLink {
-        color: #1d3557;
-        background: #f1faee;
+        background: #1d3557;
+        color: #f1faee;
         transition: 0.5s;
         font-family: $font2;
         &:hover {
-          background: #1d3557;
-          color: #f1faee;
+          color: #1d3557;
+          background: #f1faee;
+        }
+      }
+      .humbleLink {
+        background: #1b4332;
+        color: #95d5b2;
+        transition: 0.5s;
+        font-family: $font3;
+        &:hover {
+          color: #1b4332;
+          background: #95d5b2;
         }
       }
     }
     .blookifyButton {
       background: #e6ccb2;
       color: #7f5539;
-      border-bottom: 1px solid #4b3222;
     }
   }
   .menu-item-hidden {

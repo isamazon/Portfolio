@@ -17,6 +17,9 @@ function SideMenu() {
     } else if (window.scrollY >= 1900 && window.scrollY < 3000) {
       setButtonStyle('menu-button ahesButton');
       setMenuItemLink('menu-item-link ahesLink');
+    } else if (window.scrollY >= 3000 && window.scrollY < 4500) {
+      setButtonStyle('menu-button humbleButton');
+      setMenuItemLink('menu-item-link humbleLink');
     } else {
       setButtonMenu('menu-container hidden');
     }
