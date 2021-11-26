@@ -72,7 +72,7 @@
 @media screen and (max-width: 1200px) {
   .landing-page-cont .info-container .text-content-container-long {
     padding-left: 30px;
-    top: 50px;
+    top: 150px;
   }
 }
 
@@ -80,12 +80,6 @@
   .landing-page-cont .info-container .text-content-container-long {
     width: 100%;
     padding-left: 0px;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .landing-page-cont .info-container .text-content-container-long {
-    top: 80px;
   }
 }
 
@@ -143,7 +137,7 @@
 @media screen and (max-width: 1200px) {
   .landing-page-cont .info-container .text-content-container {
     padding-left: 30px;
-    top: 100px;
+    top: 200px;
   }
 }
 
@@ -258,6 +252,13 @@
   color: #58eed5;
   font-size: 65px;
   letter-spacing: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.landing-page-cont .info-container .portfolio-h1-3:hover {
+  color: #f11aee;
 }
 
 @media screen and (max-width: 1500px) {
@@ -325,7 +326,7 @@
 }
 
 .landing-page-cont .info-container .adjust-container p {
-  color: #00ffd583;
+  color: #2feeee;
   text-transform: uppercase;
   padding-left: 15px;
 }
@@ -408,7 +409,7 @@
 .landing-page-cont .info-container .adjust-container .button-cnt .radio__radio {
   width: 25px;
   height: 25px;
-  border: 2px solid #00bb9c;
+  border: 2px solid #2feeee;
   border-radius: 50%;
   margin-right: 10px;
   -webkit-box-sizing: border-box;
@@ -428,7 +429,7 @@
   width: 100%;
   height: 100%;
   display: block;
-  background: #00ffd5;
+  background: #f11aee;
   border-radius: 50%;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -457,17 +458,21 @@
 .landing-page-cont .info-container .adjust-container .button-text .shortest {
   position: absolute;
   left: 0px;
+  color: #f11aee;
+  font-weight: 500;
 }
 
 .landing-page-cont .info-container .adjust-container .button-text .longest {
   position: absolute;
   right: 0px;
+  color: #f11aee;
+  font-weight: 500;
 }
 
 .landing-page-cont .info-container .portfolio-p {
   position: relative;
   font-family: "Hind Gunter", sans-serif;
-  color: #7de2d1;
+  color: #2feeee;
   padding-left: 15px;
   width: 80%;
   height: 100%;
@@ -536,14 +541,14 @@
 }
 
 .landing-page-cont .info-container .important-links .icon {
-  color: #00ffd5;
+  color: #2feeee;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-right: 110px;
 }
 
 .landing-page-cont .info-container .important-links .icon:hover {
-  color: #00a388;
+  color: #f11aee;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
@@ -555,8 +560,10 @@
 }
 
 .landing-page-cont .info-container .important-links .icon-text {
+  left: -6px;
   position: absolute;
-  color: white;
+  color: #2feeee;
+  text-shadow: 1.5px 1px 0px #f11aee;
   font-family: "Hind Gunter", sans-serif;
 }
 
@@ -681,10 +688,7 @@
 
 @media screen and (max-width: 800px) {
   .landing-page-cont .right-col .gradient-box {
-    left: 0px;
-    height: 150px;
-    bottom: 0px;
-    width: 100%;
+    display: none;
   }
 }
 

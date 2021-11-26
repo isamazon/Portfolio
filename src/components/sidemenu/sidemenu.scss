@@ -20,6 +20,7 @@ $font3: 'Shadows Into Light', cursive;
     cursor: pointer;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.422);
     transition: 0.5s;
+    background: #f11aee;
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.422);
@@ -31,6 +32,9 @@ $font3: 'Shadows Into Light', cursive;
       top: -1px;
       left: -1px;
     }
+  }
+  .portfolioButton {
+    color: #2feeee;
   }
   .blookifyButton {
     background: #e6ccb2;
@@ -79,7 +83,6 @@ $font3: 'Shadows Into Light', cursive;
       min-height: 25%;
       width: 100%;
       background: #2b2c28;
-
       transition: 0.5s;
       .menu-item-link {
         position: relative;
@@ -91,6 +94,15 @@ $font3: 'Shadows Into Light', cursive;
         font-size: 30px;
         text-decoration: none;
         transition: 0.5s;
+      }
+      .portfolioLink {
+        background: #2b2c28;
+        color: #2feeee;
+        text-shadow: 1.5px 1.5px 0px #f11aee;
+        &:hover {
+          color: #f11aee;
+          text-shadow: 1px 1px 0px #2feeee;
+        }
       }
       .blookifyLink {
         background: #e6ccb2;

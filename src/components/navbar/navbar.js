@@ -82,7 +82,7 @@ function Navbar(props) {
       <div className="nav-bar-icon">
         <Link
           className="logo-container"
-          name={props.toproject0}
+          to={props.toproject0}
           spy={true}
           smooth={true}
         >

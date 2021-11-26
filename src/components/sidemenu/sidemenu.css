@@ -21,6 +21,7 @@
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.422);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background: #f11aee;
 }
 
 .menu-container .menu-button:hover {
@@ -36,6 +37,10 @@
   width: 105%;
   top: -1px;
   left: -1px;
+}
+
+.menu-container .portfolioButton {
+  color: #2feeee;
 }
 
 .menu-container .blookifyButton {
@@ -126,6 +131,17 @@
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.menu-container .menu-item-container .menu-item .portfolioLink {
+  background: #2b2c28;
+  color: #2feeee;
+  text-shadow: 1.5px 1.5px 0px #f11aee;
+}
+
+.menu-container .menu-item-container .menu-item .portfolioLink:hover {
+  color: #f11aee;
+  text-shadow: 1px 1px 0px #2feeee;
 }
 
 .menu-container .menu-item-container .menu-item .blookifyLink {
