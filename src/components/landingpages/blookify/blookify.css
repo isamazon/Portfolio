@@ -18,11 +18,17 @@
 
 @media screen and (max-width: 1200px) {
   .blookify-page-cont {
-    height: 1000px;
+    height: 1100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .blookify-page-cont {
+    height: 800px;
   }
 }
 
@@ -75,9 +81,16 @@
 
 @media screen and (max-width: 1200px) {
   .blookify-page-cont .info-container .video-container {
-    width: 95%;
+    width: 85%;
     height: 400px;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blookify-page-cont .info-container .video-container {
+    width: 95%;
+    height: 250px;
   }
 }
 
@@ -135,6 +148,12 @@
   font-size: 35px;
 }
 
+@media screen and (max-width: 500px) {
+  .blookify-page-cont .info-container .link-container .link-icon {
+    left: 10%;
+  }
+}
+
 .blookify-page-cont .info-container .project-title {
   position: absolute;
   top: -13px;
@@ -181,7 +200,7 @@
 @media screen and (max-width: 1200px) {
   .blookify-page-cont .right-col {
     position: absolute;
-    bottom: 80px;
+    bottom: -20px;
     height: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -206,6 +225,13 @@
   font-size: 100px;
   color: #9c6644;
   font-family: "Lobster", cursive;
+}
+
+@media screen and (max-width: 650px) {
+  .blookify-page-cont .right-col .project-name {
+    height: 50px;
+    font-size: 60px;
+  }
 }
 
 .blookify-page-cont .right-col .tech-used-container {
@@ -510,6 +536,7 @@
     padding-left: 0px;
     font-size: 15px;
     padding: 0px 20px;
+    min-height: 180px;
   }
 }
 

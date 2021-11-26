@@ -49,7 +49,7 @@ function Navbar(props) {
     }
   };
   const scrollProject2 = () => {
-    if (window.scrollY >= 800 && window.scrollY < 1800) {
+    if (window.scrollY >= 600 && window.scrollY < 1800) {
       setProject('nav-bar-container blookify');
       setLinks('links blookifylinks');
       setLogoPic(Logo2);

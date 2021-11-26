@@ -19,6 +19,9 @@ $font3: 'Hind Gunter', sans-serif;
     height: 1100px;
     flex-direction: column;
   }
+  @media screen and (max-width: 650px) {
+    height: 950px;
+  }
   .info-container {
     position: relative;
     height: 100%;
@@ -46,11 +49,11 @@ $font3: 'Hind Gunter', sans-serif;
       @media screen and (max-width: 1200px) {
         width: 85%;
         height: 400px;
-      }
-      @media screen and (max-width: 1200px) {
-        width: 95%;
-        height: 400px;
         margin-bottom: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 95%;
+        height: 250px;
       }
     }
     .link-container {
@@ -88,6 +91,9 @@ $font3: 'Hind Gunter', sans-serif;
         left: 20%;
         color: #f1faee;
         font-size: 35px;
+        @media screen and(max-width: 500px) {
+          left: 10%;
+        }
       }
     }
     .project-title {
@@ -120,7 +126,7 @@ $font3: 'Hind Gunter', sans-serif;
     align-items: center;
     @media screen and (max-width: 1200px) {
       position: absolute;
-      bottom: 80px;
+      bottom: -20px;
       height: 50%;
       align-items: center;
       padding: 0px 0px;
@@ -138,6 +144,10 @@ $font3: 'Hind Gunter', sans-serif;
       font-size: 100px;
       color: #1d3557;
       font-family: $font1;
+      @media screen and (max-width: 650px) {
+        height: 50px;
+        font-size: 60px;
+      }
     }
     .tech-used-container {
       position: relative;
@@ -301,11 +311,6 @@ $font3: 'Hind Gunter', sans-serif;
       @media screen and (max-width: 1500px) {
         width: 80%;
       }
-      @media screen and (max-width: 800px) {
-        text-align: center;
-        width: 100%;
-        padding-top: 20px;
-      }
       @media screen and (max-width: 1200px) {
         padding: 0px 50px;
       }
@@ -324,10 +329,16 @@ $font3: 'Hind Gunter', sans-serif;
         overflow-y: auto;
         padding-bottom: 100px;
       }
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        width: 100%;
+        padding-top: 20px;
+      }
       @media screen and (max-width: 550px) {
         padding-left: 0px;
         font-size: 15px;
         padding: 0px 20px;
+        min-height: 180px;
       }
     }
     .blookify-p::-webkit-scrollbar-track {

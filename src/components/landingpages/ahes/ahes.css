@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .ahes-page-cont {
+    height: 950px;
+  }
+}
+
 .ahes-page-cont .info-container {
   position: relative;
   height: 100%;
@@ -77,14 +83,14 @@
   .ahes-page-cont .info-container .video-container {
     width: 85%;
     height: 400px;
+    margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
   .ahes-page-cont .info-container .video-container {
     width: 95%;
-    height: 400px;
-    margin-bottom: 10px;
+    height: 250px;
   }
 }
 
@@ -142,6 +148,12 @@
   font-size: 35px;
 }
 
+@media screen and (max-width: 500px) {
+  .ahes-page-cont .info-container .link-container .link-icon {
+    left: 10%;
+  }
+}
+
 .ahes-page-cont .info-container .project-title {
   position: absolute;
   top: -15px;
@@ -188,7 +200,7 @@
 @media screen and (max-width: 1200px) {
   .ahes-page-cont .right-col {
     position: absolute;
-    bottom: 80px;
+    bottom: -20px;
     height: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -213,6 +225,13 @@
   font-size: 100px;
   color: #1d3557;
   font-family: "Anton", sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+  .ahes-page-cont .right-col .project-name {
+    height: 50px;
+    font-size: 60px;
+  }
 }
 
 .ahes-page-cont .right-col .tech-used-container {
@@ -473,14 +492,6 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .ahes-page-cont .right-col .ahes-p {
-    text-align: center;
-    width: 100%;
-    padding-top: 20px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .ahes-page-cont .right-col .ahes-p {
     padding: 0px 50px;
@@ -511,11 +522,20 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .ahes-page-cont .right-col .ahes-p {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .ahes-page-cont .right-col .ahes-p {
     padding-left: 0px;
     font-size: 15px;
     padding: 0px 20px;
+    min-height: 180px;
   }
 }
 

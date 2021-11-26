@@ -16,8 +16,11 @@ $font3: 'Hind Gunter', sans-serif;
   flex-direction: row;
   padding: 0px 0px;
   @media screen and (max-width: 1200px) {
-    height: 1000px;
+    height: 1100px;
     flex-direction: column;
+  }
+  @media screen and (max-width: 650px) {
+    height: 800px;
   }
   .info-container {
     position: relative;
@@ -44,9 +47,13 @@ $font3: 'Hind Gunter', sans-serif;
       border-radius: 20px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.877);
       @media screen and (max-width: 1200px) {
-        width: 95%;
+        width: 85%;
         height: 400px;
         margin-bottom: 10px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 95%;
+        height: 250px;
       }
     }
     .link-container {
@@ -84,6 +91,9 @@ $font3: 'Hind Gunter', sans-serif;
         left: 20%;
         color: #7f5539;
         font-size: 35px;
+        @media screen and(max-width: 500px) {
+          left: 10%;
+        }
       }
     }
     .project-title {
@@ -116,7 +126,7 @@ $font3: 'Hind Gunter', sans-serif;
     align-items: center;
     @media screen and (max-width: 1200px) {
       position: absolute;
-      bottom: 80px;
+      bottom: -20px;
       height: 50%;
       align-items: center;
       padding: 0px 0px;
@@ -134,6 +144,10 @@ $font3: 'Hind Gunter', sans-serif;
       font-size: 100px;
       color: #9c6644;
       font-family: $font1;
+      @media screen and (max-width: 650px) {
+        height: 50px;
+        font-size: 60px;
+      }
     }
     .tech-used-container {
       position: relative;
@@ -325,6 +339,7 @@ $font3: 'Hind Gunter', sans-serif;
         padding-left: 0px;
         font-size: 15px;
         padding: 0px 20px;
+        min-height: 180px;
       }
     }
     .blookify-p::-webkit-scrollbar-track {

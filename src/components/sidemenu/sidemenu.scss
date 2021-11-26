@@ -12,6 +12,12 @@ $font3: 'Shadows Into Light', cursive;
   bottom: 20px;
   right: 50px;
   z-index: 50;
+  @media screen and (max-width: 700px) {
+    bottom: 10px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+  }
   .menu-button {
     position: relative;
     height: 100%;

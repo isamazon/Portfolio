@@ -162,7 +162,7 @@
 
 @media screen and (max-height: 600px) {
   .landing-page-cont .info-container .text-content-container {
-    top: 80px;
+    top: 200px;
   }
 }
 

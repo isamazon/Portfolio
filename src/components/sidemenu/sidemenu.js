@@ -9,7 +9,7 @@ function SideMenu() {
   const [menuItems, setMenuItems] = useState('menu-item');
   const [menuItemLink, setMenuItemLink] = useState('menu-item-link');
   const revealMenuButton = () => {
-    if (window.scrollY >= 900 && window.scrollY < 1900) {
+    if (window.scrollY >= 500 && window.scrollY < 1900) {
       setButtonMenu('menu-container');
       setButtonStyle('menu-button blookifyButton');
       setMenuItems('menu-item blookifyButton');
@@ -24,11 +24,38 @@ function SideMenu() {
       setButtonMenu('menu-container hidden');
     }
   };
+  const revealMenuButtonSmall = () => {
+    if (window.scrollY >= 0 && window.scrollY < 600) {
+      setButtonMenu('menu-container');
+      setButtonStyle('menu-button portfolioButton');
+      setMenuItems('menu-item portfolioButton');
+      setMenuItemLink('menu-item-link portfolioLink');
+    } else if (window.scrollY >= 600 && window.scrollY < 1800) {
+      setButtonMenu('menu-container');
+      setButtonStyle('menu-button blookifyButton');
+      setMenuItems('menu-item blookifyButton');
+      setMenuItemLink('menu-item-link blookifyLink');
+    } else if (window.scrollY >= 1800 && window.scrollY < 3100) {
+      setButtonStyle('menu-button ahesButton');
+      setMenuItemLink('menu-item-link ahesLink');
+    } else if (window.scrollY >= 3100) {
+      setButtonStyle('menu-button humbleButton');
+      setMenuItemLink('menu-item-link humbleLink');
+    } else {
+    }
+  };
   const ToggleMenuItems = () => {
     setMenuItemContainer(!menuItemContainer);
   };
 
-  window.addEventListener('scroll', revealMenuButton);
+  const scroll = () => {
+    if (window.innerWidth > 1200) {
+      revealMenuButton();
+    } else if (window.innerWidth < 1200) {
+      revealMenuButtonSmall();
+    }
+  };
+  window.addEventListener('scroll', scroll);
   return (
     <div className={buttonMenu}>
       <div
