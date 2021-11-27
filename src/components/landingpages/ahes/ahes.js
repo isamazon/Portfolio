@@ -99,11 +99,11 @@ class Ahes extends React.Component {
       <div className="ahes-page-cont">
         <Col xl={6} md={12} className="info-container">
           <Youtube urlplayer="https://youtu.be/8827OSG1XoI" />
-          <a className="link-container" href="">
+          <a className="link-container" href="https://github.com/isamazon">
             <FaGithub className="link-icon" />
             Gitub
           </a>
-          <a className="link-container" href="">
+          <a className="link-container" href="https://github.com/isamazon">
             <FaGlobe className="link-icon" />
             Live demo
           </a>

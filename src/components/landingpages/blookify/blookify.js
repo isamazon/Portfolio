@@ -106,11 +106,14 @@ class Portfolio extends React.Component {
       <div className="blookify-page-cont">
         <Col xl={6} md={12} className="info-container">
           <Youtube urlplayer="https://youtu.be/V8abbfKmukA" />
-          <a className="link-container" href="">
+          <a
+            className="link-container"
+            href="https://github.com/isamazon/Blookify"
+          >
             <FaGithub className="link-icon" />
             Gitub
           </a>
-          <a className="link-container" href="">
+          <a className="link-container" href="https://blookify.com/">
             <FaGlobe className="link-icon" />
             Live demo
           </a>

@@ -109,12 +109,15 @@ class Portfolio extends React.Component {
     return (
       <div className="humble-page-cont">
         <Col xl={6} md={12} className="info-container">
-          <Youtube urlplayer="https://youtu.be/8827OSG1XoI" />
-          <a className="link-container" href="">
+          <Youtube urlplayer="https://youtu.be/PjL4lOVpgBw" />
+          <a
+            className="link-container"
+            href="https://github.com/isamazon/Humble-Nutrtion"
+          >
             <FaGithub className="link-icon" />
             Gitub
           </a>
-          <a className="link-container" href="">
+          <a className="link-container" href="https://humblenutritionnm.com/">
             <FaGlobe className="link-icon" />
             Live demo
           </a>

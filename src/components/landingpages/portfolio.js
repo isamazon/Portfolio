@@ -9,6 +9,7 @@ import Sound1 from '../../assets/clicksfx.mp3';
 // Components
 import PortfolioImg from './portfolioimg';
 import SideMenu from '../sidemenu/sidemenu';
+import Resume from '../../assets/resume.pdf';
 // Icons
 import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
@@ -205,7 +206,7 @@ class Portfolio extends React.Component {
                   </Zoom>
                 </a>
                 <a
-                  href="../../../assets/resume.pdf"
+                  href={Resume}
                   download
                   onMouseEnter={this.handleHover4}
                   onMouseLeave={this.handleHover4}

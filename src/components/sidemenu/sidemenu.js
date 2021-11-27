@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './sidemenu.css';
 import styled from 'styled-components';
+import Resume from '../../assets/resume.pdf';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
 function SideMenu() {
   const [buttonMenu, setButtonMenu] = useState('menu-container hidden');
@@ -65,17 +66,20 @@ function SideMenu() {
         onMouseLeave={ToggleMenuItems}
       >
         <div className={menuItems}>
-          <a href="" className={menuItemLink}>
+          <a href="https://github.com/isamazon" className={menuItemLink}>
             Github
           </a>
         </div>
         <div className={menuItems}>
-          <a href="" className={menuItemLink}>
+          <a
+            href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
+            className={menuItemLink}
+          >
             LinkedIn
           </a>
         </div>
         <div className={menuItems}>
-          <a href="" className={menuItemLink}>
+          <a href={Resume} className={menuItemLink} download>
             Resume
           </a>
         </div>
