@@ -142,6 +142,12 @@
   transition: 0.5s;
 }
 
+.menu-container .menu-item-container .menu-item .menu-item-link .menu-icon {
+  position: absolute;
+  font-size: 40px;
+  left: 20px;
+}
+
 .menu-container .menu-item-container .menu-item .portfolioLink {
   background: #2b2c28;
   color: #2feeee;

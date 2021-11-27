@@ -103,7 +103,10 @@ class Ahes extends React.Component {
             <FaGithub className="link-icon" />
             Gitub
           </a>
-          <a className="link-container" href="https://github.com/isamazon">
+          <a
+            className="link-container"
+            href="https://www.americanhouseholdestatesales.com/"
+          >
             <FaGlobe className="link-icon" />
             Live demo
           </a>

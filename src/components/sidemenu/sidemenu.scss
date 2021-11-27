@@ -101,6 +101,11 @@ $font3: 'Shadows Into Light', cursive;
         font-size: 30px;
         text-decoration: none;
         transition: 0.5s;
+        .menu-icon {
+          position: absolute;
+          font-size: 40px;
+          left: 20px;
+        }
       }
       .portfolioLink {
         background: #2b2c28;

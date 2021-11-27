@@ -3,12 +3,15 @@ import './sidemenu.css';
 import styled from 'styled-components';
 import Resume from '../../assets/resume.pdf';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
+import { FaGithub, FaLinkedin, FaRegFileAlt } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 function SideMenu() {
   const [buttonMenu, setButtonMenu] = useState('menu-container hidden');
   const [buttonStyle, setButtonStyle] = useState('menu-button');
   const [menuItemContainer, setMenuItemContainer] = useState(false);
   const [menuItems, setMenuItems] = useState('menu-item');
   const [menuItemLink, setMenuItemLink] = useState('menu-item-link');
+
   const revealMenuButton = () => {
     if (window.scrollY >= 500 && window.scrollY < 1900) {
       setButtonMenu('menu-container');
@@ -67,7 +70,7 @@ function SideMenu() {
       >
         <div className={menuItems}>
           <a href="https://github.com/isamazon" className={menuItemLink}>
-            Github
+            <FaGithub className="menu-icon" /> Github
           </a>
         </div>
         <div className={menuItems}>
@@ -75,17 +78,17 @@ function SideMenu() {
             href="https://www.linkedin.com/in/isaiah-mazon-1786b8206/"
             className={menuItemLink}
           >
-            LinkedIn
+            <FaLinkedin className="menu-icon" /> LinkedIn
           </a>
         </div>
         <div className={menuItems}>
           <a href={Resume} className={menuItemLink} download>
-            Resume
+            <FaRegFileAlt className="menu-icon" /> Resume
           </a>
         </div>
         <div className={menuItems}>
           <a href="" className={menuItemLink}>
-            Email Me
+            <FiMail className="menu-icon" /> Email Me
           </a>
         </div>
       </div>
